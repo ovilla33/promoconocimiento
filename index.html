@@ -7764,6 +7764,914 @@ registerModule("contractual", {
 });
 // ============================================================ FIN MÓDULO: contractual
 
+// ============================================================
+// MÓDULO: etica
+// Nombre: Cumplimiento Normativo y Código de Ética 2024
+// Preguntas: 80
+// Para actualizar: pídele a Claude "Reemplaza el bloque
+//   MÓDULO: etica con [tus nuevas preguntas o cambios]"
+// ============================================================
+registerModule("etica", {
+  "name": "Cumplimiento Normativo y Código de Ética 2024",
+  "icon": "🧭",
+  "color": "#27ae60",
+  "desc": "Módulo A: Manual de Cumplimiento Normativo (50 preguntas) · Módulo B: Código de Ética 2024 (30 preguntas)",
+  "bloques": [
+    "MÓDULO A · SECCIÓN 1 — Introducción, Objetivo, Alcance y Marcos de Referencia  (1–8)",
+    "MÓDULO A · SECCIÓN 2 — Definiciones Clave del Manual  (9–18)",
+    "MÓDULO A · SECCIÓN 3 — Política y Principios de Actuación  (19–26)",
+    "MÓDULO A · SECCIÓN 4 — Componentes de la Función de Cumplimiento Normativo  (27–35)",
+    "MÓDULO A · SECCIÓN 5 — Estructura de Gobierno: Roles y Funciones  (36–50)",
+    "MÓDULO B · SECCIÓN 6 — Destinatarios, Objetivo y Valores Corporativos  (51–62)",
+    "MÓDULO B · SECCIÓN 7 — Responsabilidades, Políticas de Conducta, Canales y Control  (63–80)"
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "q": "Según la introducción del Manual de Cumplimiento Normativo, la función de cumplimiento normativo en Colpensiones fue establecida con dos características fundamentales. ¿Cuáles son?",
+      "opts": [
+        "A) Autonomía y especialización técnica",
+        "B) Independencia e integración de procesos",
+        "C) Centralización y autorregulación",
+        "D) Obligatoriedad y confidencialidad"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 2,
+      "q": "El objetivo general del Manual de Cumplimiento Normativo establece que la función debe articularse a un sistema específico de la entidad. ¿Cuál?",
+      "opts": [
+        "A) Al Sistema de Gestión de Continuidad de Negocio",
+        "B) Al Sistema Integral de Administración de Riesgos",
+        "C) Al Sistema de Control Interno regulado por la Ley 87 de 1993",
+        "D) Al Sistema Integrado de Gestión"
+      ],
+      "ans": "D"
+    },
+    {
+      "n": 3,
+      "q": "Según el objetivo general, la función de cumplimiento normativo debe prevenir, detectar, mitigar y gestionar posibles incumplimientos normativos, promoviendo cuatro elementos. ¿Cuáles son?",
+      "opts": [
+        "A) Una cultura de integridad, gobierno corporativo, gestión de riesgos y cumplimiento",
+        "B) Prevención, detección, reacción y corrección",
+        "C) Ética, auditoria, control interno y mejora continua",
+        "D) Legalidad, eficiencia, transparencia y sostenibilidad"
+      ],
+      "ans": "A"
+    },
+    {
+      "n": 4,
+      "q": "Uno de los objetivos específicos del Manual de Cumplimiento Normativo es 'definir la estructura de gobierno de la función'. ¿Con qué propósito específico?",
+      "opts": [
+        "A) Para fomentar, fortalecer y asegurar el cumplimiento de la normatividad nueva o cambiante, interna y externa",
+        "B) Para auditar el cumplimiento de los objetivos estratégicos de la entidad",
+        "C) Para centralizar todas las decisiones en la Vicepresidencia de Seguridad y Riesgos Empresariales",
+        "D) Para establecer sanciones a los colaboradores que incumplan la regulación"
+      ],
+      "ans": "A"
+    },
+    {
+      "n": 5,
+      "q": "Según el alcance definido en el Manual, ¿a qué normatividad aplica la función de cumplimiento normativo?",
+      "opts": [
+        "A) Exclusivamente a la normatividad interna de Colpensiones",
+        "B) A la normatividad nueva o cambiante interna y externa aplicable a la Organización",
+        "C) Solo a las normas con impacto en el Régimen de Prima Media y los BEPS",
+        "D) Solo a la normatividad externa emitida por la Superintendencia Financiera de Colombia"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 6,
+      "q": "En cuanto a los destinatarios, el Manual de Cumplimiento Normativo señala que los lineamientos y políticas deben ser cumplidos por:",
+      "opts": [
+        "A) Los líderes de proceso y articuladores normativos únicamente",
+        "B) Los colaboradores directos de Colpensiones, excluyendo contratistas y sus empleados",
+        "C) Todos los grupos de interés",
+        "D) Solo los servidores públicos de planta de la entidad"
+      ],
+      "ans": "C"
+    },
+    {
+      "n": 7,
+      "q": "El Manual de Cumplimiento Normativo menciona cuatro marcos de referencia para la estructuración de la función. ¿Cuál de los siguientes NO está incluido?",
+      "opts": [
+        "A) Norma ISO 9001:2015 – Sistema de Gestión de la Calidad",
+        "B) ISO 31022:2020 – Directrices para la gestión del Riesgo Legal",
+        "C) ISO 19600:2015 – Sistemas de Gestión de Compliance",
+        "D) Documento del Comité de Basilea sobre cumplimiento en los bancos"
+      ],
+      "ans": "A"
+    },
+    {
+      "n": 8,
+      "q": "¿Cuál de los marcos de referencia mencionados en el Manual fue emitido por la Superintendencia Financiera de Colombia?",
+      "opts": [
+        "A) ISO 31022:2020",
+        "B) El documento del Comité de Basilea sobre el cumplimiento en los bancos",
+        "C) ISO 19600:2015",
+        "D) La Guía de criterios de evaluación de la función de cumplimiento normativo"
+      ],
+      "ans": "D"
+    },
+    {
+      "n": 9,
+      "q": "Según el Manual, la definición de 'Riesgo de Cumplimiento' incluye tres tipos de consecuencias ante el incumplimiento de normas o estándares adoptados por la Entidad. ¿Cuáles son?",
+      "opts": [
+        "A) Sanciones operacionales, tecnológicas y reputacionales",
+        "B) Multas económicas, suspensión de operaciones y cierre de oficinas",
+        "C) Sanciones administrativas, legales y financieras, o en dado caso la pérdida de reputación",
+        "D) Investigaciones disciplinarias, penales y civiles"
+      ],
+      "ans": "C"
+    },
+    {
+      "n": 10,
+      "q": "La definición de 'Cultura de Cumplimiento' en el Manual establece que es la interacción de valores, ética y creencias con las estructuras y sistemas de control para producir:",
+      "opts": [
+        "A) Procedimientos documentados aplicables a todos los procesos",
+        "B) Controles preventivos y detectivos frente al riesgo operacional",
+        "C) Indicadores de gestión alineados con los objetivos estratégicos",
+        "D) Normas de comportamiento que conducen a resultados de cumplimiento"
+      ],
+      "ans": "D"
+    },
+    {
+      "n": 11,
+      "q": "Según el Manual, ¿cuál es la diferencia precisa entre 'Requisito de cumplimiento' y 'Compromiso de cumplimiento'?",
+      "opts": [
+        "A) El requisito es de carácter legal; el compromiso es de carácter ético",
+        "B) El requisito de cumplimiento es aquel que la Organización tiene que cumplir; el compromiso es aquel que la Organización elige cumplir",
+        "C) No hay diferencia: ambos términos son sinónimos en el Manual",
+        "D) El requisito aplica a la normativa externa; el compromiso a la interna"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 12,
+      "q": "El Manual define 'Incumplimiento' como:",
+      "opts": [
+        "A) La ausencia de controles preventivos en un proceso crítico",
+        "B) La materialización de un riesgo de cumplimiento con consecuencias reputacionales",
+        "C) No cumplir con los requisitos legales y otros requisitos",
+        "D) La omisión intencional de una norma con beneficio para terceros"
+      ],
+      "ans": "C"
+    },
+    {
+      "n": 13,
+      "q": "¿Cómo define el Manual los 'Órganos de Gobierno Corporativo' en el contexto del cumplimiento normativo?",
+      "opts": [
+        "A) Los órganos de dirección y control definidos en el Decreto 0309 de 2017",
+        "B) La Junta Directiva, los comités de Junta Directiva, el Presidente y los comités internos de la administración que ejercen funciones de dirección, gestión y asesoría en asuntos relacionados con cumplimiento normativo",
+        "C) Solo la Junta Directiva y la Presidencia de la entidad",
+        "D) Los comités internos de la administración con funciones de auditoría y control"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 14,
+      "q": "Según el Manual, ¿quiénes son los 'Colaboradores' para efectos del cumplimiento normativo?",
+      "opts": [
+        "A) Todos los grupos de interés externos e internos de la entidad",
+        "B) Los servidores públicos de libre nombramiento y remoción y los de carrera administrativa",
+        "C) Empleados públicos, trabajadores oficiales, trabajadores en misión, aprendices SENA, practicantes, contratistas persona natural y personas de empresas que prestan servicios a Colpensiones en el Nivel Central y las Regionales",
+        "D) Solo los empleados públicos y trabajadores oficiales de planta"
+      ],
+      "ans": "C"
+    },
+    {
+      "n": 15,
+      "q": "El concepto de 'Desempeño' en el Manual se define como:",
+      "opts": [
+        "A) El nivel en que se cumplen las actividades planeadas",
+        "B) El grado de uso de los recursos previstos y asignados",
+        "C) Las actividades realizadas para aumentar la capacidad de cumplir los requisitos",
+        "D) Resultado medible, que se puede relacionar con hallazgos cualitativos y cuantitativos"
+      ],
+      "ans": "D"
+    },
+    {
+      "n": 16,
+      "q": "El Manual distingue entre 'Eficacia' y 'Eficiencia'. ¿Cuál es la definición correcta de 'Eficiencia'?",
+      "opts": [
+        "A) Actividad recurrente para mejorar el desempeño de la organización",
+        "B) Nivel en el que se cumplen las actividades planeadas",
+        "C) Grado de uso de los recursos previstos y asignados",
+        "D) Resultado medible relacionado con hallazgos cualitativos y cuantitativos"
+      ],
+      "ans": "C"
+    },
+    {
+      "n": 17,
+      "q": "La definición de 'Alta Dirección' en el Manual hace referencia a:",
+      "opts": [
+        "A) Persona o grupo de personas que dirigen y controlan una Organización al más alto nivel",
+        "B) Los comités de Junta Directiva con funciones de seguimiento al cumplimiento normativo",
+        "C) La Junta Directiva y el Presidente como únicos representantes de la dirección",
+        "D) El Presidente y los Vicepresidentes de la entidad exclusivamente"
+      ],
+      "ans": "A"
+    },
+    {
+      "n": 18,
+      "q": "¿Qué entiende el Manual por 'Función de Cumplimiento'?",
+      "opts": [
+        "A) Persona(s) con responsabilidad para la gestión de cumplimiento",
+        "B) La estructura organizacional encargada de la auditoría normativa",
+        "C) El conjunto de políticas, procedimientos y controles para gestionar el riesgo normativo",
+        "D) El proceso de revisión, evaluación, actualización y mejora continua de la normativa interna"
+      ],
+      "ans": "A"
+    },
+    {
+      "n": 19,
+      "q": "La Política de Cumplimiento Normativo de Colpensiones menciona tres tipos de riesgos que busca prevenir mediante la función de cumplimiento. ¿Cuáles son?",
+      "opts": [
+        "A) Riesgos operativos, riesgos tecnológicos y riesgos de lavado de activos",
+        "B) Riesgos de incumplimiento, riesgos regulatorios y riesgos de gobierno",
+        "C) Riesgos legales, financieros y reputacionales",
+        "D) Riesgos de fraude, riesgos de continuidad y riesgos de seguridad"
+      ],
+      "ans": "C"
+    },
+    {
+      "n": 20,
+      "q": "Uno de los principios de actuación del Manual establece que la actuación de los colaboradores se sustenta en cuatro instrumentos normativos y de conducta. ¿Cuáles son?",
+      "opts": [
+        "A) La Constitución, los contratos laborales, el manual de procesos y el SIG",
+        "B) La Constitución Nacional, la Ley, los Reglamentos internos, el Código de Ética y el Código de Gobierno Corporativo",
+        "C) La Ley, el manual de funciones, el SIG y el plan anticorrupción",
+        "D) El Código de Ética, el SIAR, el PCN y el sistema disciplinario"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 21,
+      "q": "Según los principios de actuación, ¿qué compromiso establece el Manual respecto al fraude y la corrupción?",
+      "opts": [
+        "A) Tolerancia cero hacia el fraude interno, con gestión diferenciada para el externo",
+        "B) El compromiso de reportar al ente regulador todo hecho de fraude detectado",
+        "C) La obligación de implementar el plan anticorrupción como herramienta principal",
+        "D) La actuación se ratifica en el compromiso de cero tolerancia con el fraude y la corrupción"
+      ],
+      "ans": "D"
+    },
+    {
+      "n": 22,
+      "q": "El principio de liderazgo y compromiso del Manual establece que la Junta Directiva y la Alta Dirección deben:",
+      "opts": [
+        "A) Participar directamente en las auditorías de cumplimiento normativo",
+        "B) Firmar personalmente los planes de mejoramiento derivados de incumplimientos detectados",
+        "C) Aprobar anualmente el manual de cumplimiento normativo y sus actualizaciones",
+        "D) Asegurar los recursos para la implementación, logro de los objetivos y eficacia de la función de cumplimiento normativo"
+      ],
+      "ans": "D"
+    },
+    {
+      "n": 23,
+      "q": "Según los principios de actuación, los líderes de proceso deben conocer la normatividad interna y externa con un propósito específico. ¿Cuál?",
+      "opts": [
+        "A) Para prevenir los riesgos de incumplimiento normativo",
+        "B) Para emitir conceptos jurídicos cuando la Oficina Legal lo requiera",
+        "C) Para capacitar a sus colaboradores en el cumplimiento de las normas",
+        "D) Para elaborar el normograma del proceso a su cargo"
+      ],
+      "ans": "A"
+    },
+    {
+      "n": 24,
+      "q": "El principio sobre eventos de riesgo establece que estos deben ser verificados y gestionados de manera:",
+      "opts": [
+        "A) Preventiva antes de su materialización",
+        "B) Documentada con evidencias formales ante el ente regulador",
+        "C) Gradual y sistemática conforme al nivel de impacto",
+        "D) Oportuna"
+      ],
+      "ans": "D"
+    },
+    {
+      "n": 25,
+      "q": "Uno de los principios establece que el líder de la función de cumplimiento normativo realizará una actividad específica frente a las normas aplicables. ¿Cuál?",
+      "opts": [
+        "A) Aprobar los planes de mejoramiento propuestos por los líderes de proceso",
+        "B) Emitir conceptos jurídicos vinculantes sobre las normas aplicables",
+        "C) Seguimiento permanente a la aplicación e implementación de las normas aplicables a la Organización",
+        "D) Dirigir el normograma de la entidad en coordinación con la Oficina Legal"
+      ],
+      "ans": "C"
+    },
+    {
+      "n": 26,
+      "q": "Según los principios de actuación, Colpensiones diseña e implementa actividades y estrategias con un fin concreto respecto a los colaboradores. ¿Cuál?",
+      "opts": [
+        "A) Asegurar que los colaboradores conozcan y cumplan la normatividad interna y externa",
+        "B) Asegurar que los colaboradores participen en los procesos de auditoría interna",
+        "C) Que los colaboradores cumplan sus metas de desempeño individual",
+        "D) Que los colaboradores reporten oportunamente los incumplimientos detectados"
+      ],
+      "ans": "A"
+    },
+    {
+      "n": 27,
+      "q": "El componente de 'Direccionamiento, identificación e integración de la legislación' tiene un objeto doble. ¿Cuál?",
+      "opts": [
+        "A) Identificar la legislación nueva y distribuirla a los líderes de proceso para su implementación",
+        "B) Dirigir la elaboración del normograma y gestionar los riesgos de cumplimiento",
+        "C) El direccionamiento para la identificación del marco normativo aplicable y la definición de la metodología para la actualización de las normas e integración a los procesos",
+        "D) Identificar las normas aplicables y sancionar su incumplimiento"
+      ],
+      "ans": "C"
+    },
+    {
+      "n": 28,
+      "q": "El componente de 'Gestión de riesgo de cumplimiento' establece que los criterios y metodologías deben ser conformes con lo establecido en un documento específico. ¿Cuál?",
+      "opts": [
+        "A) El Manual del Sistema Integral de Administración de Riesgos",
+        "B) La Guía del DAFP para la administración del riesgo en entidades públicas",
+        "C) El Modelo del Sistema Integrado de Gestión de Colpensiones",
+        "D) El Manual del Plan de Continuidad del Negocio"
+      ],
+      "ans": "A"
+    },
+    {
+      "n": 29,
+      "q": "El componente de 'Acceso a la información' del Manual define una facultad específica. ¿A quién le otorga esa facultad y cuál es su alcance?",
+      "opts": [
+        "A) A la Oficina Asesora de Asuntos Legales, para actualizar el normograma institucional",
+        "B) Al líder de la función de cumplimiento normativo, para acceder a cualquier registro o información de la Organización",
+        "C) A la Oficina de Control Interno, para auditar todos los procesos de la entidad",
+        "D) A la Gerencia de Riesgos, para revisar los eventos de riesgo reportados por los procesos"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 30,
+      "q": "El componente de 'Cultura de cumplimiento' contempla cuatro tipos de actividades. ¿Cuáles son?",
+      "opts": [
+        "A) Auditoría, control, evaluación y mejora",
+        "B) Divulgación, sensibilización, formación y comunicación en temas de integridad, gobierno corporativo, gestión de riesgos y cumplimiento normativo",
+        "C) Planeación, ejecución, verificación y actuación",
+        "D) Detección, reporte, gestión y cierre de eventos de incumplimiento"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 31,
+      "q": "El componente de 'Sistema disciplinario' contempla tres actividades frente a conductas de incumplimiento normativo. ¿Cuáles son?",
+      "opts": [
+        "A) Detectar, reportar y trasladar a la Procuraduría General de la Nación",
+        "B) Investigar, sancionar y comunicar a la SFC",
+        "C) Verificar, documentar y remitir al Comité Integral de Riesgos",
+        "D) Conocer e investigar las conductas, sancionar los incumplimientos y generar medidas preventivas frente a las conductas disciplinarias"
+      ],
+      "ans": "D"
+    },
+    {
+      "n": 32,
+      "q": "Según el componente 'Canal de reportes', los eventos por incumplimiento normativo deben reportarse a través de la herramienta definida para gestión de eventos de riesgo. ¿Con qué objetivo?",
+      "opts": [
+        "A) Para informar a la Superintendencia Financiera sobre los eventos materializados",
+        "B) Para publicar los resultados en el plan anticorrupción y de atención al ciudadano",
+        "C) Para iniciar automáticamente un proceso disciplinario contra el colaborador responsable",
+        "D) Para efectuar el análisis, seguimiento y gestión oportuna conforme la metodología del Sistema Integral de Administración de Riesgos"
+      ],
+      "ans": "D"
+    },
+    {
+      "n": 33,
+      "q": "El componente de 'Mejora continua' establece dos obligaciones específicas. ¿Cuáles son?",
+      "opts": [
+        "A) Actualizar el normograma y revisar los planes anticorrupción anualmente",
+        "B) Establecer el plan de mejoramiento cuando se requiera mitigar riesgos y someter el manual y los procesos relacionados a revisión, evaluación, actualización y mejora continua",
+        "C) Reportar los incumplimientos al ente regulador y realizar auditorías semestrales",
+        "D) Formular indicadores de cumplimiento y medir su resultado trimestralmente"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 34,
+      "q": "¿Cuántos componentes tiene la función de cumplimiento normativo según el Manual?",
+      "opts": [
+        "A) Seis",
+        "B) Ocho",
+        "C) Cinco",
+        "D) Siete"
+      ],
+      "ans": "D"
+    },
+    {
+      "n": 35,
+      "q": "La estructura de gobierno de la función de cumplimiento normativo está soportada bajo un modelo específico. ¿Cuál?",
+      "opts": [
+        "A) El modelo de las tres líneas de defensa",
+        "B) El modelo PHVA del ciclo de calidad",
+        "C) El modelo COSO de control interno",
+        "D) El modelo de gobierno corporativo del Código de Buen Gobierno"
+      ],
+      "ans": "A"
+    },
+    {
+      "n": 36,
+      "q": "Según el Manual, ¿quién ejerce el rol de líder de la función de cumplimiento normativo de acuerdo con lo establecido por la Junta Directiva?",
+      "opts": [
+        "A) El Vicepresidente de Seguridad y Riesgos Empresariales",
+        "B) El Presidente de Colpensiones",
+        "C) El Jefe de la Oficina Asesora de Asuntos Legales",
+        "D) El Gerente de Riesgos y Seguridad de la Información"
+      ],
+      "ans": "A"
+    },
+    {
+      "n": 37,
+      "q": "La Junta Directiva tiene tres funciones específicas en la función de cumplimiento normativo según el Manual. ¿Cuál de las siguientes está expresamente enumerada?",
+      "opts": [
+        "A) Nombrar al líder de la función de cumplimiento normativo",
+        "B) Aprobar el manual de cumplimiento normativo y sus actualizaciones anuales",
+        "C) Realizar auditorías periódicas a la implementación de la función de cumplimiento",
+        "D) Emitir directrices sobre el normograma aplicable a los procesos misionales"
+      ],
+      "ans": "A"
+    },
+    {
+      "n": 38,
+      "q": "El Presidente de Colpensiones tiene cuatro funciones en cumplimiento normativo. ¿Cuál de las siguientes está expresamente establecida?",
+      "opts": [
+        "A) Nombrar a los articuladores normativos de cada proceso",
+        "B) Aprobar el plan de mejoramiento derivado de los incumplimientos detectados",
+        "C) Pronunciarse y realizar seguimiento a la implementación y ejecución de la función de cumplimiento normativo y sus riesgos asociados",
+        "D) Emitir los lineamientos del normograma en coordinación con la Oficina Legal"
+      ],
+      "ans": "C"
+    },
+    {
+      "n": 39,
+      "q": "La Vicepresidencia de Seguridad y Riesgos Empresariales tiene varias funciones en cumplimiento normativo. ¿Cuál de ellas está expresamente contemplada?",
+      "opts": [
+        "A) Articular la función de cumplimiento normativo con el Modelo del Sistema Integrado de Gestión",
+        "B) Administrar el inventario de la normatividad aplicable al negocio",
+        "C) Realizar las auditorías requeridas para evaluar la eficacia de la función de cumplimiento",
+        "D) Presentar informes periódicos de la implementación, ejecución y desviaciones de la función de cumplimiento normativo"
+      ],
+      "ans": "D"
+    },
+    {
+      "n": 40,
+      "q": "Una de las funciones de la Gerencia de Riesgos y Seguridad de la Información en cumplimiento normativo es asistir a la primera línea de defensa. ¿En qué consiste esa asistencia?",
+      "opts": [
+        "A) En emitir conceptos jurídicos sobre las normas aplicables cuando los procesos lo soliciten",
+        "B) En la aplicación de la metodología para identificar y evaluar los riesgos de cumplimiento normativo",
+        "C) En elaborar los planes de mejoramiento derivados de los eventos de riesgo reportados",
+        "D) En capacitar a los líderes de proceso sobre los riesgos de cumplimiento identificados"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 41,
+      "q": "La Oficina de Control Interno tiene una función específica en la función de cumplimiento normativo. ¿Cuál?",
+      "opts": [
+        "A) Emitir los lineamientos para la identificación y actualización del normograma",
+        "B) Realizar las auditorías requeridas para evaluar la eficacia, eficiencia y efectividad de la función de cumplimiento normativo",
+        "C) Conocer e investigar las quejas o informes relacionados con conductas de incumplimiento normativo",
+        "D) Definir la metodología de gestión de riesgos de cumplimiento normativo"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 42,
+      "q": "La Oficina Asesora de Asuntos Legales tiene una función relacionada con la prevención del daño antijurídico. ¿Cómo está formulada en el Manual?",
+      "opts": [
+        "A) Emitir conceptos sobre las consecuencias legales de los incumplimientos detectados",
+        "B) Establecer en coordinación con las dependencias competentes, estrategias de prevención del daño antijurídico",
+        "C) Adelantar la defensa judicial de la entidad en los procesos relacionados con incumplimiento normativo",
+        "D) Coordinar con la Procuraduría General de la Nación los reportes de incumplimiento normativo"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 43,
+      "q": "La Oficina Asesora de Asuntos Legales tiene la función de administrar un instrumento específico. ¿Cuál?",
+      "opts": [
+        "A) El plan anticorrupción y de atención al ciudadano",
+        "B) El inventario de la normatividad aplicable al negocio (normograma)",
+        "C) El canal de reportes de eventos de incumplimiento normativo",
+        "D) El manual de cumplimiento normativo y sus actualizaciones periódicas"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 44,
+      "q": "La Gerencia de Prevención del Fraude tiene dos funciones en la función de cumplimiento normativo. ¿Cuál de las siguientes está expresamente enumerada?",
+      "opts": [
+        "A) Realizar auditorías internas sobre el cumplimiento del Código de Ética",
+        "B) Administrar el inventario de la normatividad aplicable al negocio",
+        "C) Definir la metodología de identificación y valoración de riesgos de cumplimiento",
+        "D) Ejecutar las estrategias y mecanismos para el cumplimiento del Código de Ética y su instructivo"
+      ],
+      "ans": "D"
+    },
+    {
+      "n": 45,
+      "q": "La Gerencia de Sistemas Integrados de Gestión tiene en el cumplimiento normativo la función de 'validar que la gestión de la función de cumplimiento normativo esté incorporada en el Modelo de procesos'. ¿Cuál otra función le asigna el Manual de manera expresa?",
+      "opts": [
+        "A) Realizar el análisis de la aplicabilidad de la normatividad nueva o cambiante bajo el enfoque de gestión por procesos",
+        "B) Definir los lineamientos, acciones y estrategias de ética, integridad y transparencia",
+        "C) Facilitar el acceso a la información para el proceso de cumplimiento normativo",
+        "D) Asegurar una adecuada adopción de controles para prevenir la materialización de riesgos"
+      ],
+      "ans": "A"
+    },
+    {
+      "n": 46,
+      "q": "Los Líderes de proceso deben cumplir varias responsabilidades en cumplimiento normativo. ¿Cuál de las siguientes está expresamente enumerada?",
+      "opts": [
+        "A) Aprobar los análisis de aplicabilidad de las normas nuevas o cambiantes",
+        "B) Elaborar el normograma del proceso a cargo sin apoyo de la Oficina Asesora de Asuntos Legales",
+        "C) Administrar el canal de reportes de eventos de incumplimiento normativo",
+        "D) Mantener la designación permanente de articuladores normativos en los procesos a cargo"
+      ],
+      "ans": "D"
+    },
+    {
+      "n": 47,
+      "q": "Los Articuladores normativos tienen una función diferenciada frente a los Líderes de proceso en la gestión del cumplimiento. ¿En qué consiste esa diferencia?",
+      "opts": [
+        "A) Los articuladores trabajan en el nivel central y los líderes en las regionales",
+        "B) Los articuladores proyectan y proponen las acciones y análisis, mientras los líderes definen y ejecutan los lineamientos y realizan el seguimiento",
+        "C) Los articuladores solo participan en la capacitación; los líderes solo en el reporte de incumplimientos",
+        "D) Los articuladores tienen funciones de auditoría y los líderes de proceso tienen funciones ejecutivas"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 48,
+      "q": "Según las funciones de los líderes de proceso, ¿qué deben hacer cuando requieran apoyo sobre la implementación normativa desde la visión de gestión por procesos?",
+      "opts": [
+        "A) Solicitar análisis de la implementación normativa bajo una visión de gestión por procesos cuando así se requiera",
+        "B) Consultar al Comité Integral de Riesgos sobre los impactos del nuevo marco normativo",
+        "C) Elaborar directamente el análisis de implementación sin apoyo externo",
+        "D) Reportar el incumplimiento en la herramienta de gestión de eventos de riesgo"
+      ],
+      "ans": "A"
+    },
+    {
+      "n": 49,
+      "q": "La Gerencia de Riesgos y Seguridad de la Información tiene la función de 'asegurar una adecuada adopción de controles'. ¿Con qué fin específico?",
+      "opts": [
+        "A) Para demostrar la eficacia de la función ante los entes de control",
+        "B) Para garantizar el cumplimiento de los objetivos estratégicos institucionales",
+        "C) Para prevenir la materialización de riesgos de cumplimiento normativo",
+        "D) Para cumplir con los requisitos de la Circular Externa 025 de 2020 de la SFC"
+      ],
+      "ans": "C"
+    },
+    {
+      "n": 50,
+      "q": "Integrando los componentes y roles del Manual: cuando un líder de proceso identifica que una norma nueva genera un riesgo de incumplimiento en su proceso, ¿cuál es la secuencia correcta de actuación según el Manual?",
+      "opts": [
+        "A) Realizar el análisis de aplicabilidad, reportar el evento de riesgo, solicitar concepto jurídico si lo requiere, y coordinar con la Gerencia SIG y la Gerencia de Riesgos para la gestión del riesgo e implementación normativa",
+        "B) Convocar al Comité Integral de Riesgos y esperar sus instrucciones antes de actuar",
+        "C) Delegar la gestión en el articulador normativo y esperar el plan de mejoramiento de la Oficina Legal",
+        "D) Reportar inmediatamente a la SFC, luego activar el plan de mejoramiento y finalmente notificar al Presidente"
+      ],
+      "ans": "A"
+    },
+    {
+      "n": 51,
+      "q": "El Código de Ética fue aprobado por la Junta Directiva mediante el Acuerdo 009 del 10 de mayo de 2024, derogando un acuerdo anterior. ¿Cuál acuerdo fue derogado?",
+      "opts": [
+        "A) Acuerdo 144 de 2018",
+        "B) Acuerdo 019 de 2019",
+        "C) Acuerdo 107 de 2017",
+        "D) Acuerdo 001 de 2015"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 52,
+      "q": "El Código de Ética incluye un grupo de destinatarios que NO aparece en la definición de 'Colaboradores' del Manual de Cumplimiento Normativo. ¿Cuál es?",
+      "opts": [
+        "A) Aprendices SENA",
+        "B) Contratistas y sus empleados",
+        "C) Miembros de la Junta Directiva, presidente, revisor fiscal y defensor del Consumidor Financiero",
+        "D) Trabajadores en misión"
+      ],
+      "ans": "C"
+    },
+    {
+      "n": 53,
+      "q": "El Código de Ética menciona que el 98% del personal de la entidad son profesionales. ¿Cuál es la afirmación adicional que hace el documento sobre ellos?",
+      "opts": [
+        "A) Que están certificados en competencias laborales por el SENA",
+        "B) Que poseen conocimientos avanzados en normatividad del Sistema General de Pensiones",
+        "C) Que tienen mínimo cinco años de experiencia en el sector pensional",
+        "D) Que están en constante búsqueda de mejoras para su gestión"
+      ],
+      "ans": "D"
+    },
+    {
+      "n": 54,
+      "q": "Según la invitación del Presidente en el Código de Ética, ¿cuál es el objetivo declarado del Código?",
+      "opts": [
+        "A) Establecer principios disciplinarios que regulen el comportamiento de los servidores públicos",
+        "B) Reemplazar el régimen disciplinario aplicable a los servidores de Colpensiones",
+        "C) Definir las sanciones aplicables a los colaboradores que incumplan las normas internas",
+        "D) Dar a conocer a los colaboradores, mediante una guía clara y de fácil entendimiento, los principales lineamientos de conducta ética, constituyendo un referente fundamental de integridad pública"
+      ],
+      "ans": "D"
+    },
+    {
+      "n": 55,
+      "q": "La definición corporativa del valor 'Diligencia' establece que cumplir funciones y responsabilidades de la mejor manera sirve para:",
+      "opts": [
+        "A) Generar confianza en los ciudadanos y grupos de interés",
+        "B) Garantizar el goce efectivo del derecho a la protección social de toda la población",
+        "C) Optimizar el uso de los recursos del Estado",
+        "D) Favorecer el interés general con transparencia y rectitud"
+      ],
+      "ans": "C"
+    },
+    {
+      "n": 56,
+      "q": "El valor 'Igualdad y Diversidad' en el Código de Ética establece una regla de doble tratamiento. ¿Cuál es?",
+      "opts": [
+        "A) Trato preferencial para grupos históricamente discriminados y trato estándar para los demás",
+        "B) Trato diferenciado según el nivel jerárquico dentro de la organización",
+        "C) Trato igual a personas en una misma situación fáctica y trato divergente a quienes se encuentren en situaciones diferentes, convirtiendo las diferencias en fuente de oportunidades",
+        "D) Trato uniforme para todos independientemente de su situación, eliminando cualquier distinción"
+      ],
+      "ans": "C"
+    },
+    {
+      "n": 57,
+      "q": "Según el Código de Ética, el valor 'Solidaridad' tiene un alcance que va más allá de las relaciones interpersonales. ¿Cuál es ese alcance?",
+      "opts": [
+        "A) Apoyar a los funcionarios de menor rango en el cumplimiento de sus funciones",
+        "B) Contribuir a la mutua ayuda entre las personas, las generaciones, los sectores económicos, las regiones y las comunidades en beneficio del interés colectivo",
+        "C) Prestar colaboración a los ciudadanos que no comprenden los trámites pensionales",
+        "D) Garantizar la atención prioritaria a los grupos vulnerables en todas las oficinas"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 58,
+      "q": "El valor 'Universalidad' en el Código de Ética está definido con una condición expresa. ¿Cuál?",
+      "opts": [
+        "A) Al servicio del goce efectivo del derecho a la protección social de toda la población, sin discriminación alguna",
+        "B) Al servicio de los ciudadanos y empleadores que interactúan con Colpensiones",
+        "C) Al servicio de los grupos de interés priorizados en el análisis de partes interesadas",
+        "D) Al servicio de todos los afiliados cotizantes del Régimen de Prima Media"
+      ],
+      "ans": "A"
+    },
+    {
+      "n": 59,
+      "q": "El Código de Ética define a los colaboradores de Colpensiones como personas con cuatro características. ¿Cuáles son?",
+      "opts": [
+        "A) Profesionales altamente calificadas, con experiencia en seguridad social, orientadas a la innovación y comprometidas con la transformación digital",
+        "B) Servidores públicos íntegros, con conocimiento normativo, orientados al ciudadano y comprometidos con la sostenibilidad",
+        "C) Con un amplio sentido social, dedicadas a la protección de la vejez, que ejecutan sus actividades de manera humana, comprometidas con un servicio efectivo e integral y con capacidad de adaptarse al cambio",
+        "D) Comprometidas, eficientes, íntegras y con vocación de servicio público"
+      ],
+      "ans": "C"
+    },
+    {
+      "n": 60,
+      "q": "Según el Código de Ética, el valor 'Compromiso' se define como ser consciente de la importancia del rol como servidor/a público/a y estar en disposición permanente. ¿Para qué?",
+      "opts": [
+        "A) Para implementar las políticas y lineamientos establecidos en el Código de Ética",
+        "B) Para representar a Colpensiones en todos los escenarios públicos y privados",
+        "C) Para cumplir con los objetivos estratégicos definidos en el Plan Estratégico Institucional",
+        "D) Para comprender y resolver las necesidades de las personas con las que se relaciona en las labores cotidianas, buscando siempre su bienestar"
+      ],
+      "ans": "D"
+    },
+    {
+      "n": 61,
+      "q": "El valor 'Honestidad' en el Código de Ética establece que actuar con fundamento en la verdad implica cumplir los deberes con transparencia y rectitud. ¿Con qué fin adicional?",
+      "opts": [
+        "A) Siempre favoreciendo el interés general",
+        "B) Para garantizar el respeto por los derechos humanos",
+        "C) Para mantener la confianza de los ciudadanos en la entidad",
+        "D) Para proteger el patrimonio público y los recursos de los afiliados"
+      ],
+      "ans": "A"
+    },
+    {
+      "n": 62,
+      "q": "El valor 'Justicia' en el Código de Ética establece que actuar con imparcialidad implica tres atributos. ¿Cuáles?",
+      "opts": [
+        "A) Honradez, proporcionalidad y coherencia",
+        "B) Objetividad, neutralidad y transparencia",
+        "C) Legalidad, imparcialidad y rectitud",
+        "D) Equidad, igualdad y sin discriminación"
+      ],
+      "ans": "D"
+    },
+    {
+      "n": 63,
+      "q": "El Código de Ética establece que Colpensiones tiene la responsabilidad de 'diseñar e implementar un programa de transparencia y ética pública'. ¿Conforme a qué ley?",
+      "opts": [
+        "A) Ley 2195 de 2022",
+        "B) Ley 2016 de 2020 – Código de Integridad",
+        "C) Ley 1474 de 2011 – Estatuto Anticorrupción",
+        "D) Ley 1712 de 2014 – Ley de Transparencia"
+      ],
+      "ans": "A"
+    },
+    {
+      "n": 64,
+      "q": "Según el Código de Ética, la responsabilidad de Colpensiones de 'garantizar un ambiente libre de acoso laboral y sexual' se enmarca en la Ley 1010 de 2006 y:",
+      "opts": [
+        "A) La Ley 1257 de 2008 sobre violencia contra la mujer",
+        "B) El Protocolo de Prevención y Atención de Conductas de ALS y demás normas concordantes",
+        "C) El Decreto 0309 de 2017 sobre la estructura de Colpensiones",
+        "D) La Ley 2016 de 2020 sobre el Código de Integridad"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 65,
+      "q": "El Código de Ética establece que los colaboradores deben reportar en la Línea de Integridad y Transparencia cinco tipos de situaciones específicas. ¿Cuáles son?",
+      "opts": [
+        "A) Eventos de seguridad, riesgos de información, fraudes, incumplimientos contractuales y conflictos de interés",
+        "B) Accidentes, incidentes, riesgos tecnológicos, fraudes internos y externos",
+        "C) Incumplimientos normativos, riesgos de lavado de activos, acoso laboral, discriminación y sobornos",
+        "D) Presuntos hechos de fraude o corrupción, retaliaciones, sobornos, beneficios y conflicto de interés"
+      ],
+      "ans": "D"
+    },
+    {
+      "n": 66,
+      "q": "Según la Política Antisoborno del Código de Ética, los regalos admisibles tienen un límite de valor comercial. ¿Cuál es ese límite?",
+      "opts": [
+        "A) No podrán superar el equivalente a dos días del salario mínimo legal mensual vigente",
+        "B) No podrán tener un valor comercial que exceda un día del salario básico que devengue el colaborador",
+        "C) No podrán superar el equivalente a medio salario mínimo diario",
+        "D) No tienen límite siempre que sean objetos de material promocional ampliamente distribuido"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 67,
+      "q": "La Política Antisoborno prohíbe expresamente ciertos tipos de elementos aunque sean entregados sin intención de obtener ventajas. ¿Cuáles?",
+      "opts": [
+        "A) Dinero, valores o bonos representativos en dinero, condonaciones de deudas, favores, dádivas, prebendas o servicios",
+        "B) Obsequios de valor superior a dos salarios mínimos diarios",
+        "C) Artículos de material promocional como esferos, agendas o calendarios",
+        "D) Artículos de bienestar entregados por la Gerencia de Talento Humano"
+      ],
+      "ans": "A"
+    },
+    {
+      "n": 68,
+      "q": "Según la Política Antisoborno, cuando un colaborador recibe un regalo que no es conforme a la política y existen razones que impiden su devolución inmediata, ¿qué debe hacer?",
+      "opts": [
+        "A) Reportarlo exclusivamente a través de la Línea de Integridad y Transparencia",
+        "B) Seguir el procedimiento definido para los casos de conflictos de interés",
+        "C) Entregarlo al Oficial de Ética para su custodia hasta tanto pueda devolverse",
+        "D) Reportarlo a la Gerencia de Prevención del Fraude y esperar instrucciones"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 69,
+      "q": "La Política de Protección Reputacional establece que el único vocero de Colpensiones es su Presidente. Para participar en eventos académicos, comerciales o sociales sobre temas institucionales, el trabajador debe:",
+      "opts": [
+        "A) Informar previamente al Oficial de Ética principal y al jefe inmediato",
+        "B) Registrarse en el directorio de voceros oficiales administrado por la Oficina de Relacionamiento",
+        "C) Solicitar autorización previa del presidente, con visto bueno del jefe inmediato",
+        "D) Obtener aprobación del Comité de Gobierno Corporativo"
+      ],
+      "ans": "C"
+    },
+    {
+      "n": 70,
+      "q": "La Política de Uso, Acceso y Custodia de la Información del Código de Ética prohíbe la divulgación de información clasificada o reservada salvo dos excepciones. ¿Cuáles son?",
+      "opts": [
+        "A) Obligación legal o requerimiento de autoridad competente",
+        "B) Cuando sea solicitada por medios de comunicación o autoridades internacionales",
+        "C) Cuando sea autorizada por el Presidente o el Vicepresidente de área",
+        "D) Cuando la Superintendencia Financiera o la Contraloría lo requieran formalmente"
+      ],
+      "ans": "A"
+    },
+    {
+      "n": 71,
+      "q": "Según el Código de Ética, la documentación y el conocimiento generado en Colpensiones son propiedad de la entidad. ¿Bajo qué condición específica pueden utilizarse para otros fines distintos a los laborales?",
+      "opts": [
+        "A) Con el visto bueno del Oficial de Ética y el jefe inmediato del colaborador",
+        "B) Con autorización expresa por los líderes de proceso propietarios de los activos de información",
+        "C) Nunca; la prohibición es absoluta sin excepción alguna",
+        "D) Con autorización del Presidente de la entidad mediante resolución motivada"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 72,
+      "q": "La Política de Prevención del Lavado de Activos del Código de Ética menciona dos delitos específicos que los colaboradores deben conocer. ¿Cuáles?",
+      "opts": [
+        "A) Concusión y prevaricato",
+        "B) Enriquecimiento ilícito y tráfico de influencias",
+        "C) Fraude y corrupción",
+        "D) Peculado y cohecho"
+      ],
+      "ans": "A"
+    },
+    {
+      "n": 73,
+      "q": "Según la Política de Prevención del Lavado de Activos, ¿a qué correo electrónico deben reportarse las operaciones inusuales identificadas?",
+      "opts": [
+        "A) etico.colpensiones.gov.co",
+        "B) sistemadegestion@colpensiones.gov.co",
+        "C) gestionderiesgos@colpensiones.gov.co",
+        "D) oficialcumplimiento@colpensiones.gov.co"
+      ],
+      "ans": "D"
+    },
+    {
+      "n": 74,
+      "q": "Según la Política de Incentivos del Código de Ética, ¿cuál gerencia es la encargada de determinar y otorgar los incentivos y en qué consisten?",
+      "opts": [
+        "A) La Presidencia de la entidad mediante acto administrativo motivado",
+        "B) La Gerencia de Prevención del Fraude, mediante reconocimientos públicos y bonificaciones económicas",
+        "C) El Comité Institucional de Gestión y Desempeño, mediante aprobación de planes individuales de desarrollo",
+        "D) La Gerencia de Talento Humano y Relaciones Laborales; los incentivos se constituyen por formaciones académicas conforme a la plataforma SOY Colpensiones y reconocimientos sociales, entre otros"
+      ],
+      "ans": "D"
+    },
+    {
+      "n": 75,
+      "q": "El Oficial de Ética principal y el Oficial de Ética suplente en Colpensiones son respectivamente:",
+      "opts": [
+        "A) El Jefe de la Oficina Asesora de Asuntos Legales (principal) y el Jefe de la Oficina de Control Interno (suplente)",
+        "B) El Presidente de la entidad (principal) y el Vicepresidente de Seguridad y Riesgos Empresariales (suplente)",
+        "C) El Vicepresidente de Seguridad y Riesgos Empresariales (principal) y el Gerente de Prevención del Fraude (suplente)",
+        "D) El Gerente de Prevención del Fraude (principal) y el Gerente de Riesgos y Seguridad de la Información (suplente)"
+      ],
+      "ans": "C"
+    },
+    {
+      "n": 76,
+      "q": "Según el Código de Ética, ¿cuál gerencia realiza las actividades de inducción, capacitación y socialización del Código de manera periódica?",
+      "opts": [
+        "A) La Gerencia de Riesgos y Seguridad de la Información",
+        "B) La Vicepresidencia de Seguridad y Riesgos Empresariales",
+        "C) La Gerencia de Prevención del Fraude, en coordinación con la Gerencia de Talento Humano",
+        "D) La Gerencia de Talento Humano y Relaciones Laborales"
+      ],
+      "ans": "C"
+    },
+    {
+      "n": 77,
+      "q": "El seguimiento al cumplimiento del Código de Ética utiliza tres tipos de acciones. ¿Cuáles son?",
+      "opts": [
+        "A) Acciones preventivas, diagnósticas y correctivas",
+        "B) Planificación, ejecución y evaluación",
+        "C) Detección, reporte y gestión",
+        "D) Inspección, vigilancia y control"
+      ],
+      "ans": "A"
+    },
+    {
+      "n": 78,
+      "q": "Las actividades de seguimiento del Código de Ética se consolidan para ser presentadas con una periodicidad específica y ante dos órganos. ¿Cuáles son y cuál es la periodicidad?",
+      "opts": [
+        "A) Cada año ante la Junta Directiva y el Comité Institucional de Gestión y Desempeño",
+        "B) Semestralmente ante el Presidente y el Comité de Gobierno Corporativo",
+        "C) Anualmente ante la Superintendencia Financiera y el Comité Institucional de Gestión",
+        "D) Trimestralmente ante el Comité Integral de Riesgos y la Junta Directiva"
+      ],
+      "ans": "A"
+    },
+    {
+      "n": 79,
+      "q": "Según el Código de Ética, ¿cómo puede accederse a la Línea de Acompañamiento al Colaborador y en qué horario?",
+      "opts": [
+        "A) A través del correo electronico etico@colpensiones.gov.co de lunes a viernes de 7:00 a.m. a 6:00 p.m.",
+        "B) A través de la página https://etico.colpensiones.gov.co/ las 24 horas del día",
+        "C) Por extensión telefónica 1696 en el conmutador (601 2170100), de lunes a viernes entre 8:00 a.m. y 5:30 p.m.",
+        "D) Por la línea gratuita 01 8000 518500 de lunes a sábado entre 7:00 a.m. y 8:00 p.m."
+      ],
+      "ans": "C"
+    },
+    {
+      "n": 80,
+      "q": "Integrando el Código de Ética y el Manual de Cumplimiento Normativo: la Gerencia de Prevención del Fraude tiene un rol dual que vincula ambos documentos. ¿Cuál es ese rol articulador?",
+      "opts": [
+        "A) Elaborar el plan anticorrupción y gestionar los eventos de riesgo de incumplimiento normativo",
+        "B) Administrar el normograma y ejecutar las estrategias del Código de Ética simultáneamente",
+        "C) Dirigir el canal de reportes y coordinar las auditorías internas sobre cumplimiento ético",
+        "D) Actuar como Oficial de Ética suplente (Código de Ética) y definir lineamientos de integridad y ejecutar estrategias del Código de Ética para el fortalecimiento de la cultura de cumplimiento normativo (Manual de Cumplimiento), siendo también la encargada de detectar desviaciones y atender la Línea de Acompañamiento al Colaborador"
+      ],
+      "ans": "D"
+    }
+  ]
+});
+// ============================================================ FIN MÓDULO: etica
+
+
+
 
 let currentQuiz = null;
 let currentIndex = 0;
