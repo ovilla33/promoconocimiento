@@ -4720,7 +4720,7 @@ registerModule("gestion_corporativa", {
 // ============================================================
 // MÓDULO: ci
 // Nombre: Sistema de Control Interno — Colpensiones
-// Preguntas: 60
+// Preguntas: 80
 // Para actualizar: pídele a Claude "Reemplaza el bloque
 //   MÓDULO: ci con [tus nuevas preguntas o cambios]"
 // ============================================================
@@ -4728,679 +4728,909 @@ registerModule("ci", {
   "name": "Sistema de Control Interno — Colpensiones",
   "icon": "🔍",
   "color": "#3498db",
-  "desc": "Manual SCI · Principios, componentes, modelo tres líneas y roles",
+  "desc": "Módulo A: Fundamentos, Marco Legal y Definiciones · Módulo B: Componentes del SCI · Módulo C: Modelo de Tres Líneas, Roles y Articulaciones",
   "bloques": [
-    "BLOQUE 1 — OBJETIVO, ALCANCE Y MARCO LEGAL  (Preguntas 1–10)",
-    "BLOQUE 2 — DEFINICIONES Y PRINCIPIOS  (Preguntas 11–20)",
-    "BLOQUE 3 — OBJETIVOS Y POLÍTICA DEL SCI  (Preguntas 21–30)",
-    "BLOQUE 4 — COMPONENTES DEL SCI  (Preguntas 31–44)",
-    "BLOQUE 5 — MODELO DE TRES LÍNEAS Y ROLES  (Preguntas 45–56)",
-    "BLOQUE 6 — ARTICULACIÓN, CONTROL FISCAL Y SIG  (Preguntas 57–60)"
+    "MÓDULO A · SECCIÓN 1 — Objetivo y alcance  (1–3)",
+    "MÓDULO A · SECCIÓN 2 — Marco legal y referencia  (4–7)",
+    "MÓDULO A · SECCIÓN 3 — Definiciones clave  (8–12)",
+    "MÓDULO A · SECCIÓN 4 — Descripción del documento y SCI  (13–15)",
+    "MÓDULO A · SECCIÓN 5 — Principios y Política del SCI  (16–20)",
+    "MÓDULO B · SECCIÓN 6 — Ambiente de control  (21–30)",
+    "MÓDULO B · SECCIÓN 7 — Gestión de riesgos  (31–34)",
+    "MÓDULO B · SECCIÓN 8 — Actividades de control  (35–38)",
+    "MÓDULO B · SECCIÓN 9 — Información y comunicación  (39–42)",
+    "MÓDULO B · SECCIÓN 10 — Actividades de seguimiento y monitoreo  (43–47)",
+    "MÓDULO B · SECCIÓN 11 — Políticas específicas del ambiente de control  (48–50)",
+    "MÓDULO C · SECCIÓN 12 — Modelo de las Tres Líneas  (51–58)",
+    "MÓDULO C · SECCIÓN 13 — Roles y responsabilidades  (59–63)",
+    "MÓDULO C · SECCIÓN 14 — Control fiscal y articulación con el SIG  (64–67)",
+    "MÓDULO C · SECCIÓN 15 — Preguntas integradoras y de aplicación  (68–80)"
   ],
   "questions": [
     {
       "n": 1,
-      "q": "¿Cuál es el objetivo principal del Manual del Sistema de Control Interno de Colpensiones?",
+      "q": "Según el objetivo del Manual del Sistema de Control Interno de Colpensiones, ¿cuál es el propósito central que se busca cumplir mediante la estructura de control que este establece?",
       "opts": [
-        "A. Reglamentar el régimen salarial de los servidores públicos de la entidad.",
-        "B. Establecer los lineamientos y servir de guía para el mantenimiento y mejora del SCI, en armonía con el MIPG, el Modelo de Gobierno Corporativo y el Modelo SIG.",
-        "C. Definir exclusivamente las funciones de la Oficina de Control Interno.",
-        "D. Regular los contratos con proveedores y auditores externos."
+        "A) Garantizar exclusivamente el cumplimiento de los requisitos exigidos por la Superintendencia Financiera de Colombia en sus circulares externas",
+        "B) Proporcionar una estructura de control para que todas las actividades, operaciones y actuaciones, así como la administración de la información y recursos, se lleven a cabo de acuerdo con las normas constitucionales y legales vigentes, dentro de las políticas de la Junta Directiva y en atención a los objetivos institucionales",
+        "C) Establecer los mecanismos de sanción para los trabajadores que incumplan los procedimientos establecidos en los manuales internos de Colpensiones",
+        "D) Centralizar en la Oficina de Control Interno todas las decisiones relacionadas con la gestión de riesgos y el cumplimiento normativo de la entidad"
       ],
       "ans": "B"
     },
     {
       "n": 2,
-      "q": "Conforme al manual, ¿quiénes son responsables del establecimiento y desarrollo del Sistema de Control Interno en Colpensiones?",
+      "q": "El alcance del Manual del SCI establece que el establecimiento y desarrollo del Sistema de Control Interno es responsabilidad de ciertos órganos. ¿Quiénes son los responsables primarios y quiénes son los responsables de la aplicación de los lineamientos definidos en el manual?",
       "opts": [
-        "A. Únicamente la Oficina de Control Interno.",
-        "B. La Junta Directiva y el Representante Legal de Colpensiones.",
-        "C. Solo la Alta Gerencia y los líderes de proceso.",
-        "D. El Comité de Auditoría y la Superintendencia Financiera de Colombia."
+        "A) La Oficina de Control Interno es responsable del establecimiento; los trabajadores son responsables de la aplicación",
+        "B) La Junta Directiva y el Representante Legal son responsables del establecimiento; los jefes y directivos de cada dependencia, así como todos los trabajadores y grupos de interés internos, son responsables de la aplicación",
+        "C) El Comité Institucional de Coordinación de Control Interno es responsable del establecimiento; la alta gerencia es la única responsable de la aplicación",
+        "D) La Superintendencia Financiera es responsable del establecimiento a través de sus instrucciones; Colpensiones es responsable únicamente de la aplicación"
       ],
       "ans": "B"
     },
     {
       "n": 3,
-      "q": "¿Qué artículo de la Constitución Política de Colombia establece que 'la administración pública, en todos sus órdenes, tendrá un control interno que se ejercerá en los términos que señale la ley'?",
+      "q": "El Manual del SCI señala que el control interno se actualiza y desarrolla a través de dos instrumentos específicos. ¿Cuáles son esos instrumentos?",
       "opts": [
-        "A. Artículo 267.",
-        "B. Artículo 269.",
-        "C. Artículo 209.",
-        "D. Artículo 123."
+        "A) El COSO 2013 y el Modelo de las Tres Líneas del IIA 2020",
+        "B) El MIPG y los Lineamientos del Comité de Basilea",
+        "C) El Modelo Estándar de Control Interno (MECI) y la Circular Básica Jurídica Parte I, Título I, Capítulo IV de la Superintendencia Financiera de Colombia",
+        "D) El Decreto 1499 de 2017 y la Guía para la Administración del Riesgo del DAFP"
       ],
       "ans": "C"
     },
     {
       "n": 4,
-      "q": "¿Qué ley establece las normas para el ejercicio del control interno en las entidades y organismos del Estado colombiano?",
+      "q": "El marco legal del Manual del SCI cita dos artículos de la Constitución Política relacionados con el control interno. ¿Qué obliga específicamente el Artículo 269 de la Constitución?",
       "opts": [
-        "A. Ley 610 de 2000.",
-        "B. Ley 489 de 1998.",
-        "C. Ley 87 de 1993.",
-        "D. Ley 1474 de 2011."
+        "A) Establece que el control fiscal es una función pública que ejercerá la Contraloría General de la República",
+        "B) Establece que la función administrativa se desarrolla con fundamento en los principios de igualdad, moralidad, eficacia, economía, celeridad, imparcialidad y publicidad",
+        "C) Obliga a las entidades públicas a diseñar y aplicar métodos y procedimientos de control interno de conformidad con lo que disponga la ley, la cual podrá establecer excepciones y autorizar la contratación de dichos servicios con empresas privadas colombianas",
+        "D) Establece que el control fiscal es preventivo y que debe articularse con el control interno a través del modelo constitucional de control fiscal multinivel"
       ],
       "ans": "C"
     },
     {
       "n": 5,
-      "q": "¿Qué decreto reglamentó el alcance del Sistema de Gestión y su articulación con el Sistema de Control Interno en el marco del MIPG, e incluyó el MECI como herramienta de implementación?",
+      "q": "Dentro del marco normativo del Manual del SCI, ¿qué regula específicamente el Acto Legislativo 04 de 2019 y qué decreto lo implementa?",
       "opts": [
-        "A. Decreto 1083 de 2015.",
-        "B. Decreto 648 de 2017.",
-        "C. Decreto 1499 de 2017.",
-        "D. Decreto 309 de 2017."
+        "A) Regula el Modelo Integrado de Planeación y Gestión; lo implementa el Decreto 1499 de 2017",
+        "B) Reforma el Régimen de Control Fiscal; lo implementa el Decreto Ley 403 de 2020",
+        "C) Establece el trámite de los procesos de responsabilidad fiscal; lo implementa la Ley 610 de 2000",
+        "D) Regula el control interno en las entidades del Estado; lo implementa el Decreto 1083 de 2015"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 6,
+      "q": "El Manual del SCI menciona tres marcos de referencia internacionales y de mejores prácticas que Colpensiones ha considerado. ¿Cuál de los siguientes NO está incluido entre ellos?",
+      "opts": [
+        "A) Modelo de las Tres Líneas (IIA 2020)",
+        "B) Lineamientos del Comité de Supervisión Bancaria de Basilea en materia de gobierno corporativo",
+        "C) Marco Integrado de Control Interno 2013 del COSO",
+        "D) Norma ISO 31000:2018 de Gestión del Riesgo"
+      ],
+      "ans": "D"
+    },
+    {
+      "n": 7,
+      "q": "Conforme al marco legal del Manual del SCI, ¿en cuál dimensión del Modelo Integrado de Planeación y Gestión (MIPG) se incluyó el Modelo Estándar de Control Interno (MECI) como herramienta de implementación?",
+      "opts": [
+        "A) En la tercera dimensión denominada 'Talento Humano'",
+        "B) En la quinta dimensión denominada 'Evaluación de Resultados'",
+        "C) En la séptima dimensión denominada 'Control Interno'",
+        "D) En la cuarta dimensión denominada 'Evaluación y Auditoría'"
       ],
       "ans": "C"
     },
     {
-      "n": 6,
-      "q": "La Circular Básica Jurídica de la Superintendencia Financiera de Colombia que regula el Sistema de Control Interno de Colpensiones corresponde a:",
-      "opts": [
-        "A. Parte II, Título III, Capítulo VI.",
-        "B. Parte I, Título I, Capítulo IV.",
-        "C. Parte III, Título II, Capítulo I.",
-        "D. Parte I, Título II, Capítulo VIII."
-      ],
-      "ans": "B"
-    },
-    {
-      "n": 7,
-      "q": "¿Qué marco internacional de mejores prácticas en control interno ha adoptado Colpensiones según el manual?",
-      "opts": [
-        "A. ISO 31000:2018 de gestión de riesgos.",
-        "B. Marco Integrado de Control Interno COSO 2013.",
-        "C. Norma ISO 9001:2015 de gestión de calidad.",
-        "D. Estándares ITIL de gestión de servicios de TI."
-      ],
-      "ans": "B"
-    },
-    {
       "n": 8,
-      "q": "El Acto Legislativo 04 de 2019 y el Decreto Ley 403 de 2020 son referenciados en el manual principalmente porque:",
+      "q": "Según las definiciones del Manual del SCI, ¿cuál es la diferencia precisa entre 'autoevaluación o evaluación continua' y 'evaluación independiente'?",
       "opts": [
-        "A. Regulan el Sistema de Gestión de Calidad de entidades públicas.",
-        "B. Reforman el régimen de control fiscal y fortalecen el control fiscal interno.",
-        "C. Establecen los estándares de auditoría interna del sector público.",
-        "D. Reglamentan la rendición de cuentas ante la ciudadanía."
+        "A) La autoevaluación la realiza la Superintendencia Financiera; la evaluación independiente la realiza la Contraloría General de la República",
+        "B) La autoevaluación son operaciones rutinarias integradas en los procesos, llevadas a cabo en tiempo real por líderes de proceso; la evaluación independiente se lleva a cabo de forma periódica por parte de la Oficina de Control Interno a través de la auditoría interna de gestión",
+        "C) La autoevaluación la realiza el Comité de Auditoría anualmente; la evaluación independiente la realizan firmas externas contratadas para tal fin",
+        "D) La autoevaluación cubre los controles de primera línea; la evaluación independiente cubre únicamente los controles de segunda línea"
       ],
       "ans": "B"
     },
     {
       "n": 9,
-      "q": "¿Cuál de los siguientes documentos no hace parte del marco de referencia del Sistema de Control Interno de Colpensiones según el manual?",
+      "q": "El Manual del SCI define 'Control fiscal interno' y lo distingue de 'Control fiscal multinivel'. ¿Cuál es la distinción correcta según el documento?",
       "opts": [
-        "A. Modelo de las Tres Líneas (IIA 2020).",
-        "B. Lineamientos del Comité de Supervisión Bancaria de Basilea.",
-        "C. Norma ISO 45001:2018 de seguridad y salud en el trabajo.",
-        "D. Marco Integrado de Control Interno COSO 2013."
-      ],
-      "ans": "C"
-    },
-    {
-      "n": 10,
-      "q": "¿Qué herramienta es utilizada por Colpensiones para actualizar y desarrollar el control interno dentro de la séptima dimensión del MIPG?",
-      "opts": [
-        "A. El Sistema de Gestión de Seguridad de la Información.",
-        "B. El Modelo Estándar de Control Interno (MECI).",
-        "C. El Plan Estratégico de Tecnologías de la Información (PETI).",
-        "D. El Plan Anual de Auditoría Interna."
+        "A) El control fiscal interno es ejercido por la Contraloría; el control fiscal multinivel es ejercido por todos los entes de control simultáneamente",
+        "B) El control fiscal interno alude al primer nivel para la vigilancia fiscal de los recursos públicos y prevención de riesgos fiscales; el control fiscal multinivel se refiere a la articulación entre el sistema de control interno y el control externo, con la participación activa del control social",
+        "C) El control fiscal interno aplica solo a los fondos de reserva pensional RPM; el control fiscal multinivel aplica a todos los recursos de Colpensiones",
+        "D) El control fiscal interno es de naturaleza preventiva; el control fiscal multinivel es de naturaleza sancionatoria"
       ],
       "ans": "B"
     },
     {
-      "n": 11,
-      "q": "Según las definiciones del manual, ¿qué es el 'control interno'?",
+      "n": 10,
+      "q": "Según la definición de 'Alta gerencia' contenida en el Manual del SCI de Colpensiones, ¿quiénes la conforman y cuál es su responsabilidad principal en relación con los riesgos?",
       "opts": [
-        "A. El conjunto de normas expedidas exclusivamente por la Superintendencia Financiera de Colombia para las entidades vigiladas.",
-        "B. Sistema integrado por el esquema de organización y el conjunto de planes, métodos, principios, normas, procedimientos y mecanismos de verificación y evaluación adoptados por una entidad.",
-        "C. El mecanismo de vigilancia ejercido únicamente por la Contraloría General de la República.",
-        "D. El proceso de auditoría externa contratado con firmas privadas especializadas."
+        "A) La conforman todos los servidores del nivel directivo y asesor; su responsabilidad es reportar los riesgos identificados a la Oficina de Control Interno",
+        "B) La conforman los integrantes de la Junta Directiva; su responsabilidad es aprobar el marco de apetito de riesgo de la entidad",
+        "C) La conforman el grupo de personas responsables de la gestión de los riesgos que reportan directamente a la Junta Directiva y/o al representante legal, incluido este último; son responsables de dirigir, ejecutar y supervisar las operaciones de manera consistente con el plan de negocio, apetito de riesgo y demás políticas",
+        "D) La conforman los jefes de proceso de primer nivel; su responsabilidad es diseñar los controles que mitigan los riesgos identificados en la primera línea"
+      ],
+      "ans": "C"
+    },
+    {
+      "n": 11,
+      "q": "Conforme al Manual del SCI, el MECI se define con un propósito específico. ¿Cuál es ese propósito según el documento?",
+      "opts": [
+        "A) Establecer los requisitos mínimos de auditoría interna que deben cumplir las entidades vigiladas por la Superintendencia Financiera",
+        "B) Orientar a las entidades del Estado hacia el cumplimiento de sus objetivos institucionales y la contribución de estos a los fines esenciales del Estado, a través de una estructura para el control a la estrategia, la gestión y la evaluación",
+        "C) Definir las políticas de gestión de riesgos que deben implementar las entidades públicas conforme a los lineamientos del Departamento Administrativo de la Función Pública",
+        "D) Reemplazar el sistema de control interno establecido en la Ley 87 de 1993 con un modelo más moderno y compatible con las normas ISO"
       ],
       "ans": "B"
     },
     {
       "n": 12,
-      "q": "¿Qué es el 'control fiscal interno' según el manual?",
+      "q": "Según el Manual del SCI, ¿cómo define el documento el 'Riesgo fiscal' y cuál es su relación con el patrimonio público?",
       "opts": [
-        "A. El control ejercido por la Contraloría General de la República sobre los recursos del Estado.",
-        "B. El alude al primer nivel para la vigilancia fiscal de los recursos públicos y para la prevención de riesgos fiscales y defensa del patrimonio público.",
-        "C. El proceso de conciliación contable entre la entidad y la DIAN.",
-        "D. La auditoría practicada por revisores fiscales de firmas privadas."
+        "A) Es la probabilidad de que un funcionario incurra en actos de corrupción que afecten los recursos del Estado",
+        "B) Es el efecto dañoso sobre los recursos públicos y/o los bienes y/o intereses patrimoniales de naturaleza pública, a causa de un evento potencial",
+        "C) Es la posibilidad de que la Contraloría General imponga sanciones fiscales a Colpensiones por deficiencias en el control interno",
+        "D) Es el impacto negativo sobre los estados financieros de Colpensiones derivado de riesgos operativos no gestionados adecuadamente"
       ],
       "ans": "B"
     },
     {
       "n": 13,
-      "q": "¿Cómo define el manual el concepto de 'control fiscal multinivel'?",
+      "q": "El Manual del SCI describe el Sistema de Control Interno (SCI) como un conjunto de elementos que busca proporcionar un grado de seguridad razonable. ¿Cuáles son los participantes del SCI según esta descripción?",
       "opts": [
-        "A. La supervisión que ejercen simultáneamente varias contralorías sobre una misma entidad.",
-        "B. La articulación entre el sistema de control interno y el control externo, con participación activa del control social.",
-        "C. El modelo de auditoría interna que abarca los tres niveles jerárquicos de la entidad.",
-        "D. El esquema de reporte de riesgos a los tres niveles de gobierno: nacional, departamental y municipal."
+        "A) Solo la Oficina de Control Interno y la alta gerencia, quienes coordinan y ejecutan los controles de manera exclusiva",
+        "B) Los órganos de gobierno y control, así como las y los trabajadores de Colpensiones, quienes intervienen y participan en el sistema",
+        "C) Exclusivamente la Junta Directiva y el Representante Legal como responsables primarios del establecimiento del sistema",
+        "D) Los auditores externos, la Superintendencia Financiera y el Comité de Auditoría como instancias de supervisión independiente"
       ],
       "ans": "B"
     },
     {
       "n": 14,
-      "q": "El 'MECI' se define en el manual como:",
+      "q": "Según el Manual del SCI, ¿cuál es la relación entre el SCI y el MIPG en el contexto de la dimensión séptima? ¿Qué permite el SCI a través de esa articulación?",
       "opts": [
-        "A. El Manual Estratégico de Comunicación Interna de Colpensiones.",
-        "B. El Modelo Estándar de Control Interno que proporciona una estructura para el control a la estrategia, la gestión y la evaluación en las entidades del Estado.",
-        "C. El Mecanismo Especial de Control Institucional creado por la Superintendencia Financiera.",
-        "D. El Modelo de Evaluación Continua Interna de los procesos misionales."
+        "A) El SCI reemplaza al MIPG en aquellos aspectos donde exista contradicción entre sus disposiciones",
+        "B) A través de la séptima dimensión del MIPG 'Control Interno', Colpensiones mejora y mantiene su SCI mediante parámetros de autogestión, autorregulación y autocontrol, asegurando que las actividades se realicen conforme a normas vigentes y dentro de las políticas de la dirección",
+        "C) El SCI se articula al MIPG únicamente en lo relacionado con los planes anticorrupción y los mecanismos de participación ciudadana",
+        "D) A través de la dimensión séptima del MIPG, el SCI transfiere a la Contraloría la responsabilidad de evaluar el desempeño institucional de Colpensiones"
       ],
       "ans": "B"
     },
     {
       "n": 15,
-      "q": "Según el manual, ¿cuáles son los tres principios del Sistema de Control Interno de Colpensiones?",
+      "q": "El Manual del SCI establece que la estructura del SCI contempla dos elementos fundamentales. ¿Cuáles son esos dos elementos?",
       "opts": [
-        "A. Legalidad, transparencia y rendición de cuentas.",
-        "B. Autocontrol, autorregulación y autogestión.",
-        "C. Eficiencia, eficacia y efectividad.",
-        "D. Planeación, ejecución y evaluación."
+        "A) Un sistema de auditoría interna y un sistema de evaluación externa periódica",
+        "B) Una estructura de control basada en cinco componentes y un esquema de responsabilidades basado en el modelo de las líneas adaptado del IIA",
+        "C) El MECI como herramienta de implementación y el COSO 2013 como marco de referencia conceptual",
+        "D) Un conjunto de políticas aprobadas por la Junta Directiva y un sistema de indicadores de gestión por procesos"
       ],
       "ans": "B"
     },
     {
       "n": 16,
-      "q": "El principio de 'autocontrol' implica que los trabajadores deben:",
+      "q": "El Manual del SCI establece tres principios del Sistema de Control Interno. ¿Cuál es la diferencia precisa entre 'autorregulación' y 'autogestión' según sus definiciones en el documento?",
       "opts": [
-        "A. Contratar empresas externas para evaluar sus procesos.",
-        "B. Reportar directamente a la Contraloría cualquier irregularidad detectada.",
-        "C. Evaluar y controlar su trabajo, detectar desviaciones y adoptar correctivos de manera oportuna.",
-        "D. Aplicar únicamente los controles definidos por la Oficina de Control Interno."
+        "A) La autorregulación es individual (cada trabajador controla su trabajo); la autogestión es colectiva (la entidad coordina la operación del sistema)",
+        "B) La autorregulación consiste en que Colpensiones desarrolle métodos, normas y procedimientos internos que permitan la implementación y mejoramiento del SCI; la autogestión consiste en la capacidad de Colpensiones para coordinar, ejecutar y evaluar de manera efectiva, eficiente y eficaz el funcionamiento del SCI",
+        "C) La autorregulación aplica a las áreas de segunda línea; la autogestión aplica exclusivamente a las áreas de primera línea",
+        "D) La autorregulación es un principio externo impuesto por la Superintendencia Financiera; la autogestión es un principio interno definido por la Junta Directiva"
       ],
-      "ans": "C"
+      "ans": "B"
     },
     {
       "n": 17,
-      "q": "La 'autorregulación' como principio del SCI implica que Colpensiones debe:",
+      "q": "Según la Política del SCI del Manual, ¿qué tipo de evaluaciones periódicas se compromete Colpensiones a realizar para validar el cumplimiento y funcionalidad del sistema?",
       "opts": [
-        "A. Someterse a las regulaciones emitidas exclusivamente por entes externos.",
-        "B. Desarrollar métodos, normas y procedimientos internos que permitan la implementación y mejoramiento del SCI.",
-        "C. Delegar la regulación interna en la Superintendencia Financiera.",
-        "D. Adoptar únicamente las mejores prácticas internacionales sin adaptarlas."
+        "A) Solo evaluaciones externas contratadas con firmas especializadas en control interno cada dos años",
+        "B) Evaluaciones internas y externas, aplicando los principios de autogestión, autoevaluación y autocontrol",
+        "C) Únicamente autoevaluaciones internas lideradas por la Oficina de Control Interno sin participación de terceros",
+        "D) Evaluaciones anuales realizadas exclusivamente por el Comité de Auditoría como comité asesor de la Junta Directiva"
       ],
       "ans": "B"
     },
     {
       "n": 18,
-      "q": "La 'autogestión' como principio del SCI significa que Colpensiones debe tener capacidad para:",
+      "q": "La Política del SCI establece un compromiso específico respecto a los informes que deben presentarse. ¿Ante qué órganos deben presentarse estos informes y con qué periodicidad mínima debe el líder del SCI presentar el informe de cambios del sistema?",
       "opts": [
-        "A. Gestionar autónomamente su presupuesto sin controles externos.",
-        "B. Coordinar, ejecutar y evaluar de manera efectiva, eficiente y eficaz el funcionamiento del SCI.",
-        "C. Tomar decisiones de inversión sin reportar a la Junta Directiva.",
-        "D. Contratar libremente auditores externos sin aprobación del Comité de Auditoría."
+        "A) Solo ante la Junta Directiva; con periodicidad trimestral",
+        "B) Ante la Junta Directiva y sus comités según las competencias de cada uno (CICCI y Comité de Auditoría); el líder del SCI presentará al menos semestralmente a la alta gerencia y al Comité de Auditoría el informe de cambios del SCI",
+        "C) Solo ante la Superintendencia Financiera mediante los reportes regulatorios establecidos en la Circular Básica Jurídica",
+        "D) Ante todos los grupos de interés externos de manera simultánea; con periodicidad anual en audiencias públicas de rendición de cuentas"
       ],
       "ans": "B"
     },
     {
       "n": 19,
-      "q": "Según el manual, ¿qué es la 'evaluación independiente'?",
+      "q": "El Manual del SCI describe los objetivos fundamentales del SCI. ¿Cuáles de los siguientes objetivos están expresamente enumerados en el documento?",
       "opts": [
-        "A. Una evaluación realizada en tiempo real por los líderes de proceso.",
-        "B. Las evaluaciones llevadas a cabo de forma periódica por la Oficina de Control Interno a través de la auditoría interna de gestión.",
-        "C. La evaluación que practica anualmente la Contraloría General de la República.",
-        "D. El proceso de autoevaluación que realizan los trabajadores en sus puestos de trabajo."
+        "A) Maximizar la rentabilidad del portafolio de inversiones del fondo de reserva pensional RPM y garantizar el pago oportuno de las pensiones",
+        "B) Proteger los recursos, garantizar eficacia y economía en operaciones, asegurar confiabilidad de la información, prevenir riesgos y fraudes, cumplir la normatividad aplicable, proteger activos y prevenir actos de corrupción, entre otros",
+        "C) Garantizar la certificación en normas ISO de todos los procesos de la cadena de valor y la acreditación internacional de los sistemas de gestión",
+        "D) Asegurar la vinculación de Colpensiones al Sistema Nacional de Competitividad e Innovación y cumplir con las metas del Plan Nacional de Desarrollo"
       ],
       "ans": "B"
     },
     {
       "n": 20,
-      "q": "¿Cómo define el manual el 'riesgo fiscal'?",
+      "q": "Según el Marco Legal del Manual del SCI, ¿cuál es la Guía que adopta Colpensiones para la identificación, análisis y valoración del riesgo fiscal?",
       "opts": [
-        "A. La probabilidad de que la entidad incumpla el presupuesto aprobado por el Congreso.",
-        "B. El efecto dañoso sobre los recursos públicos y/o los bienes e intereses patrimoniales de naturaleza pública, a causa de un evento potencial.",
-        "C. El riesgo de que los estados financieros no reflejen la situación real de la entidad.",
-        "D. La posibilidad de que la Contraloría detecte irregularidades en una auditoría."
+        "A) La Guía Técnica Colombiana GTC-ISO 31000 de la norma internacional de gestión de riesgo",
+        "B) La Guía para la Administración del Riesgo y el diseño de controles en entidades públicas, Capítulo IV del Departamento Administrativo de la Función Pública (DAFP)",
+        "C) La Guía de Auditoría para Entidades Públicas emitida por la Contraloría General de la República",
+        "D) La Guía Metodológica de Gestión de Riesgos para Entidades Financieras emitida por la Superintendencia Financiera de Colombia"
       ],
       "ans": "B"
     },
     {
       "n": 21,
-      "q": "¿Cuál es el objetivo general del Sistema de Control Interno de Colpensiones según el manual?",
+      "q": "El Manual del SCI describe el 'Ambiente de Control' como el primer componente del SCI. ¿Cuál es su propósito específico según el documento?",
       "opts": [
-        "A. Garantizar la certificación en ISO 9001:2015 de todos los procesos.",
-        "B. Proporcionar una estructura de control para que las actividades, operaciones y actuaciones se lleven a cabo de acuerdo con las normas constitucionales y legales vigentes dentro de las políticas de la alta gerencia.",
-        "C. Eliminar completamente los riesgos a los que está expuesta la entidad.",
-        "D. Sustituir las funciones de la Contraloría en la vigilancia de los recursos públicos."
+        "A) Identificar y valorar los riesgos estratégicos y operacionales que puedan afectar el cumplimiento de los objetivos de Colpensiones",
+        "B) Asegurar las condiciones mínimas para el ejercicio del control interno, la gestión eficiente de riesgos, la integridad operativa y el logro de los objetivos organizacionales, requiriendo el compromiso y liderazgo de los órganos de dirección",
+        "C) Evaluar de manera independiente y objetiva los controles establecidos por la primera línea para verificar su efectividad y cobertura",
+        "D) Definir los canales de comunicación entre Colpensiones y sus grupos de interés internos y externos para garantizar la transparencia institucional"
       ],
       "ans": "B"
     },
     {
       "n": 22,
-      "q": "¿Cuál de los siguientes es un objetivo fundamental del SCI de Colpensiones conforme al manual?",
+      "q": "Según el Manual del SCI, ¿cuál es la función principal del Comité de Auditoría dentro del Ambiente de Control y cuál es su limitación expresa?",
       "opts": [
-        "A. Maximizar las utilidades de la entidad a través de inversiones financieras.",
-        "B. Prevenir y mitigar la ocurrencia de fraudes internos y externos.",
-        "C. Reducir la planta de personal para optimizar los costos operativos.",
-        "D. Eliminar la necesidad de auditorías externas."
+        "A) Su función es aprobar los planes de mejoramiento derivados de las auditorías internas; su limitación es que no puede contratar firmas externas de auditoría",
+        "B) Su función es asistir a la Junta Directiva en su función de supervisión evaluando procedimientos contables, relacionamiento con el Revisor Fiscal y la arquitectura de control incluyendo la auditoría del sistema de administración de riesgos; su limitación es que no sustituye la responsabilidad de la Junta Directiva en el establecimiento y desarrollo del control interno",
+        "C) Su función es auditar directamente todos los procesos de Colpensiones cada semestre; su limitación es que no puede sancionar a los líderes de proceso que incumplan los controles",
+        "D) Su función es emitir conceptos vinculantes sobre los hallazgos de control interno; su limitación es que solo puede pronunciarse sobre los componentes de información y comunicación"
       ],
       "ans": "B"
     },
     {
       "n": 23,
-      "q": "¿Qué cultura organizacional promueve el SCI de Colpensiones según el manual?",
+      "q": "El Manual del SCI establece que el Código de Ética se gestiona a cargo de la Gerencia de Prevención de Fraude y se encuentra documentado con un código específico. ¿Cuál es ese código y cómo se realiza su divulgación?",
       "opts": [
-        "A. Una cultura basada exclusivamente en el cumplimiento normativo externo.",
-        "B. Una cultura fundamentada en principios, valores y conductas éticas, en el adecuado uso de la información, el control y la evaluación para la toma de decisiones.",
-        "C. Una cultura de competencia entre dependencias para el logro de metas individuales.",
-        "D. Una cultura orientada únicamente al control presupuestal."
+        "A) Código AGE-GRI-MAN-009; se divulga a través de capacitaciones presenciales obligatorias anuales",
+        "B) Código ECG-PDI-DIN-001; su divulgación se realiza a través del portal web de Colpensiones para los grupos de interés y en el gestor documental del Sistema de Gestión de Calidad para el equipo humano interno",
+        "C) Código GAO-GFI-MAN-001; se divulga a través de los comités institucionales y reuniones de área con periodicidad semestral",
+        "D) Código AGE-GIR-DIN-005; se divulga exclusivamente a través de la intranet institucional con acceso restringido a servidores públicos de planta"
       ],
       "ans": "B"
     },
     {
       "n": 24,
-      "q": "La Política del SCI de Colpensiones establece compromisos de la entidad. ¿Cuál de los siguientes es uno de ellos?",
+      "q": "Conforme al Manual del SCI, ¿cuál es el propósito de los informes sobre el SCI que se generan y remiten a la Junta Directiva y cuál es la responsabilidad adicional de la Oficina de Control Interno en esta materia?",
       "opts": [
-        "A. Externalizar todas las funciones de auditoría interna a firmas especializadas.",
-        "B. Implementar, mantener, evaluar y mejorar de manera continua el Sistema de Control Interno.",
-        "C. Concentrar el control interno únicamente en la Oficina de Control Interno.",
-        "D. Eliminar la presentación de informes periódicos a la Junta Directiva."
+        "A) El propósito es mostrar el nivel de ejecución del plan anticorrupción; la Oficina de Control Interno debe presentar un informe anual de gestión a la ciudadanía",
+        "B) El propósito es proporcionar una evaluación transparente y completa del estado del control interno, la efectividad de los controles, identificar áreas de mejora y asegurar la rendición de cuentas; la Oficina de Control Interno debe presentar un informe semestral de evaluación independiente del SCI",
+        "C) El propósito es certificar el cumplimiento de los requisitos de la Circular Básica Jurídica; la Oficina de Control Interno debe presentar un informe trimestral de seguimiento al plan anual de auditoría",
+        "D) El propósito es comunicar los resultados de las auditorías externas a todos los grupos de interés; la Oficina de Control Interno debe consolidar los informes de las tres líneas y presentarlos al Comité Institucional de Coordinación de Control Interno"
       ],
       "ans": "B"
     },
     {
       "n": 25,
-      "q": "Según la Política del SCI, ¿qué estrategias debe adoptar Colpensiones para promover el control interno?",
+      "q": "El Manual del SCI describe la 'Política de gestión de riesgos' como parte del Ambiente de Control. ¿Qué documento la desarrolla y cuál es la dependencia responsable?",
       "opts": [
-        "A. Estrategias orientadas a reducir el número de controles para agilizar los procesos.",
-        "B. Estrategias orientadas a promover el ambiente de control, la gestión del riesgo, las actividades de control, la información y comunicación y las actividades de seguimiento y monitoreo.",
-        "C. Estrategias exclusivamente tecnológicas de automatización.",
-        "D. Estrategias enfocadas únicamente en el control del gasto público."
+        "A) El Código de Ética (ECG-PDI-DIN-001); la Gerencia de Prevención de Fraude",
+        "B) El Manual del Sistema Integral de Administración de Riesgos, código AGE-GRI-MAN-009, y el proceso Gestión Integral de Riesgos; la Gerencia de Riesgos y Seguridad de la Información",
+        "C) Las Políticas de Gestión Contable (GAO-GFI-MAN-001); la Gerencia Administrativa",
+        "D) El Código de Gobierno Corporativo y el proceso de Gestión de Órganos de Dirección; la Vicepresidencia de Seguridad y Riesgos Empresariales"
       ],
       "ans": "B"
     },
     {
       "n": 26,
-      "q": "La Política del SCI establece que el/la líder del SCI debe presentar al Comité de Auditoría:",
+      "q": "Según el Manual del SCI, la 'Política de inducción y capacitación de miembros de la Junta Directiva y de sus comités de apoyo' tiene un alcance que va más allá de los nuevos integrantes. ¿Cuál es ese alcance adicional?",
       "opts": [
-        "A. Un informe trimestral sobre el estado del presupuesto.",
-        "B. Al menos semestralmente, un informe sobre los cambios realizados al SCI en el marco de su mantenimiento y mejora.",
-        "C. Un informe anual de auditoría interna completo.",
-        "D. Un informe diario sobre los riesgos operativos identificados."
+        "A) Comprende también la capacitación a los líderes de primera línea para que comprendan las decisiones estratégicas de la Junta Directiva",
+        "B) Comprende los lineamientos de capacitación a los integrantes de la JD y sus comités cuando soliciten información técnica especializada para adoptar decisiones sobre asuntos con alto componente técnico",
+        "C) Comprende la capacitación obligatoria a todos los trabajadores de Colpensiones sobre las decisiones adoptadas por la Junta Directiva en cada sesión",
+        "D) Comprende la certificación internacional obligatoria en gobierno corporativo para todos los miembros de la Junta Directiva"
       ],
       "ans": "B"
     },
     {
       "n": 27,
-      "q": "¿Cuántos objetivos fundamentales orienta el diseño y desarrollo del SCI de Colpensiones según el manual?",
+      "q": "El Manual del SCI establece que el Plan Estratégico de Tecnologías de la Información (PETI) debe contemplar mínimamente ciertos aspectos. ¿Cuál de los siguientes NO está incluido expresamente?",
       "opts": [
-        "A. 5 objetivos.",
-        "B. 8 objetivos.",
-        "C. 13 objetivos.",
-        "D. 20 objetivos."
+        "A) Evaluación del estado actual de la infraestructura tecnológica",
+        "B) Cronograma de actividades y objetivos de corto, mediano y largo plazo en materia tecnológica",
+        "C) Designación de los proveedores tecnológicos estratégicos aprobados por el Comité de Contratación",
+        "D) Mecanismos para la mitigación del riesgo operacional y de ciberseguridad asociados a los desarrollos"
       ],
       "ans": "C"
     },
     {
       "n": 28,
-      "q": "Uno de los objetivos del SCI es 'asegurar la oportunidad y confiabilidad de la información y de sus registros'. Esto se relaciona principalmente con el componente de:",
+      "q": "Según el Manual del SCI, el Estatuto de Auditoría es un documento formal que define varios elementos. ¿Cuál de los siguientes aspectos está expresamente contemplado en la definición del Estatuto de Auditoría?",
       "opts": [
-        "A. Gestión de riesgos.",
-        "B. Actividades de control.",
-        "C. Información y comunicación.",
-        "D. Actividades de seguimiento y monitoreo."
+        "A) Los criterios de evaluación del desempeño individual de los auditores internos y el plan de carrera de la Oficina de Control Interno",
+        "B) El propósito, la autoridad y la responsabilidad de la auditoría interna, así como los mecanismos de acceso a la información y bienes necesarios para la ejecución de sus funciones",
+        "C) Los honorarios y tarifas de referencia para contratar auditorías externas cuando la Oficina de Control Interno no tenga la capacidad técnica requerida",
+        "D) Las sanciones disciplinarias que puede recomendar la Oficina de Control Interno ante los líderes de proceso que obstaculicen las auditorías"
       ],
-      "ans": "C"
+      "ans": "B"
     },
     {
       "n": 29,
-      "q": "¿Cuál es la estructura sobre la que se basa el Sistema de Control Interno de Colpensiones según el manual?",
+      "q": "La 'Política de Seguridad de la Información y Ciberseguridad' descrita en el Manual del SCI hace énfasis en dos aspectos críticos de la información de Colpensiones. ¿Cuáles son?",
       "opts": [
-        "A. Una estructura basada en tres componentes y un esquema de auditoría externa.",
-        "B. Una estructura basada en cinco componentes y un esquema de responsabilidades basado en el modelo de las tres líneas.",
-        "C. Una estructura basada en siete dimensiones del MIPG.",
-        "D. Una estructura basada exclusivamente en los requisitos de la NTC ISO 9001:2015."
+        "A) La velocidad de procesamiento de las transacciones y la disponibilidad de los sistemas en horarios de alta demanda",
+        "B) La integridad de la información de aportes y pagos por su criticidad, y la confidencialidad de los datos personales de la población afiliada, ciudadanía y colaboradores",
+        "C) La encriptación de las comunicaciones internas y la certificación internacional de los sistemas de información bajo norma ISO 27001",
+        "D) La recuperación ante desastres de los centros de datos y la autenticación multifactor obligatoria para todos los accesos a los sistemas"
       ],
       "ans": "B"
     },
     {
       "n": 30,
-      "q": "¿En qué materia contribuye el SCI a la cultura organizacional de Colpensiones, conforme al manual?",
+      "q": "Conforme al Manual del SCI, ¿cuál es la dependencia responsable de la ejecución, desarrollo y monitoreo de la Política Financiera y Contable?",
       "opts": [
-        "A. En la gestión del talento humano y la nómina.",
-        "B. En la comercialización de los productos pensionales.",
-        "C. En la adecuada gestión por procesos y administración de los riesgos para mayor seguridad a los grupos de interés.",
-        "D. En la gestión presupuestal y la ejecución del gasto público."
+        "A) La Vicepresidencia de Seguridad y Riesgos Empresariales a través de la Gerencia de Riesgos",
+        "B) La Gerencia Administrativa de la Vicepresidencia de Gestión Corporativa",
+        "C) La Gerencia de Planeación Institucional de la Vicepresidencia de Planeación y Tecnologías de la Información",
+        "D) La Oficina Asesora de Asuntos Legales como primera línea de defensa jurídica y financiera"
       ],
-      "ans": "C"
+      "ans": "B"
     },
     {
       "n": 31,
-      "q": "¿Cuántos componentes conforman el Sistema de Control Interno de Colpensiones según el manual?",
+      "q": "Según el Manual del SCI, ¿qué es el Sistema Integral de Administración de Riesgos (SIAR) y cuál es su objetivo principal?",
       "opts": [
-        "A. Tres componentes.",
-        "B. Cuatro componentes.",
-        "C. Cinco componentes.",
-        "D. Siete componentes."
+        "A) Es el sistema de auditoría interna de Colpensiones cuyo objetivo es evaluar la eficacia de los controles establecidos por la primera línea",
+        "B) Es un sistema que tiene como objetivo crear y proteger el valor para Colpensiones dentro del apetito de riesgo definido, a través de políticas, lineamientos, responsabilidades, procedimientos y metodologías para identificar, valorar, tratar, hacer seguimiento y comunicar los riesgos a los que está expuesta la entidad",
+        "C) Es el sistema de reporte de incidentes de seguridad de la información cuyo objetivo es documentar y gestionar los eventos que comprometan los activos de información",
+        "D) Es el sistema de gestión de quejas y reclamos de los afiliados cuyo objetivo es garantizar la atención oportuna y la protección de los derechos de los usuarios del RPM"
       ],
-      "ans": "C"
+      "ans": "B"
     },
     {
       "n": 32,
-      "q": "El 'Ambiente de Control' se define en el manual como:",
+      "q": "El Manual del SCI señala que el SIAR se desarrolla en el marco de dos sistemas regulatorios establecidos por la Superintendencia Financiera. ¿Cuáles son y en qué capítulos de la Circular Básica Jurídica están contenidos?",
       "opts": [
-        "A. El proceso de identificación y valoración de riesgos estratégicos y operativos.",
-        "B. El conjunto de políticas, normas internas, objetivos, procedimientos y estructuras jerárquicas y de gobierno al que se encuentran sujetos todos los trabajadores en el SCI.",
-        "C. El mecanismo de auditoría interna que evalúa los controles diseñados en los procesos.",
-        "D. Los canales de comunicación entre Colpensiones y sus grupos de interés externos."
+        "A) El SARO (riesgo operativo) en el Capítulo XXIII y el SARL (riesgo de liquidez) en el Capítulo VI",
+        "B) El SARLAFT en el Capítulo IV, Título IV, Parte I de la CBJ y el Sistema Integral de Administración de Riesgos (SIAR) en el Capítulo XXXI CBCF",
+        "C) El SARC (riesgo de crédito) en el Capítulo II y el SARM (riesgo de mercado) en el Capítulo XXI",
+        "D) El SARO en el Capítulo XXIII y el SARC en el Capítulo II de la Circular Básica Contable y Financiera"
       ],
       "ans": "B"
     },
     {
       "n": 33,
-      "q": "¿Qué es el Código de Ética de Colpensiones en el marco del Ambiente de Control?",
+      "q": "La 'Política de la Gestión Integral de Riesgos' contenida en el Manual del SCI enumera los tipos de riesgos que Colpensiones se compromete a gestionar. ¿Cuál de los siguientes NO está expresamente mencionado?",
       "opts": [
-        "A. El reglamento de contratación pública de la entidad.",
-        "B. El documento que contiene los valores, lineamientos y referentes de comportamiento para los colaboradores, que exige la primacía de los intereses públicos sobre los privados.",
-        "C. El manual de procedimientos disciplinarios de la entidad.",
-        "D. El estatuto de la Junta Directiva aprobado por la Superintendencia Financiera."
-      ],
-      "ans": "B"
-    },
-    {
-      "n": 34,
-      "q": "El Código de Ética de Colpensiones se encuentra documentado bajo el código:",
-      "opts": [
-        "A. AGE-GRI-MAN-009.",
-        "B. DIE-COM-MAN-002.",
-        "C. ECG-PDI-DIN-001.",
-        "D. AGE-GIR-MAN-019."
+        "A) Riesgos operacionales y de continuidad del negocio",
+        "B) Riesgos de seguridad de la información y ciberseguridad",
+        "C) Riesgos reputacionales derivados de la cobertura mediática negativa de la entidad",
+        "D) Riesgos de lavado de activos y financiación del terrorismo"
       ],
       "ans": "C"
     },
     {
-      "n": 35,
-      "q": "¿Qué es el Estatuto de Auditoría según el manual?",
+      "n": 34,
+      "q": "Según el Manual del SCI, la Política de Gestión Integral de Riesgos establece un compromiso específico sobre los riesgos de terceras partes. ¿Cuál es ese compromiso?",
       "opts": [
-        "A. El reglamento de la Junta Directiva aprobado por la Asamblea General.",
-        "B. El documento formal aprobado por el Comité de Auditoría que define la posición, relaciones de dependencia, alcance y tipos de servicios de la auditoría interna.",
-        "C. El plan anual de actividades de la Oficina de Control Interno.",
-        "D. El protocolo para la contratación de auditores externos."
+        "A) Transferir integralmente los riesgos de terceras partes al contratista a través de cláusulas contractuales de indemnidad",
+        "B) Considerar los riesgos relacionados con las terceras partes que soportan los procesos, en la búsqueda de objetivos estratégicos, y mantener continuamente informada a la Junta Directiva y a la alta gerencia sobre los riesgos de procesos y actividades tercerizadas",
+        "C) Excluir a los terceros contratistas del marco de gestión de riesgos de Colpensiones por ser entidades jurídicamente independientes",
+        "D) Requerir a todos los terceros contratistas la certificación bajo norma ISO 31000 como requisito previo a la suscripción de cualquier contrato"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 35,
+      "q": "El Manual del SCI define cuatro tipos de Actividades de Control. ¿Cuál es la diferencia entre los 'Controles de alto nivel' y los 'Controles generales'?",
+      "opts": [
+        "A) Los controles de alto nivel son manuales y los controles generales son automatizados dentro de los sistemas de información",
+        "B) Los controles de alto nivel son el seguimiento por parte de la Junta Directiva, comités y alta gerencia para detectar falencias estratégicas; los controles generales son las actividades que deben desarrollar las diferentes áreas para asegurar la continuidad y correcto funcionamiento de todos sus procesos",
+        "C) Los controles de alto nivel aplican a los contratos con terceros; los controles generales aplican a los procesos internos de la cadena de valor",
+        "D) Los controles de alto nivel son revisados por la Contraloría; los controles generales son revisados únicamente por la Oficina de Control Interno"
       ],
       "ans": "B"
     },
     {
       "n": 36,
-      "q": "El componente de 'Gestión de Riesgos' del SCI tiene como propósito:",
+      "q": "Según el Manual del SCI, los 'Controles sobre la tecnología' tienen tres propósitos específicos. ¿Cuáles son?",
       "opts": [
-        "A. Ejecutar directamente los controles sobre los procesos de la primera línea.",
-        "B. Identificar, evaluar y gestionar eventos potenciales internos y externos que puedan afectar el logro de los objetivos institucionales.",
-        "C. Emitir los informes de auditoría interna al Comité de Auditoría.",
-        "D. Establecer los canales de comunicación con los grupos de interés externos."
+        "A) Garantizar la disponibilidad del 99.9% de los sistemas, gestionar los incidentes de ciberseguridad y certificar los desarrollos tecnológicos",
+        "B) Asegurar el cumplimiento de la política de seguridad de la información; mitigar los riesgos asociados a la adquisición, funcionamiento, desarrollo y mantenimiento de la infraestructura tecnológica; e identificar cambios o actualizaciones de la tecnología",
+        "C) Controlar el acceso de usuarios a los sistemas, gestionar las licencias de software y supervisar el presupuesto de TI",
+        "D) Verificar la implementación del PETI, supervisar los contratos tecnológicos y garantizar la alineación de TI con los objetivos estratégicos"
       ],
       "ans": "B"
     },
     {
       "n": 37,
-      "q": "¿Qué es el Sistema Integral de Administración de Riesgos (SIAR) de Colpensiones?",
+      "q": "El Manual del SCI señala que la selección y desarrollo de las Actividades de Control debe determinarse considerando un criterio específico. ¿Cuál es ese criterio?",
       "opts": [
-        "A. El sistema que gestiona exclusivamente los riesgos de lavado de activos.",
-        "B. El sistema que tiene como objetivo crear y proteger el valor de la entidad dentro del apetito de riesgo definido, con políticas y metodologías para identificar, valorar, tratar y comunicar los riesgos.",
-        "C. El sistema de auditoría de los estados financieros de Colpensiones.",
-        "D. El programa de seguros corporativos de la entidad."
+        "A) La frecuencia de los incidentes de control reportados en el período inmediatamente anterior",
+        "B) La relación beneficio/costo y la potencial efectividad de las actividades de control",
+        "C) El nivel de riesgo residual aceptado por la Junta Directiva en el marco de apetito de riesgo",
+        "D) El número de hallazgos identificados por la Oficina de Control Interno en las últimas auditorías internas"
       ],
       "ans": "B"
     },
     {
       "n": 38,
-      "q": "Las 'Actividades de Control' en el SCI son acciones que deben realizarse:",
+      "q": "Conforme al Manual del SCI, ¿desde cuáles perspectivas o líneas se enmarca el desarrollo de las Actividades de Control?",
       "opts": [
-        "A. Solo en la Oficina de Control Interno y la alta gerencia.",
-        "B. Exclusivamente en los procesos misionales de la entidad.",
-        "C. En todos los niveles de Colpensiones, en las diferentes etapas de los procesos y en el entorno tecnológico.",
-        "D. Solo cuando se detecte un hallazgo en una auditoría interna."
+        "A) Desde la perspectiva del MIPG, el MECI y los estándares internacionales del COSO 2013",
+        "B) Desde la línea estratégica (comités asesores), la gestión de primera línea (procesos de la cadena de valor), la autoevaluación y monitoreo de segunda línea, y la evaluación independiente de tercera línea",
+        "C) Desde la perspectiva regulatoria de la Superintendencia Financiera y la Contraloría General de la República exclusivamente",
+        "D) Desde la perspectiva de los cinco sistemas de gestión del MIPG: calidad, seguridad y salud en el trabajo, ambiental, seguridad de la información y control interno"
       ],
-      "ans": "C"
+      "ans": "B"
     },
     {
       "n": 39,
-      "q": "¿Cuáles son los cuatro tipos de actividades de control contemplados en el manual?",
+      "q": "El Manual del SCI describe la Línea de Integridad y Transparencia como canal de comunicación. ¿A través de cuáles medios puede realizarse el reporte y qué garantías deben brindarse a los denunciantes?",
       "opts": [
-        "A. Controles preventivos, detectivos, correctivos y disuasivos.",
-        "B. Controles de alto nivel, controles generales, controles sobre la tecnología y controles sobre la gestión contable y financiera.",
-        "C. Controles estratégicos, tácticos, operativos y de apoyo.",
-        "D. Controles manuales, automatizados, mixtos y compensatorios."
+        "A) Solo a través del correo electrónico institucional; se garantiza el anonimato absoluto y la inmunidad disciplinaria del denunciante",
+        "B) A través del portal web https://etico.colpensiones.gov.co/ y la línea gratuita 01 8000 518500 (buzón de integridad); se deben garantizar la protección frente a represalias, capacitación a funcionarios, instancias internas para el trámite y procesos eficientes y oportunos",
+        "C) Exclusivamente a través de la aplicación móvil de Colpensiones; se garantiza que el reporte será tramitado en máximo cinco días hábiles",
+        "D) A través de la ventanilla de PQRS de las oficinas regionales; se garantiza la confidencialidad mediante custodia de la Oficina de Control Interno"
       ],
       "ans": "B"
     },
     {
       "n": 40,
-      "q": "Los 'controles de alto nivel' en el componente de Actividades de Control se refieren a:",
+      "q": "Según el Manual del SCI, ¿cuáles son las características que debe tener la información transmitida a los grupos de interés según la Política de información y comunicación?",
       "opts": [
-        "A. Los controles tecnológicos implementados en los sistemas de información críticos.",
-        "B. El seguimiento por parte de la Junta Directiva, comités de apoyo y alta gerencia del funcionamiento del SCI y del progreso en el logro de objetivos estratégicos.",
-        "C. Los controles aplicados por la segunda línea sobre la primera línea.",
-        "D. Los controles diseñados para mitigar exclusivamente el riesgo de fraude."
+        "A) Debe ser sintética, visual, periódica y alineada con la imagen institucional de Colpensiones",
+        "B) Debe ser accesible, exacta, actualizada y protegida",
+        "C) Debe ser pública, gratuita, descargable y disponible en formato digital e impreso",
+        "D) Debe ser oportuna, relevante, completa y certificada por la Oficina de Control Interno"
       ],
       "ans": "B"
     },
     {
       "n": 41,
-      "q": "El componente de 'Información y Comunicación' tiene como propósito:",
+      "q": "El Manual del SCI describe la 'Política de Comunicación Institucional' con varios compromisos. ¿Cuál de los siguientes compromisos está expresamente incluido en dicha política?",
       "opts": [
-        "A. Realizar las auditorías anuales del SCI.",
-        "B. Utilizar la información de manera adecuada y comunicarla por los medios y en los tiempos oportunos.",
-        "C. Gestionar exclusivamente los riesgos de seguridad de la información.",
-        "D. Aprobar el presupuesto anual de comunicaciones de la entidad."
+        "A) Contratar espacios en medios de comunicación masivos para posicionar la imagen de Colpensiones a nivel nacional",
+        "B) Emplear un lenguaje claro, comprensible, sencillo, inclusivo y diverso en la información transmitida, habilitar canales de comunicación, mantener canales para quejas y denuncias, y garantizar la confidencialidad, integridad y disponibilidad de la información",
+        "C) Prohibir la divulgación de información financiera de la entidad a medios de comunicación sin autorización previa de la Presidencia",
+        "D) Establecer tarifas diferenciadas de acceso a la información para ciudadanos, empleadores y entidades gubernamentales"
       ],
       "ans": "B"
     },
     {
       "n": 42,
-      "q": "¿Cómo se denomina el canal anónimo y confidencial de denuncias de Colpensiones mencionado en el manual?",
+      "q": "Conforme al Manual del SCI, ¿qué documentos liderados por la Gerencia de Prevención del Fraude soportan el desarrollo de la recepción y tratamiento de denuncias a través de la Línea de Integridad?",
       "opts": [
-        "A. Canal de Transparencia y Ética.",
-        "B. Línea de Integridad y Transparencia.",
-        "C. Portal de Denuncias Ciudadanas.",
-        "D. Buzón de Control Interno."
+        "A) El Manual de Política de Comunicación Institucional y el Plan Anual de Auditoría Interna",
+        "B) Los procesos de prevención, detección e investigación de desviaciones; el Código de Ética; y la Resolución 016 de 2020",
+        "C) El Manual del Sistema Integral de Administración de Riesgos y el Estatuto de Auditoría Interna",
+        "D) El PETI y el Manual del Sistema de Gestión de Seguridad de la Información y Ciberseguridad"
       ],
       "ans": "B"
     },
     {
       "n": 43,
-      "q": "Las 'Actividades de Seguimiento y Monitoreo' tienen como propósito:",
+      "q": "El Manual del SCI establece que las Actividades de Seguimiento y Monitoreo permiten valorar cuatro aspectos específicos. ¿Cuáles son?",
       "opts": [
-        "A. Diseñar los controles para los riesgos identificados en los procesos.",
-        "B. Desarrollar actividades de supervisión continua y evaluaciones periódicas que permiten valorar la efectividad del control interno, eficiencia y eficacia de los procesos, y resultados de la gestión.",
-        "C. Aprobar los planes estratégicos anuales de la entidad.",
-        "D. Emitir los informes financieros ante la Superintendencia Financiera."
+        "A) El cumplimiento de metas de recaudo, la satisfacción de los afiliados, el número de pensiones reconocidas y el tiempo promedio de atención en ventanilla",
+        "B) La efectividad del control interno, la eficiencia, eficacia y efectividad de los procesos, el nivel de ejecución de planes y proyectos, y los resultados de la gestión para detectar desviaciones y generar recomendaciones de mejora",
+        "C) El número de hallazgos de auditoría, el porcentaje de cumplimiento del MIPG, la calificación de riesgo de la entidad y el resultado del FURAG",
+        "D) La cobertura del RPM, el índice de rotación de personal, el nivel de satisfacción laboral y el presupuesto ejecutado"
       ],
       "ans": "B"
     },
     {
       "n": 44,
-      "q": "¿Qué tipo de evaluaciones pueden contratar Colpensiones para verificar el funcionamiento de los diferentes componentes del SCI?",
+      "q": "Según el Manual del SCI, ¿qué elementos son considerados en el marco de las evaluaciones y autoevaluaciones internas?",
       "opts": [
-        "A. Solo evaluaciones internas realizadas por la Oficina de Control Interno.",
-        "B. Únicamente evaluaciones de la Contraloría General de la República.",
-        "C. Evaluaciones externas con firmas privadas, además de las evaluaciones periódicas de los entes de control.",
-        "D. Solo evaluaciones de pares entre entidades del sector público."
+        "A) Solo los resultados de las auditorías externas y los informes de los entes de control",
+        "B) Los indicadores de gestión por procesos, los planes de trabajo de la planeación estratégica, la autoevaluación de riesgos y controles, los proyectos de inversión, las auditorías internas de sistemas de gestión y los planes de mejoramiento",
+        "C) Únicamente el FURAG y los indicadores de desempeño establecidos por el Departamento Administrativo de la Función Pública",
+        "D) Solo los informes de gestión de la alta gerencia y los informes del Comité de Auditoría presentados a la Junta Directiva"
       ],
-      "ans": "C"
+      "ans": "B"
     },
     {
       "n": 45,
-      "q": "¿Cuál es el propósito del Modelo de las Tres Líneas en el SCI de Colpensiones?",
+      "q": "El Manual del SCI define la 'Evaluación independiente' de la auditoría interna con una finalidad específica. ¿Cuál es esa finalidad y qué instrumento utiliza la Oficina de Control Interno para ejecutarla?",
       "opts": [
-        "A. Concentrar toda la gestión del control interno en la Oficina de Control Interno.",
-        "B. Promover estructuras de gobierno y procesos que contribuyan a los objetivos estratégicos, facilitando la gestión de los riesgos con responsabilidades distribuidas transversalmente.",
-        "C. Establecer tres niveles jerárquicos de supervisión únicamente para el control fiscal.",
-        "D. Separar completamente las funciones de auditoría interna y externa."
+        "A) La finalidad es certificar el cumplimiento de los requisitos regulatorios; utiliza la matriz de riesgos como instrumento principal",
+        "B) La finalidad es agregar valor y mejorar las operaciones mediante un enfoque sistemático y disciplinado para evaluar y mejorar la eficacia de los procesos de gestión, riesgos, control y gobierno; para ello elabora un plan anual de auditoría aprobado por el Comité de Auditoría",
+        "C) La finalidad es emitir sanciones disciplinarias contra los líderes de proceso que incumplan los controles establecidos; utiliza el Estatuto de Auditoría como instrumento sancionatorio",
+        "D) La finalidad es reemplazar a los entes de control externos en la vigilancia de Colpensiones; utiliza el sistema FURAG como herramienta de medición"
       ],
       "ans": "B"
     },
     {
       "n": 46,
-      "q": "¿Qué conforman la 'Línea Estratégica' en el modelo de tres líneas de Colpensiones?",
+      "q": "Conforme al Manual del SCI, ¿cuál es el papel de la Segunda Línea en la autoevaluación, según la descripción de las Actividades de Seguimiento y Monitoreo?",
       "opts": [
-        "A. Exclusivamente la Oficina de Control Interno y los auditores internos.",
-        "B. Los integrantes de la Junta Directiva y la alta gerencia (presidente, vicepresidentes y jefes de Oficina), representados en sus comités.",
-        "C. Los líderes de macroprocesos y sus equipos de trabajo operativo.",
-        "D. Los trabajadores de las áreas de riesgo y cumplimiento normativo."
+        "A) La Segunda Línea solo genera información de contraste para la Junta Directiva, sin participar en actividades de autoevaluación",
+        "B) La Segunda Línea lleva a cabo autoevaluación permanente de las actividades de la primera línea, asegurando que esté diseñada y opere efectivamente, generando información clave para la toma de decisiones y como insumo para la autoevaluación de procesos e informes de auditoría",
+        "C) La Segunda Línea únicamente evalúa los controles tecnológicos, delegando la evaluación de los controles administrativos y financieros a la primera línea",
+        "D) La Segunda Línea actúa como instancia de apelación para los líderes de primera línea que no estén de acuerdo con los hallazgos de la Oficina de Control Interno"
       ],
       "ans": "B"
     },
     {
       "n": 47,
-      "q": "¿Cuál de los siguientes comités NO hace parte de la Línea Estratégica del SCI según el manual?",
+      "q": "El Manual del SCI establece que las evaluaciones externas pueden ser contratadas por Colpensiones o provenir de entes de control. Además, ¿qué elemento fundamental se establece como consecuencia de las autoevaluaciones y evaluaciones?",
       "opts": [
-        "A. Junta Directiva y sus comités decisorios.",
-        "B. Comité Institucional de Gestión y Desempeño (CIGD).",
-        "C. Comité Integral de Riesgos (CIR).",
-        "D. Comité de Auditoría Externa de la Contraloría."
+        "A) La modificación automática de los manuales de procesos cuando se detecten desviaciones significativas",
+        "B) El establecimiento de planes de mejoramiento que permitan atender observaciones y brechas evidenciadas, consolidados de manera institucional para lograr una gestión eficiente y revisión de su efectividad",
+        "C) La reclasificación inmediata de los riesgos identificados en el mapa de riesgos institucional sin necesidad de aprobación del Comité de Riesgos",
+        "D) La activación del protocolo de crisis institucional cuando los hallazgos superen un umbral de riesgo crítico definido por la Junta Directiva"
       ],
-      "ans": "D"
+      "ans": "B"
     },
     {
       "n": 48,
-      "q": "La 'Primera Línea' en el modelo de tres líneas está conformada por:",
+      "q": "La Política de Talento Humano del Manual del SCI establece una orientación estratégica específica. ¿Cuál es el propósito declarado de la Gestión Integral de Talento Humano en Colpensiones?",
       "opts": [
-        "A. Los funcionarios de la Oficina de Control Interno.",
-        "B. Los directivos de la segunda línea y sus equipos de supervisión.",
-        "C. Los trabajadores en sus diferentes niveles, quienes aplican las medidas de control interno en las operaciones del día a día.",
-        "D. Los auditores externos contratados por la entidad."
+        "A) Reducir los costos laborales mediante la automatización de procesos y la optimización de la planta de personal de la entidad",
+        "B) Implementar estrategias y mejores prácticas para 'Hacer de Colpensiones una entidad para su gente', retener, fidelizar y potencializar al mejor talento humano, coadyuvando al desarrollo y cierre de brechas de competencias en cada servidor",
+        "C) Garantizar el cumplimiento exclusivo de las obligaciones legales en materia laboral sin incurrir en compromisos adicionales con el personal",
+        "D) Certificar a todos los servidores en competencias laborales establecidas por el SENA como requisito de permanencia en la entidad"
       ],
-      "ans": "C"
+      "ans": "B"
     },
     {
       "n": 49,
-      "q": "¿Cuál es una de las responsabilidades de la Primera Línea según el manual?",
+      "q": "Según la Política Financiera y Contable descrita en el Manual del SCI, ¿a qué marco normativo debe prepararse la información financiera de Colpensiones?",
       "opts": [
-        "A. Aprobar las políticas del Sistema de Control Interno.",
-        "B. Identificar, evaluar, controlar, mitigar y monitorear los riesgos estratégicos, tácticos y por procesos.",
-        "C. Realizar auditorías independientes a los procesos de la entidad.",
-        "D. Presentar informes semestrales al Comité de Auditoría."
+        "A) A las Normas Internacionales de Información Financiera (NIIF/IFRS) emitidas por el IASB",
+        "B) Al Marco Normativo para Entidades de Gobierno expedido por la Contaduría General de la Nación, utilizando el Catálogo General de Cuentas para registros contables y el CUIF para transmisión a la Superintendencia Financiera",
+        "C) A los Principios de Contabilidad Generalmente Aceptados (PCGA) colombianos en su versión vigente hasta 2015",
+        "D) Al Manual de Contabilidad para Entidades Financieras de Carácter Especial emitido por la Superintendencia Financiera de Colombia"
       ],
       "ans": "B"
     },
     {
       "n": 50,
-      "q": "¿Quién lidera la 'Segunda Línea' en Colpensiones según el manual?",
+      "q": "Integrando los componentes del SCI: cuando la Oficina de Control Interno identifica en su evaluación independiente que un control diseñado por la primera línea no opera efectivamente y la segunda línea no lo ha detectado, ¿cuál es la secuencia de actuación del SCI según el Manual?",
       "opts": [
-        "A. La Oficina de Control Interno.",
-        "B. La Junta Directiva y sus comités de apoyo.",
-        "C. La Vicepresidencia de Planeación y TI, la Vicepresidencia de Seguridad y Riesgos Empresariales, la Vicepresidencia de Gestión Corporativa y la Oficina Asesora de Asuntos Legales, entre otras.",
-        "D. Los auditores externos de la Revisoría Fiscal."
+        "A) La Oficina de Control Interno sanciona directamente al líder del proceso e impone el plan de mejoramiento sin consultar a la segunda línea",
+        "B) La Oficina de Control Interno (tercera línea) comunica el hallazgo; la alta gerencia define el plan de acción y medidas correctivas; los responsables de proceso (primera línea) implementan las correcciones; la segunda línea verifica que las correcciones operen adecuadamente; todo queda consolidado en el plan de mejoramiento institucional",
+        "C) El Comité de Auditoría suspende al líder del proceso hasta que subsane el hallazgo y certifique ante la Junta Directiva el cumplimiento de los controles",
+        "D) La Superintendencia Financiera es notificada de inmediato y determina las acciones correctivas que debe adoptar Colpensiones en un plazo de 30 días calendario"
       ],
-      "ans": "C"
+      "ans": "B"
     },
     {
       "n": 51,
-      "q": "¿Cuál es una responsabilidad de la Segunda Línea conforme al manual?",
+      "q": "Según el Manual del SCI, ¿cuál es el propósito del Modelo de las Tres Líneas en la estructura del Sistema de Control Interno de Colpensiones?",
       "opts": [
-        "A. Ejecutar directamente los controles en las operaciones del día a día.",
-        "B. Capacitar y asesorar a la Primera Línea para la implementación, mantenimiento y mejora del Modelo SIG en el marco del SCI.",
-        "C. Aprobar el Plan Anual de Auditoría Interna.",
-        "D. Presentar los estados financieros de la entidad ante la Superintendencia Financiera."
+        "A) Concentrar toda la responsabilidad del control interno en la Oficina de Control Interno para mayor eficiencia operativa",
+        "B) Promover la creación de estructuras de gobierno y procesos que contribuyan a la materialización de los objetivos estratégicos, facilitando la gestión de los riesgos mediante un esquema de asignación de responsabilidades y roles distribuido transversalmente",
+        "C) Reemplazar el MECI por un modelo más moderno de asignación de responsabilidades alineado con los estándares del IIA 2020",
+        "D) Separar completamente las funciones de gestión y control para evitar conflictos de interés entre las áreas operativas y la Oficina de Control Interno"
       ],
       "ans": "B"
     },
     {
       "n": 52,
-      "q": "La 'Tercera Línea' del modelo está conformada por:",
+      "q": "El Manual del SCI describe la 'Línea estratégica' del modelo de tres líneas. ¿Cuál es su responsabilidad central y qué órganos la conforman?",
       "opts": [
-        "A. La Contraloría General de la República.",
-        "B. La Revisoría Fiscal de la entidad.",
-        "C. La Oficina de Control Interno de Colpensiones, que evalúa de manera independiente y objetiva los controles de la Primera Línea.",
-        "D. Los organismos de control externo del orden nacional."
+        "A) Su responsabilidad es ejecutar las operaciones del día a día; la conforman los líderes de macroprocesos y sus equipos de trabajo",
+        "B) Su responsabilidad se centra en la emisión, revisión, validación y supervisión del cumplimiento de políticas y lineamientos en materia de control interno; la conforman la Junta Directiva, el/la presidente, vicepresidentes, jefes de Oficina y los comités asociados",
+        "C) Su responsabilidad es evaluar de manera independiente los controles de primera línea; la conforman exclusivamente la Oficina de Control Interno y el Comité de Auditoría",
+        "D) Su responsabilidad es gestionar las relaciones con los entes de control externos; la conforman la Oficina Asesora de Asuntos Legales y la Gerencia de Planeación Institucional"
       ],
-      "ans": "C"
+      "ans": "B"
     },
     {
       "n": 53,
-      "q": "¿Ante quién rinde cuentas la Tercera Línea según el manual?",
+      "q": "Según el Manual del SCI, ¿cuáles comités forman parte de la Línea estratégica dentro de la estructura organizacional del SCI?",
       "opts": [
-        "A. Ante la Primera Línea y los líderes de proceso.",
-        "B. Ante la Junta Directiva y el Comité de Auditoría.",
-        "C. Ante la Superintendencia Financiera de Colombia exclusivamente.",
-        "D. Ante la alta gerencia y el CIGD."
+        "A) Solo el Comité de Auditoría y el Comité Institucional de Gestión y Desempeño",
+        "B) La Junta Directiva y sus comités decisorios (Comité de Gobierno Corporativo, de Inversiones y Riesgos Financieros y de Auditoría), el CIGD, el CICCI, el Comité Integral de Riesgos y otros comités internos decisorios",
+        "C) Solo el Comité Integral de Riesgos y el Comité Institucional de Coordinación de Control Interno",
+        "D) El Comité de Contratación y Racionalización del Gasto, el Comité de Gestión y Desempeño y el Comité de Auditoría"
       ],
       "ans": "B"
     },
     {
       "n": 54,
-      "q": "¿Qué decreto desarrolla las funciones y responsabilidades de la Oficina de Control Interno (Tercera Línea) en Colpensiones?",
+      "q": "El Manual del SCI define las responsabilidades de la Primera Línea con varios elementos. ¿Cuál de las siguientes NO es una responsabilidad expresamente asignada a la Primera Línea?",
       "opts": [
-        "A. Decreto 1083 de 2015.",
-        "B. Decreto 1499 de 2017.",
-        "C. Decreto 309 de 2017.",
-        "D. Decreto 648 de 2017."
+        "A) Desarrollar e implementar políticas, procesos y procedimientos que aseguren que la operación es consistente con las metas y objetivos de los sistemas de gestión",
+        "B) Identificar, evaluar, controlar, mitigar y monitorear los riesgos estratégicos, tácticos y por procesos, así como el diseño y mantenimiento efectivo de sus controles",
+        "C) Evaluar de manera independiente y objetiva los controles de primera línea para asegurar su efectividad y cobertura frente a los riesgos identificados",
+        "D) Implementar acciones correctivas o de mejora para hacer frente a las deficiencias y el fortalecimiento de su operación"
       ],
       "ans": "C"
     },
     {
       "n": 55,
-      "q": "¿Qué es la 'Línea de Rendición de Cuentas' en el modelo de tres líneas de Colpensiones?",
+      "q": "Según el Manual del SCI, ¿cuáles vicepresidencias y gerencias lideran la Segunda Línea en Colpensiones?",
       "opts": [
-        "A. El proceso de auditoría fiscal practicado por la Contraloría General.",
-        "B. Las instancias y canales a través de los cuales se informa el cumplimiento de las funciones para todo el SCI.",
-        "C. El informe anual de gestión presentado ante el Congreso de la República.",
-        "D. El proceso de autoevaluación de competencias del talento humano."
+        "A) La Vicepresidencia Jurídica, la Gerencia de Auditoría y la Oficina de Control Interno",
+        "B) La Vicepresidencia de Planeación y TI (con Gerencias de Planeación, SIG y TI), la Vicepresidencia de Seguridad y Riesgos Empresariales (con Gerencias de Riesgos y Prevención del Fraude), la Vicepresidencia de Gestión Corporativa (con Gerencias de Talento Humano y Administrativa), la Vicepresidencia Comercial (con Gerencia de Servicio) y la Oficina Asesora de Asuntos Legales",
+        "C) Solo la Vicepresidencia de Seguridad y Riesgos Empresariales y la Oficina de Control Interno como instancias especializadas",
+        "D) Todas las vicepresidencias de Colpensiones de manera equitativa, siendo la Junta Directiva la que coordina sus funciones en esta línea"
       ],
       "ans": "B"
     },
     {
       "n": 56,
-      "q": "¿Cuál es la responsabilidad central de la Línea Estratégica frente al SCI?",
+      "q": "Conforme al Manual del SCI, ¿cuáles son las responsabilidades de alerta de la Segunda Línea frente a la Primera Línea?",
       "opts": [
-        "A. Ejecutar los controles operativos en los procesos misionales.",
-        "B. Realizar la auditoría interna independiente a los procesos de la entidad.",
-        "C. La emisión, revisión, validación y supervisión del cumplimiento de políticas y lineamientos en materia de control interno.",
-        "D. Identificar y gestionar diariamente los riesgos operativos de la entidad."
+        "A) Sancionar a los líderes de primera línea cuando detecten controles inefectivos o incumplimiento de políticas",
+        "B) Alertar a la primera línea en asuntos emergentes, cambio en los requisitos del cliente, legales, organizacionales, de las normas técnicas, de riesgos y la corrección oportuna de desviaciones",
+        "C) Comunicar directamente a la Junta Directiva los incumplimientos de la primera línea sin informar previamente a los responsables de proceso",
+        "D) Emitir conceptos vinculantes que la primera línea está obligada a implementar en los plazos definidos por la segunda línea"
       ],
-      "ans": "C"
+      "ans": "B"
     },
     {
       "n": 57,
-      "q": "El Control Fiscal Interno es parte del Sistema de Control Interno y es responsabilidad de:",
+      "q": "El Manual del SCI describe la Tercera Línea (Oficina de Control Interno) con una característica esencial. ¿Cuál es esa característica y cuál es su función adicional respecto a los controles de segunda línea?",
       "opts": [
-        "A. Exclusivamente la Contraloría General de la República.",
-        "B. Las y los servidores públicos y quienes administran recursos, bienes e intereses patrimoniales de naturaleza pública, en el marco del modelo de Tres Líneas.",
-        "C. Solo la Oficina de Control Interno de Colpensiones.",
-        "D. El Comité de Auditoría y los auditores externos contratados."
+        "A) Es dependiente de la alta gerencia; su función adicional es consolidar los informes de primera y segunda línea para presentarlos a la Junta Directiva",
+        "B) Es independiente y objetiva; su función adicional es evaluar los controles de primera línea que no estén cubiertos y los que inadecuadamente sean cubiertos por la segunda línea",
+        "C) Es dependiente del Comité de Auditoría; su función adicional es diseñar los controles que la primera línea debe implementar en los procesos de alto riesgo",
+        "D) Es independiente de la Junta Directiva; su función adicional es reemplazar a los entes de control externos cuando Colpensiones lo considere necesario"
       ],
       "ans": "B"
     },
     {
       "n": 58,
-      "q": "¿Qué metodología adopta Colpensiones para la identificación del riesgo fiscal según el manual?",
+      "q": "Según el Manual del SCI, ¿cuál es la 'Línea de rendición de cuentas' y ante quién responde cada línea según el documento?",
       "opts": [
-        "A. La metodología ISO 31000 de gestión de riesgos internacionales.",
-        "B. La metodología del Departamento Administrativo de la Función Pública para la identificación, análisis y valoración del riesgo fiscal.",
-        "C. La metodología COSO ERM para la gestión de riesgos empresariales.",
-        "D. La metodología definida por la Contraloría General de la República."
+        "A) Es la línea que gestiona los procesos de PQRS de los afiliados; todas las líneas responden ante la Superintendencia Financiera",
+        "B) Son las instancias y canales a través de los cuales se informa el cumplimiento de funciones del SCI; la primera y segunda líneas responden ante la alta gerencia (Línea Estratégica); la tercera línea responde ante la Junta Directiva y el Comité de Auditoría",
+        "C) Es la línea que gestiona la rendición de cuentas ciudadana; todas las líneas responden ante la Contraloría General de la República",
+        "D) Son los canales de comunicación externa; la primera línea responde ante los afiliados, la segunda ante los empleadores y la tercera ante los entes de control"
       ],
       "ans": "B"
     },
     {
       "n": 59,
-      "q": "¿Cómo se articula el Sistema de Control Interno con el Modelo del Sistema Integrado de Gestión (SIG) de Colpensiones?",
+      "q": "El Manual del SCI establece que la normatividad que rige los roles y responsabilidades del SCI es específica. ¿Cuáles normas se mencionan expresamente como reguladoras de esos roles?",
       "opts": [
-        "A. El SCI reemplaza al SIG en la gestión de los procesos misionales.",
-        "B. El SCI es parte integral de la gestión de Colpensiones a nivel estratégico, táctico y en la ejecución de los procesos, articulado con el SIG conforme al Decreto 1083 de 2015.",
-        "C. El SCI y el SIG operan de manera completamente independiente sin puntos de articulación.",
-        "D. El SCI solo se articula con el Sistema de Gestión de Calidad y no con los demás sistemas del SIG."
+        "A) El Decreto 309 de 2017 y el Acuerdo 106 de 2017 exclusivamente",
+        "B) La Ley 87 de 1993, el Decreto 1083 de 2015 y la Circular Básica Jurídica de la Superintendencia Financiera (Parte I, Título I, Capítulo IV)",
+        "C) La Ley 489 de 1998 y el Decreto Único Reglamentario del Sector Función Pública 1083 de 2015 únicamente",
+        "D) El MIPG y el MECI como marcos de referencia estándar para todas las entidades del Estado colombiano"
       ],
       "ans": "B"
     },
     {
       "n": 60,
-      "q": "¿Qué afirma el Decreto 1083 de 2015 sobre la articulación del Sistema de Gestión con el Sistema de Control Interno, según el manual?",
+      "q": "El Manual del SCI establece que el Comité Institucional de Coordinación de Control Interno (CICCI) es una instancia específica. ¿Cómo la define el documento y cuál es la norma interna que lo reglamenta?",
       "opts": [
-        "A. Que el SCI sustituye al Sistema de Gestión en la séptima dimensión del MIPG.",
-        "B. Que el SCI, previsto en la Ley 87 de 1993, se articulará al Sistema de Gestión en el marco del MIPG a través de mecanismos de control y verificación, siendo transversal a la gestión.",
-        "C. Que ambos sistemas deben operar de manera independiente para garantizar objetividad.",
-        "D. Que el MECI remplaza completamente al SCI en las entidades del Estado."
+        "A) Es un comité asesor de la Junta Directiva; lo reglamenta el Código de Gobierno Corporativo",
+        "B) Es un órgano asesor e instancia decisoria en los asuntos del Control Interno; lo reglamenta la Resolución 506 de 2017 y las normas que la modifiquen, adicionen, complementen o sustituyan",
+        "C) Es un comité técnico de la Oficina de Control Interno; lo reglamenta el Estatuto de Auditoría Interna",
+        "D) Es una instancia de revisión de los planes de mejoramiento; lo reglamenta el Plan Anual de Auditoría Interna aprobado por el Comité de Auditoría"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 61,
+      "q": "Conforme a la Tabla 2 del Manual del SCI (Funciones de la Alta Gerencia), ¿cuáles documentos y políticas debe la alta gerencia someter a consideración del Comité de Auditoría (no de la Junta Directiva)?",
+      "opts": [
+        "A) El Plan Estratégico Institucional, el Presupuesto anual y los Reglamentos internos de comités de apoyo",
+        "B) La estructura, procedimientos y metodologías del SCI; el Código de Ética; la Política de generación y remisión de informes sobre el SCI; la Política de seguridad de la información; y el Plan estratégico de tecnologías de la información",
+        "C) La Política de recurso humano, la Política financiera y contable y la Política de evaluaciones y autoevaluaciones",
+        "D) Los informes de gestión anual y los estados financieros auditados de Colpensiones y los fondos bajo su administración"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 62,
+      "q": "Según el Manual del SCI, ¿cuál es la responsabilidad de la alta gerencia en el componente de 'Actividades de Seguimiento y Monitoreo'?",
+      "opts": [
+        "A) Realizar directamente las auditorías internas de los sistemas de gestión con sus equipos de trabajo",
+        "B) Verificar el cumplimiento de obligaciones de rendición de cuentas, mantener actualizados los manuales de funciones y el Código de Ética, verificar el cumplimiento del marco de apetito de riesgos, definir planes de acción para hallazgos y monitorear cambios del entorno",
+        "C) Aprobar los informes de auditoría interna antes de que sean presentados al Comité de Auditoría",
+        "D) Contratar los servicios de auditoría externa cada vez que la Oficina de Control Interno no tenga capacidad técnica para realizar la evaluación independiente"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 63,
+      "q": "El Manual del SCI describe la responsabilidad de la alta gerencia en 'Gestión de Riesgos'. ¿Cuál es el mecanismo específico que debe desarrollar para mitigar los riesgos de fraude?",
+      "opts": [
+        "A) Contratar seguros de responsabilidad civil extracontractual que cubran los daños derivados de actos fraudulentos",
+        "B) Desarrollar mecanismos para mitigar los riesgos de fraude en Colpensiones, en el marco de las responsabilidades de la alta gerencia",
+        "C) Exigir a todos los trabajadores la suscripción de una declaración de conflicto de intereses con periodicidad mensual",
+        "D) Implementar un sistema de rotación obligatoria de funciones cada seis meses para todos los cargos de nivel profesional"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 64,
+      "q": "El Manual del SCI describe el modelo constitucional de control fiscal con tres elementos. ¿Cuál es la diferencia entre el 'control fiscal interno' y el 'control externo' en el nuevo modelo constitucional?",
+      "opts": [
+        "A) El control fiscal interno lo ejercen los funcionarios de Colpensiones; el control externo es exclusivamente sancionatorio y se activa solo cuando hay daño fiscal comprobado",
+        "B) El control fiscal interno es el primer nivel para la vigilancia fiscal y prevención de riesgos fiscales, siendo responsabilidad de los servidores públicos y del modelo de Tres Líneas; el control externo adquiere un enfoque preventivo y potencia el enfoque preventivo del control interno para la prevención de responsabilidades",
+        "C) El control fiscal interno se aplica solo a los fondos de reserva pensional RPM; el control externo se aplica a todos los recursos de Colpensiones incluyendo los BEPS",
+        "D) El control fiscal interno es voluntario; el control externo es obligatorio y su incumplimiento genera responsabilidad fiscal automática"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 65,
+      "q": "Según el Manual del SCI, ¿qué determina el fenecimiento de la cuenta de Colpensiones según el nuevo modelo de control fiscal?",
+      "opts": [
+        "A) El resultado de la calificación FURAG publicada por el Departamento Administrativo de la Función Pública",
+        "B) La evaluación del control fiscal interno realizada por la Contraloría respectiva, siendo esa evaluación determinante para el fenecimiento",
+        "C) La aprobación del informe de gestión por parte de la Junta Directiva con el voto favorable de la mayoría de sus miembros",
+        "D) La certificación de los estados financieros emitida por el Revisor Fiscal y el auditor externo de manera conjunta"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 66,
+      "q": "El Manual del SCI establece que la articulación del SCI con el Modelo del Sistema Integrado de Gestión (SIG) se desarrolla en armonía con el Decreto 1083 de 2015. ¿Qué establece expresamente ese decreto sobre la articulación entre el Sistema de Gestión y el Sistema de Control Interno?",
+      "opts": [
+        "A) Establece que el SCI reemplaza al Sistema de Gestión en aquellas entidades que opten por el modelo MECI como herramienta de implementación",
+        "B) Establece que el Sistema de Control Interno previsto en la Ley 87 de 1993 y la Ley 489 de 1998 se articulará al Sistema de Gestión en el marco del MIPG, a través de mecanismos de control y verificación; y que el Control Interno es transversal a la gestión y se implementa a través del MECI",
+        "C) Establece que el Sistema de Gestión es subordinado al Sistema de Control Interno en todas las entidades del Estado colombiano sin excepción",
+        "D) Establece que el SCI es opcional para las Empresas Industriales y Comerciales del Estado organizadas como entidades financieras especiales"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 67,
+      "q": "Según el Manual del SCI, ¿bajo cuáles condiciones puede el Modelo de las Tres Líneas ser estructurado y acogido por algún sistema que haga parte del Modelo SIG de Colpensiones?",
+      "opts": [
+        "A) Solo cuando lo autorice la Superintendencia Financiera mediante circular externa específica",
+        "B) Cuando existan necesidades particulares de algún sistema que haga parte del Modelo SIG de Colpensiones, siempre que ello quede contemplado en los respectivos documentos del sistema que lo adopte",
+        "C) Cuando la Junta Directiva lo apruebe por unanimidad en sesión ordinaria con registro en el acta correspondiente",
+        "D) Únicamente cuando el sistema de gestión específico esté certificado bajo normas ISO pertinentes y vigentes"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 68,
+      "q": "Integrando el Modelo de las Tres Líneas y los Componentes del SCI: un líder de proceso identifica que un control preventivo diseñado para mitigar un riesgo de fraude no está operando. ¿Cuál es la actuación esperada de cada línea según el Manual del SCI?",
+      "opts": [
+        "A) El líder de proceso (primera línea) reporta a la segunda línea; la segunda línea sanciona al responsable; la tercera línea certifica el cierre del hallazgo",
+        "B) El líder de proceso (primera línea) adopta acciones correctivas e informa a la segunda línea; la segunda línea verifica que la corrección sea efectiva y lo comunica a la alta gerencia; la tercera línea (OCI) evalúa independientemente la efectividad de la corrección en el siguiente ciclo de auditoría",
+        "C) El líder de proceso debe esperar la próxima auditoría de la OCI para reportar el hallazgo y no puede actuar unilateralmente",
+        "D) El líder de proceso (primera línea) reporta directamente a la Junta Directiva para garantizar la independencia y objetividad del reporte"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 69,
+      "q": "El Manual del SCI establece que en materia de control interno las responsabilidades deben ser coordinadas cuidadosamente. ¿Por qué razón específica menciona el documento que esto es así?",
+      "opts": [
+        "A) Porque la Superintendencia Financiera exige una segregación estricta de funciones entre quienes diseñan y quienes evalúan los controles",
+        "B) Porque las responsabilidades de la gestión de riesgos y del control están distribuidas a nivel transversal de la entidad y no se concentran en la Oficina de Control Interno, de allí que deban ser coordinadas para asegurar que los controles operen",
+        "C) Porque el modelo COSO 2013 exige que ninguna área tenga más de dos de los cinco componentes del control interno bajo su responsabilidad",
+        "D) Porque la Ley 87 de 1993 prohíbe que una misma unidad organizacional sea simultáneamente responsable del diseño y la evaluación de controles"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 70,
+      "q": "Según el Manual del SCI, ¿cuál es la responsabilidad de la tercera línea en relación con la normatividad aplicable y el marco en que desarrolla sus funciones?",
+      "opts": [
+        "A) Desarrolla sus funciones únicamente en el marco del COSO 2013 y los estándares internacionales del IIA, con independencia de la normatividad interna de Colpensiones",
+        "B) Desarrolla sus funciones y responsabilidades en el marco de lo definido en el Decreto 309 de 2017 y la normatividad aplicable a Colpensiones que lo complementen",
+        "C) Desarrolla sus funciones exclusivamente en el marco de las instrucciones de la Superintendencia Financiera, sin sujeción a normas internas de Colpensiones",
+        "D) Desarrolla sus funciones en el marco de los estatutos aprobados por la Junta Directiva y puede apartarse de la normatividad legal cuando lo justifique el interés institucional"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 71,
+      "q": "El Manual del SCI describe el 'Modelo del Sistema Integrado de Gestión' de Colpensiones. ¿Cómo lo define y cuál es su característica fundamental?",
+      "opts": [
+        "A) Es el conjunto de procesos misionales y de apoyo de Colpensiones, organizados en una cadena de valor alineada con los objetivos estratégicos",
+        "B) Es el conjunto de sistemas de gestión, marcos de referencia y buenas prácticas que interactúan de manera unificada y armonizada, permitiendo su articulación e integración",
+        "C) Es la estructura organizacional formal de Colpensiones definida mediante el Decreto 309 de 2017 y sus modificaciones",
+        "D) Es el sistema de información que centraliza todos los datos de gestión de la entidad para su análisis y reporte a los grupos de interés"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 72,
+      "q": "Conforme al Manual del SCI, ¿cuál es el objetivo del SIAR respecto al apetito de riesgo y a quién apunta la cultura de gestión de riesgos que se busca promover?",
+      "opts": [
+        "A) El objetivo es eliminar todos los riesgos hasta cero; la cultura se dirige exclusivamente a la alta gerencia y la Junta Directiva",
+        "B) El objetivo es crear y proteger el valor para Colpensiones dentro del apetito de riesgo definido; la cultura de gestión de riesgos se promueve en todos los niveles de la organización, reduciendo efectos no deseados y potenciando oportunidades",
+        "C) El objetivo es transferir todos los riesgos al mercado asegurador; la cultura se dirige solo a los líderes de segunda línea como responsables especializados",
+        "D) El objetivo es cumplir con los requisitos regulatorios del SARLAFT; la cultura se dirige solo a las áreas con contacto directo con terceros y contratistas"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 73,
+      "q": "Según el Manual del SCI, ¿cuál es la diferencia entre el 'Ambiente de Control' y las 'Actividades de Control' como componentes del SCI?",
+      "opts": [
+        "A) El Ambiente de Control cubre los aspectos estratégicos; las Actividades de Control cubren los aspectos operativos del día a día exclusivamente",
+        "B) El Ambiente de Control es el conjunto de políticas, normas, estructuras y objetivos que condicionan el ejercicio del control en toda la organización; las Actividades de Control son las acciones concretas que se realizan en todos los niveles para garantizar la correcta aplicación del SCI, alineadas con la gestión de riesgos y con criterio de relación beneficio/costo",
+        "C) El Ambiente de Control es responsabilidad exclusiva de la Junta Directiva; las Actividades de Control son responsabilidad exclusiva de la primera línea",
+        "D) El Ambiente de Control se evalúa externamente por la Contraloría; las Actividades de Control se evalúan internamente por la Oficina de Control Interno"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 74,
+      "q": "El Manual del SCI describe los sistemas de información dentro del componente de Información y Comunicación. ¿Qué capacidad específica deben tener estos sistemas según el documento?",
+      "opts": [
+        "A) Deben ser capaces de automatizar todos los controles manuales de primera línea para reducir el error humano",
+        "B) Deben tener capacidad de obtener, capturar y procesar datos procedentes de fuentes internas y externas seguras, transformándolos en información de valor; deben ajustarse a las necesidades de Colpensiones y los volúmenes de datos a procesar",
+        "C) Deben ser interoperables con los sistemas de la Contraloría General y la Superintendencia Financiera para el reporte automático de información regulatoria",
+        "D) Deben garantizar la disponibilidad del 99.9% del tiempo con mecanismos de recuperación ante desastres certificados por el Ministerio de las TIC"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 75,
+      "q": "Conforme al Manual del SCI, ¿cuál es la responsabilidad de la Vicepresidencia de Seguridad y Riesgos Empresariales respecto al liderazgo del SCI?",
+      "opts": [
+        "A) Es responsable exclusivamente de la gestión del SARLAFT y la prevención del lavado de activos",
+        "B) Actúa como Líder del SCI en lo que corresponde a la Política de generación y remisión de informes sobre el SCI, con aplicabilidad de la alta gerencia, y es responsable de las políticas de gestión de riesgos e inducción de la Junta Directiva",
+        "C) Es responsable únicamente de la ciberseguridad y la gestión de la seguridad de la información",
+        "D) Actúa como secretaría técnica de todos los comités del SCI incluyendo el Comité de Auditoría y el CICCI"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 76,
+      "q": "Según el Manual del SCI, ¿cuáles son las dependencias responsables de las 'Evaluaciones y autoevaluaciones internas' dentro del componente de Actividades de Seguimiento y Monitoreo?",
+      "opts": [
+        "A) Solo la Oficina de Control Interno, dado que la evaluación independiente es su función exclusiva",
+        "B) La Oficina de Control Interno, la Vicepresidencia de Planeación y TI (Gerencias de TI, Planeación y SIG), la Vicepresidencia de Seguridad y Riesgos (Gerencia de Riesgos) y todas las dependencias en el marco del autocontrol",
+        "C) Solo la Vicepresidencia de Seguridad y Riesgos Empresariales como líder del SCI",
+        "D) El Comité de Auditoría como comité asesor de la Junta Directiva con apoyo de los líderes de proceso de primera línea"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 77,
+      "q": "El Manual del SCI establece que las Actividades de Seguimiento permiten valorar la efectividad del control interno. ¿Cuál es la diferencia entre las 'evaluaciones y autoevaluaciones internas' y las 'evaluaciones externas' según el documento?",
+      "opts": [
+        "A) Las autoevaluaciones son obligatorias y las evaluaciones externas son opcionales según el criterio de la Junta Directiva",
+        "B) Las evaluaciones y autoevaluaciones internas son realizadas periódicamente por los responsables de proceso y la OCI para verificar el funcionamiento de los componentes del SCI y ejecutar acciones correctivas; las evaluaciones externas son contratadas por Colpensiones o provienen de entes de control para verificar el funcionamiento del SCI desde afuera",
+        "C) Las autoevaluaciones son realizadas por la primera línea y las evaluaciones externas por la segunda línea como instancias de control diferenciadas",
+        "D) Las evaluaciones internas son confidenciales y de uso exclusivo de la alta gerencia; las evaluaciones externas son públicas y de obligatoria divulgación"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 78,
+      "q": "Conforme al Manual del SCI, ¿cuál es la diferencia entre el 'control social' en el control fiscal multinivel y las demás instancias de control?",
+      "opts": [
+        "A) El control social reemplaza al control externo cuando la Contraloría no puede ejercer sus funciones en los plazos establecidos",
+        "B) El control fiscal multinivel articula el sistema de control interno (primer nivel de control) y el control externo (segundo nivel de control) con la participación activa del control social, siendo este último una instancia adicional que complementa los dos niveles de control formal",
+        "C) El control social es ejercido exclusivamente por la ciudadanía a través de las audiencias públicas de rendición de cuentas, sin articulación con el control interno",
+        "D) El control social es la única instancia de control que no genera responsabilidad fiscal para los servidores públicos de Colpensiones"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 79,
+      "q": "Según el Manual del SCI, ¿qué características debe tener el Plan Anual de Auditoría Interna en cuanto a modificaciones y proceso de aprobación?",
+      "opts": [
+        "A) Puede modificarse libremente por el jefe de la Oficina de Control Interno sin necesidad de aprobación adicional",
+        "B) Debe cumplirse integralmente; las modificaciones que se realicen deben sustentarse y aprobarse siguiendo el mismo proceso que se surtió para su aprobación inicial",
+        "C) Solo puede modificarse con autorización de la Superintendencia Financiera mediante comunicación formal",
+        "D) Puede modificarse con el visto bueno de la alta gerencia sin necesidad de volver al Comité de Auditoría para su reaprobación"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 80,
+      "q": "Integrando todo el Manual del SCI: Colpensiones recibe una observación del ente de control externo señalando debilidades en el componente de Gestión de Riesgos. ¿Cuál sería la secuencia completa de actuación del SCI conforme al Manual?",
+      "opts": [
+        "A) La Oficina de Control Interno emite una sanción disciplinaria contra el líder de la Gerencia de Riesgos sin necesidad de plan de mejoramiento previo",
+        "B) La alta gerencia define el plan de acción para atender el hallazgo; la segunda línea (Gerencia de Riesgos) rediseña o fortalece los controles de gestión de riesgos; la primera línea implementa los ajustes en sus procesos; la OCI evalúa independientemente la efectividad de las acciones; los resultados se consolidan en el plan de mejoramiento institucional y se reportan a la Junta Directiva y al Comité de Auditoría con la periodicidad establecida",
+        "C) Solo la Oficina de Control Interno debe atender el hallazgo sin involucrar a las demás líneas, por ser el interlocutor exclusivo de Colpensiones ante los entes de control",
+        "D) Colpensiones impugna la observación ante la Contraloría sin adoptar medidas internas hasta que el proceso fiscal quede en firme"
       ],
       "ans": "B"
     }
   ]
 });
 // ============================================================ FIN MÓDULO: ci
+
 
 // ============================================================
 // MÓDULO: ley2381
@@ -7082,687 +7312,917 @@ registerModule("ley2381", {
 
 // ============================================================
 // MÓDULO: contractual
-// Nombre: Gestión Contractual — Res. 009/2025
-// Preguntas: 60
+// Nombre: Supervisión e Interventoría · Contratación Colpensiones
+// Preguntas: 80
 // Para actualizar: pídele a Claude "Reemplaza el bloque
 //   MÓDULO: contractual con [tus nuevas preguntas o cambios]"
 // ============================================================
 registerModule("contractual", {
-  "name": "Gestión Contractual — Res. 009/2025",
+  "name": "Supervisión e Interventoría · Contratación Colpensiones",
   "icon": "📋",
   "color": "#f39c12",
-  "desc": "Res. 009/2025 y Manual de Contratación · Supervisión e interventoría",
+  "desc": "Módulo A: Resolución 009 de 2025 (50 preguntas) · Módulo B: Acuerdo 005 de 2020 — Manual de Contratación (30 preguntas)",
   "bloques": [
-    "BLOQUE 1 — MARCO NORMATIVO, DEFINICIONES Y RÉGIMEN CONTRACTUAL  (1–12)",
-    "BLOQUE 2 — MODALIDADES DE CONTRATACIÓN  (13–22)",
-    "BLOQUE 3 — CRITERIOS, OBLIGACIONES Y PROHIBICIONES DEL SUPERVISOR  (23–36)",
-    "BLOQUE 4 — RESPONSABILIDADES Y RÉGIMEN SANCIONATORIO  (37–46)",
-    "BLOQUE 5 — INTERVENTORÍA, LIQUIDACIÓN Y ETAPA POST-CONTRACTUAL  (47–60)"
+    "MÓDULO A · SECCIÓN 1 — Objeto, ámbito y definiciones  (1–8)",
+    "MÓDULO A · SECCIÓN 2 — Criterios y obligaciones del supervisor  (9–15)",
+    "MÓDULO A · SECCIÓN 3 — Responsabilidades  (16–20)",
+    "MÓDULO A · SECCIÓN 4 — Supervisión integral: designación y obligaciones  (21–30)",
+    "MÓDULO A · SECCIÓN 5 — Interventoría  (28–30)",
+    "MÓDULO A · SECCIÓN 6 — Liquidación  (31–35)",
+    "MÓDULO A · SECCIÓN 7 — Aspectos complementarios  (36–40)",
+    "MÓDULO A · SECCIÓN 8 — Preguntas integradoras  (41–50)",
+    "MÓDULO B · SECCIÓN 9 — Marco normativo y principios  (51–55)",
+    "MÓDULO B · SECCIÓN 10 — Modalidades de contratación  (56–60)",
+    "MÓDULO B · SECCIÓN 11 — Normas comunes, garantías y ejecución  (61–65)",
+    "MÓDULO B · SECCIÓN 12 — Etapa contractual y postcontractual  (66–70)",
+    "MÓDULO B · SECCIÓN 13 — Evaluación y Grupos Evaluadores  (71–75)",
+    "MÓDULO B · SECCIÓN 14 — Política de buen gobierno y disposiciones transversales  (76–80)"
   ],
   "questions": [
     {
       "n": 1,
-      "q": "¿Cuál es el objeto de la Resolución 009 de 2025 de Colpensiones?",
+      "q": "Según el Artículo Primero de la Resolución 009 de 2025, el objeto de la norma es establecer las pautas y el trámite interno del procedimiento para desarrollar las actividades de supervisión e interventoría. ¿Cuál es el fin último declarado de dicho objeto?",
       "opts": [
-        "A. Crear el Comité de Contratación y Racionalización del Gasto.",
-        "B. Establecer pautas y el trámite interno para desarrollar actividades de supervisión e interventoría de contratos, convenios y demás negocios jurídicos, facilitando funciones y responsabilidades de los designados.",
-        "C. Definir exclusivamente las obligaciones financieras de los supervisores.",
-        "D. Establecer el régimen de inhabilidades e incompatibilidades de los contratistas."
+        "A) Determinar el régimen disciplinario aplicable a los supervisores e interventores de Colpensiones",
+        "B) Facilitar la actividad a desarrollar, funciones y responsabilidades de quienes sean designados, con el fin de lograr el cumplimiento del objeto y obligaciones pactadas contractualmente",
+        "C) Establecer los criterios para la selección de contratistas en los procesos de contratación de Colpensiones",
+        "D) Reglamentar la liquidación de contratos y el trámite de los pagos a contratistas"
       ],
       "ans": "B"
     },
     {
       "n": 2,
-      "q": "¿Qué norma derogó expresamente la Resolución 009 de 2025?",
+      "q": "La Resolución 009 de 2025 derogó expresamente una resolución anterior sobre la misma materia. ¿Cuál fue la resolución derogada y cuál era su fecha?",
       "opts": [
-        "A. La Resolución 073 del 10 de febrero de 2020.",
-        "B. La Resolución 099 del 16 de mayo de 2018.",
-        "C. La Resolución 511 de 2017.",
-        "D. El Acuerdo 073 de 2014."
+        "A) Resolución 055 del 22 de marzo de 2015",
+        "B) Resolución 099 del 16 de mayo de 2018",
+        "C) Resolución 073 del 30 de julio de 2014",
+        "D) Resolución 131 del 15 de octubre de 2018"
       ],
       "ans": "B"
     },
     {
       "n": 3,
-      "q": "¿Bajo qué régimen jurídico se rige la actividad contractual de Colpensiones según el Acuerdo 005 de 2020?",
+      "q": "Conforme a las definiciones del Artículo Segundo de la Resolución 009 de 2025, el 'Acta de Inicio' cumple una función específica. ¿Cuál es esa función y qué puede incluir adicionalmente?",
       "opts": [
-        "A. El Estatuto General de Contratación de la Administración Pública (Ley 80 de 1993) en su totalidad.",
-        "B. Las normas del Derecho Privado y los principios de igualdad, moralidad, eficacia, economía, celeridad, imparcialidad, responsabilidad y publicidad.",
-        "C. Exclusivamente el Derecho Comercial colombiano.",
-        "D. Las disposiciones del Código de Procedimiento Administrativo."
+        "A) Señalar el inicio de la ejecución del contrato; adicionalmente puede incluir el cumplimiento de requisitos previos a la ejecución o cualquier otro aspecto que las partes consideren pertinentes",
+        "B) Certificar el recibo a satisfacción de los bienes o servicios entregados parcialmente por el contratista",
+        "C) Documentar los acuerdos entre las partes sobre modificaciones al objeto del contrato durante su ejecución",
+        "D) Formalizar la terminación anticipada del contrato por mutuo acuerdo entre las partes contratantes"
       ],
-      "ans": "B"
+      "ans": "A"
     },
     {
       "n": 4,
-      "q": "¿Qué es la 'Supervisión' según las definiciones de la Resolución 009 de 2025?",
+      "q": "Según la definición de 'Supervisión' contenida en la Resolución 009 de 2025, ¿quiénes pueden ejercerla y cuáles son los aspectos que debe cubrir su revisión constante?",
       "opts": [
-        "A. El seguimiento técnico especializado realizado por un tercero contratado.",
-        "B. El seguimiento integral que hace Colpensiones a la ejecución del contrato, con cuidado y revisión constante de sus aspectos técnicos, administrativos, financieros, contables y jurídicos.",
-        "C. La evaluación periódica que realiza la Contraloría sobre los contratos.",
-        "D. El control exclusivamente financiero sobre la ejecución del presupuesto."
+        "A) Solo trabajadores oficiales de nivel profesional; debe cubrir aspectos técnicos y administrativos",
+        "B) El Vicepresidente, Jefe de Oficina, Gerente o Director, o trabajadores oficiales de dicha área, o persona natural o jurídica externa; debe cubrir aspectos técnicos, administrativos, financieros, contables y jurídicos",
+        "C) Exclusivamente contratistas de interventoría especializados; debe cubrir únicamente los aspectos técnicos del contrato",
+        "D) Solo servidores de nivel directivo designados por la Junta Directiva; debe cubrir aspectos legales y financieros"
       ],
       "ans": "B"
     },
     {
       "n": 5,
-      "q": "¿Cuándo procede la 'Interventoría' según la Resolución 009 de 2025?",
+      "q": "De acuerdo con la Resolución 009 de 2025, ¿cuándo procede la interventoría y cuál es la diferencia fundamental con la supervisión?",
       "opts": [
-        "A. En todos los contratos sin importar su valor o complejidad.",
-        "B. Cuando la complejidad, extensión o el seguimiento del contrato suponga conocimientos especializados.",
-        "C. Solo en contratos de obra pública superiores a 6.000 SMLMV.",
-        "D. Únicamente cuando lo exija la Superintendencia Financiera."
+        "A) La interventoría procede siempre que el contrato supere 300 SMLMV; se diferencia de la supervisión en que la primera es ejercida por un servidor público",
+        "B) La interventoría procede cuando la complejidad, extensión o el seguimiento del contrato suponga conocimientos especializados; se diferencia de la supervisión en que es realizada por un tercero contratado para tal fin",
+        "C) La interventoría procede únicamente en contratos de obra pública; se diferencia de la supervisión en que solo cubre aspectos técnicos",
+        "D) La interventoría procede cuando el contrato tenga una vigencia superior a un año; se diferencia de la supervisión en que la ejercen varios funcionarios simultáneamente"
       ],
       "ans": "B"
     },
     {
       "n": 6,
-      "q": "¿Qué es el Acta de Inicio según la Resolución 009 de 2025?",
+      "q": "Conforme al Artículo Segundo de la Resolución 009 de 2025, el 'Acta de Suspensión' genera una obligación específica para el contratista. ¿Cuál es?",
       "opts": [
-        "A. El documento que formaliza la terminación del contrato y el balance final.",
-        "B. El documento suscrito entre el supervisor o interventor y el contratista que señala el inicio de la ejecución y puede incluir requisitos previos y otros aspectos que las partes consideren pertinentes.",
-        "C. El acta que aprueba la modificación del objeto contractual.",
-        "D. El documento que certifica el recibo satisfactorio de los servicios."
+        "A) Presentar un informe de avance de las actividades ejecutadas hasta la fecha de suspensión",
+        "B) Mantener vigentes las pólizas del contrato durante el período de suspensión sin modificaciones",
+        "C) Actualizar las vigencias de las garantías, en caso de que aplique",
+        "D) Acreditar el pago de aportes al sistema de seguridad social integral del personal vinculado"
       ],
-      "ans": "B"
+      "ans": "C"
     },
     {
       "n": 7,
-      "q": "¿Qué es el Acta de Liquidación según la Resolución 009 de 2025?",
+      "q": "Según la Resolución 009 de 2025, ¿qué debe contener mínimamente el 'Informe de Supervisión o Interventoría para Terminación del Contrato' y dentro de qué plazo debe remitirse a la Dirección Contractual?",
       "opts": [
-        "A. El documento que señala el inicio de la ejecución del contrato.",
-        "B. El documento en que las partes realizan un balance final económico, jurídico y técnico de la ejecución del contrato, verificando obligaciones y estableciendo si están a paz y salvo.",
-        "C. El documento que suspende temporalmente el plazo de ejecución.",
-        "D. El informe parcial de ejecución elaborado para cada pago."
+        "A) Las actividades adelantadas y el balance financiero; dentro de los tres (3) meses siguientes al vencimiento del plazo contractual",
+        "B) La información y soportes sobre lo ocurrido durante la ejecución para la liberación de saldos, señalando las actividades adelantadas, el balance financiero y el porcentaje de ejecución; dentro de los dos (2) meses siguientes a la terminación del contrato",
+        "C) Solo el porcentaje de cumplimiento de obligaciones y la constancia de paz y salvo; dentro del mes siguiente a la terminación del contrato",
+        "D) La relación de pagos efectuados y los soportes de seguridad social; dentro de los cuatro (4) meses siguientes a la liquidación del contrato"
       ],
       "ans": "B"
     },
     {
       "n": 8,
-      "q": "¿Qué es una 'Adición' contractual según la Resolución 009 de 2025?",
+      "q": "De acuerdo con la Resolución 009 de 2025, ¿qué distingue a la 'Adición' de la 'Modificación' como actos jurídicos contractuales?",
       "opts": [
-        "A. El acto jurídico que modifica el objeto del contrato.",
-        "B. El acto jurídico mediante el cual las partes acuerdan incrementar el valor del contrato sin modificar su objeto, con justificación previa del supervisor y disponibilidad presupuestal.",
-        "C. El documento que prorroga el plazo de ejecución del contrato.",
-        "D. La cesión de la posición contractual a un tercero."
+        "A) La adición incrementa el plazo del contrato; la modificación incrementa el valor sin alterar el objeto",
+        "B) La adición incrementa el valor del contrato sin modificar su objeto; la modificación puede alterar cualquier cláusula del contrato",
+        "C) La adición requiere concepto previo del Comité de Contratación; la modificación solo requiere justificación del supervisor",
+        "D) La adición aplica solo a contratos de prestación de servicios; la modificación aplica a todos los tipos de contrato"
       ],
       "ans": "B"
     },
     {
       "n": 9,
-      "q": "¿Qué se entiende por 'Penal Pecuniaria' en la Resolución 009 de 2025?",
+      "q": "El Artículo Cuarto de la Resolución 009 de 2025 establece que las instrucciones, requerimientos y solicitudes que el supervisor o interventor haga al contratista deben cumplir una condición formal. ¿Cuál es esa condición y con qué procedimientos deben conformarse?",
       "opts": [
-        "A. Una sanción definitiva que determina los perjuicios exactos causados.",
-        "B. La disposición contractual que fija un monto o porcentaje como estimación anticipada pero no definitiva de perjuicios cuando se presenta incumplimiento del contratista.",
-        "C. El mecanismo para resolver controversias entre las partes.",
-        "D. La garantía de cumplimiento exigida al contratista."
+        "A) Deben realizarse verbalmente y registrarse en el sistema de gestión documental en un plazo de cinco días hábiles",
+        "B) Deben realizarse por escrito y conforme a los procedimientos previstos para la Gestión Documental",
+        "C) Deben realizarse mediante correo electrónico institucional y archivarse en el expediente contractual de manera inmediata",
+        "D) Deben realizarse a través de la herramienta de gestión contractual de Colpensiones y ser avaladas por la Dirección Contractual"
       ],
       "ans": "B"
     },
     {
       "n": 10,
-      "q": "¿Cuándo se contabiliza el plazo de ejecución del contrato cuando se ha pactado un acta de inicio, según el Acuerdo 005 de 2020?",
+      "q": "Según el Artículo Cuarto de la Resolución 009 de 2025, ¿cuál es la regla general sobre la concurrencia de supervisión e interventoría en un mismo contrato, y bajo qué condición se puede exceptuar?",
       "opts": [
-        "A. Desde la fecha de suscripción del contrato.",
-        "B. Desde el momento en que dicha acta sea suscrita por el supervisor y el contratista, o desde el momento que las partes prevean en el respectivo contrato.",
-        "C. Desde la expedición del Certificado de Disponibilidad.",
-        "D. Desde la aprobación de la garantía por el Director Contractual."
+        "A) Por regla general son concurrentes; se exceptúan cuando el contrato es de alta complejidad técnica y requiere especialización simultánea",
+        "B) Por regla general no son concurrentes en relación con un mismo contrato; sin embargo, Colpensiones puede determinar que la vigilancia se realice de manera conjunta cuando sea necesario",
+        "C) Por regla general son concurrentes en contratos de obra; en contratos de servicios solo puede haber supervisión",
+        "D) Por regla general no son concurrentes; la única excepción es cuando el contrato supera los 6.000 SMLMV"
       ],
       "ans": "B"
     },
     {
       "n": 11,
-      "q": "¿Quién tiene la competencia para celebrar contratos y convenios en Colpensiones según el Acuerdo 005 de 2020?",
+      "q": "Conforme al Artículo Cuarto de la Resolución 009 de 2025, cuando se requiere apoyo a la supervisión a través de contratos de prestación de servicios, ¿qué limitación expresa establece la norma sobre ese apoyo?",
       "opts": [
-        "A. La Dirección Contractual de manera exclusiva.",
-        "B. El Comité de Contratación y Racionalización del Gasto.",
-        "C. El Representante Legal o sus suplentes, con posibilidad de delegar en funcionarios del nivel directivo.",
-        "D. El Vicepresidente de Gestión Corporativa."
+        "A) El apoyo no podrá exceder el 30% del tiempo de la labor del supervisor designado",
+        "B) El apoyo no representará en ningún momento delegación de las funciones a cargo de los supervisores, ni modificación a la supervisión designada",
+        "C) El apoyo solo podrá contratarse cuando el contrato principal supere los 300 SMLMV de cuantía",
+        "D) El apoyo deberá ser aprobado previamente por el Comité de Contratación y Racionalización del Gasto"
       ],
-      "ans": "C"
+      "ans": "B"
     },
     {
       "n": 12,
-      "q": "¿Cuándo puede Colpensiones prescindir de garantías en sus contratos según el Acuerdo 005 de 2020?",
+      "q": "Según el Artículo Cuarto de la Resolución 009 de 2025, cuando el supervisor o interventor requiere tramitar modificaciones, prórrogas o cesiones, ¿con qué antelación mínima debe solicitarlas a la Dirección Contractual y bajo qué condición se amplía ese plazo?",
       "opts": [
-        "A. Cuando el contratista sea una entidad pública.",
-        "B. En los contratos inferiores a cien salarios mínimos legales mensuales vigentes (100 SMLMV), interadministrativos y los de seguros.",
-        "C. Solo cuando el Comité de Contratación así lo autorice.",
-        "D. En todos los contratos de prestación de servicios profesionales."
+        "A) Con mínimo cinco (5) días hábiles; el plazo se amplía a diez (10) días si requiere concepto jurídico previo",
+        "B) Con mínimo diez (10) días hábiles de antelación; el plazo se amplía a mínimo veinte (20) días hábiles cuando el trámite requiera recomendación del Comité de Contratación y Racionalización del Gasto",
+        "C) Con mínimo quince (15) días hábiles de antelación; el plazo se amplía a treinta (30) días cuando el contrato sea objeto de interventoría",
+        "D) Con mínimo ocho (8) días calendario; el plazo se amplía a veinte (20) días cuando el valor de la modificación supere el 20% del contrato"
       ],
       "ans": "B"
     },
     {
       "n": 13,
-      "q": "¿Cuáles son las cuatro modalidades de contratación previstas en el Manual de Contratación de Colpensiones (Acuerdo 005 de 2020)?",
+      "q": "El Artículo Quinto de la Resolución 009 de 2025 prohíbe expresamente ciertas conductas a los supervisores e interventores. ¿Cuál de las siguientes constituye una prohibición expresa contemplada en dicho artículo?",
       "opts": [
-        "A. Licitación pública, selección abreviada, concurso de méritos y contratación directa.",
-        "B. Invitación a una pluralidad determinada de proponentes, Convocatoria Pública, Invitación a un proponente y Subasta Inversa.",
-        "C. Contratación por cuantía, por urgencia manifiesta, por acuerdo marco y por mínima cuantía.",
-        "D. Invitación cerrada, convocatoria abierta, concurso técnico y adjudicación directa."
+        "A) Asistir a comités técnicos de seguimiento sin autorización escrita de la Dirección Contractual",
+        "B) Certificar el cumplimiento parcial o total de la ejecución del contrato cuando existan dudas sobre el cumplimiento de las obligaciones",
+        "C) Solicitar informes de avance al contratista con una periodicidad mayor a la establecida en el contrato",
+        "D) Proponer la terminación anticipada del contrato sin que medie incumplimiento verificado del contratista"
       ],
       "ans": "B"
     },
     {
       "n": 14,
-      "q": "¿Cuándo procede la modalidad de 'Invitación a una pluralidad determinada de proponentes'?",
+      "q": "Según el Artículo Quinto de la Resolución 009 de 2025, un supervisor se encuentra en situación de conflicto de interés. ¿Qué acción debe adelantar de manera inmediata?",
       "opts": [
-        "A. Cuando la cuantía sea superior a 6.000 SMLMV.",
-        "B. Cuando la cuantía estimada sea superior a 300 SMLMV e inferior a 6.000 SMLMV, sin incluir IVA.",
-        "C. Cuando la cuantía sea inferior a 300 SMLMV.",
-        "D. Solo en contratos de obra pública."
+        "A) Informar al supervisor suplente para que asuma temporalmente las funciones de vigilancia",
+        "B) Ponerlo en conocimiento de manera inmediata al Ordenador del Gasto",
+        "C) Comunicarlo a la Dirección Contractual mediante oficio para que designe a un nuevo supervisor",
+        "D) Abstenerse de suscribir documentos contractuales hasta que la Oficina Legal conceptúe sobre la situación"
       ],
       "ans": "B"
     },
     {
       "n": 15,
-      "q": "¿Cuántos oferentes mínimos deben invitarse en la modalidad de 'Invitación a una pluralidad determinada de proponentes'?",
+      "q": "El Artículo Sexto de la Resolución 009 de 2025 enumera el marco legal aplicable a las inhabilidades e incompatibilidades de los supervisores. ¿Cuál de las siguientes leyes NO está expresamente mencionada en dicho artículo como parte de ese marco?",
       "opts": [
-        "A. Mínimo cinco (5) oferentes.",
-        "B. Mínimo dos (2) oferentes cuando solo existen esos en el mercado.",
-        "C. Mínimo tres (3) oferentes; o dos (2) si el estudio de mercado evidencia que solo existen dos oferentes en el mercado.",
-        "D. Mínimo cuatro (4) oferentes siempre."
+        "A) Ley 80 de 1993",
+        "B) Ley 1150 de 2007",
+        "C) Ley 1952 de 2019",
+        "D) Ley 1474 de 2011"
       ],
       "ans": "C"
     },
     {
       "n": 16,
-      "q": "¿Cuándo procede la modalidad de 'Convocatoria Pública'?",
+      "q": "Conforme al Artículo Séptimo de la Resolución 009 de 2025, ¿en qué tipo de responsabilidades pueden incurrir los supervisores e interventores por las acciones u omisiones que les sean imputables en el ejercicio de sus funciones?",
       "opts": [
-        "A. Cuando la cuantía sea superior a 300 SMLMV e inferior a 6.000 SMLMV.",
-        "B. Cuando la cuantía sea igual o superior a 6.000 SMLMV, o en vigencia de la Ley 996 de 2005.",
-        "C. En cualquier contrato sin importar la cuantía.",
-        "D. Solo cuando el Representante Legal lo considere necesario."
+        "A) Responsabilidad administrativa, contractual y reputacional",
+        "B) Responsabilidad disciplinaria, fiscal, civil y penal",
+        "C) Responsabilidad disciplinaria, administrativa, patrimonial y reglamentaria",
+        "D) Responsabilidad penal, laboral, tributaria y contractual"
       ],
       "ans": "B"
     },
     {
       "n": 17,
-      "q": "¿Por cuánto tiempo queda el Informe de Evaluación a disposición de los proponentes en los procesos de pluralidad determinada y convocatoria pública?",
+      "q": "Según la Resolución 009 de 2025, la responsabilidad disciplinaria de los supervisores e interventores se configura, entre otras causales, cuando se certifica como satisfactoria una obra que no ha sido completamente ejecutada. ¿Bajo qué ley se configuran estas faltas?",
       "opts": [
-        "A. Cinco (5) días hábiles.",
-        "B. Diez (10) días calendario.",
-        "C. Tres (3) días hábiles.",
-        "D. Dos (2) días hábiles."
-      ],
-      "ans": "C"
-    },
-    {
-      "n": 18,
-      "q": "¿En cuál de los siguientes casos procede la modalidad 'Invitación a un proponente' según el Acuerdo 005 de 2020?",
-      "opts": [
-        "A. Cuando la cuantía sea superior a 6.000 SMLMV.",
-        "B. Cuando se trate de contratos intuito personae, cuya cuantía no sobrepase 300 SMLMV, cuando no haya pluralidad de oferentes, o cuando la necesidad inminente no permita otra modalidad, entre otros casos.",
-        "C. Solo cuando el procedimiento de convocatoria pública haya fracasado.",
-        "D. Únicamente para contratos de prestación de servicios profesionales."
+        "A) Ley 734 de 2002",
+        "B) Ley 1952 de 2019",
+        "C) Ley 1474 de 2011",
+        "D) Ley 1437 de 2011"
       ],
       "ans": "B"
     },
     {
-      "n": 19,
-      "q": "¿Qué es la 'Subasta Inversa' según el Acuerdo 005 de 2020?",
+      "n": 18,
+      "q": "De acuerdo con la Resolución 009 de 2025, la responsabilidad fiscal de los supervisores e interventores tiene cuatro características esenciales. ¿Cuál de las siguientes NO es una de esas características?",
       "opts": [
-        "A. Un proceso de negociación directa con un único proveedor.",
-        "B. Modalidad de contratación competitiva en que los invitados realizan una puja dinámica mediante reducción sucesiva de precios durante un tiempo determinado, seleccionando la oferta con el menor precio al finalizar.",
-        "C. Un mecanismo de evaluación de ofertas basado únicamente en criterios técnicos.",
-        "D. La selección del proveedor con el precio más alto que garantice calidad."
+        "A) Es de naturaleza administrativa",
+        "B) No tiene carácter sancionatorio sino eminentemente resarcitorio",
+        "C) Se determina a partir de un proceso administrativo",
+        "D) Es de carácter solidario entre el supervisor y el contratista por los mismos hechos"
+      ],
+      "ans": "D"
+    },
+    {
+      "n": 19,
+      "q": "Conforme al Artículo Séptimo de la Resolución 009 de 2025, ¿bajo qué norma se materializa la responsabilidad civil de los supervisores e interventores que causan perjuicios a Colpensiones?",
+      "opts": [
+        "A) A través del proceso ordinario civil de responsabilidad extracontractual ante juez competente",
+        "B) A través de la acción de repetición o mediante el llamamiento en garantía, conforme al numeral 2 del artículo 26 de la Ley 80 de 1993",
+        "C) A través del proceso disciplinario con incidencia patrimonial conforme a la Ley 1952 de 2019",
+        "D) A través del proceso de responsabilidad fiscal regulado en la Ley 610 de 2000"
       ],
       "ans": "B"
     },
     {
       "n": 20,
-      "q": "¿Cuándo procede la 'Subasta Inversa' según el Acuerdo 005 de 2020?",
+      "q": "Según la Resolución 009 de 2025, ¿qué delitos específicos se mencionan como ejemplos de responsabilidad penal aplicable a los supervisores e interventores que ejercen funciones públicas?",
       "opts": [
-        "A. Para cualquier bien o servicio cuando la cuantía supere 100 SMLMV.",
-        "B. Para la adquisición de bienes y servicios de características técnicas uniformes y de común utilización, cuya cuantía sea igual o superior a 300 SMLMV.",
-        "C. Solo para contratos de tecnología y comunicaciones.",
-        "D. Exclusivamente cuando no haya pluralidad de oferentes."
+        "A) Prevaricato, abuso de autoridad, interés ilícito en celebración de contratos y cohecho",
+        "B) Celebración indebida de contratos, tráfico de influencias, peculado, concusión, cohecho, enriquecimiento ilícito y prevaricato",
+        "C) Peculado, concusión, fraude procesal, enriquecimiento ilícito y falsedad en documento público",
+        "D) Cohecho, soborno transnacional, lavado de activos y tráfico de influencias"
       ],
       "ans": "B"
     },
     {
       "n": 21,
-      "q": "¿Qué es el 'Grupo Evaluador' en los procesos de contratación de Colpensiones?",
+      "q": "El Artículo Octavo de la Resolución 009 de 2025 define la supervisión integral. ¿Qué entidad la ejerce y a través de quién se materializa?",
       "opts": [
-        "A. El comité directivo que aprueba la selección del contratista.",
-        "B. El grupo conformado para cada procedimiento de convocatoria pública, pluralidad o subasta que evalúa técnica, jurídica, financiera y económicamente las propuestas, con sujeción a las Reglas de Participación.",
-        "C. El equipo de auditores internos que verifica la contratación.",
-        "D. Los representantes de la Contraloría durante el proceso."
+        "A) La ejerce la Dirección Contractual a través de los gerentes y directores de área",
+        "B) La ejerce la misma Colpensiones a través del servidor señalado en los Estudios Previos y, por ende, en el contrato",
+        "C) La ejerce el Comité de Contratación a través de los delegados que designe para cada contrato",
+        "D) La ejerce la Oficina de Control Interno a través de los auditores internos asignados a los contratos"
       ],
       "ans": "B"
     },
     {
       "n": 22,
-      "q": "¿Qué ocurre si el oferente seleccionado no acepta la decisión de contratación o no suscribe el contrato en el tiempo establecido en la Convocatoria Pública?",
+      "q": "Conforme al numeral 3 del Artículo Octavo de la Resolución 009 de 2025, cuando se produce el cambio de supervisor por ausencia temporal o definitiva, ¿quién asume automáticamente la supervisión hasta que se haga una nueva designación?",
       "opts": [
-        "A. Se declara fallido el proceso sin posibilidad de continuar.",
-        "B. Colpensiones puede contratar, dentro de los cinco (5) días hábiles siguientes, con el oferente calificado en segundo lugar, siempre que su oferta sea favorable y vigente.",
-        "C. Se reinicia el proceso de evaluación desde el inicio.",
-        "D. La Entidad debe esperar seis meses para lanzar un nuevo proceso."
+        "A) El supervisor suplente designado en el acto administrativo de designación original",
+        "B) El Jefe del área que solicitó la contratación",
+        "C) El servidor de mayor jerarquía de la dependencia solicitante",
+        "D) La Dirección Contractual de Colpensiones directamente"
       ],
       "ans": "B"
     },
     {
       "n": 23,
-      "q": "¿En qué niveles jerárquicos recae por regla general la designación de supervisión al interior de Colpensiones?",
+      "q": "Según el Artículo Noveno de la Resolución 009 de 2025, dentro de las obligaciones administrativas del supervisor, ¿qué debe hacer al verificar que las garantías contractuales están aprobadas?",
       "opts": [
-        "A. Solo en el nivel directivo.",
-        "B. En servidores del nivel directivo, asesor y profesional, conforme al Manual Específico de Funciones.",
-        "C. En cualquier servidor sin importar su nivel.",
-        "D. Solo en los trabajadores de la dependencia solicitante."
+        "A) Remitir copia de la aprobación al Comité de Contratación y al jefe inmediato para registro",
+        "B) Verificar que estén aprobadas por el Director Contractual, pues ello es requisito para suscribir el acta de inicio; no se puede autorizar la prestación de ningún servicio ni recibir bienes sin el cumplimiento de estos requisitos",
+        "C) Solicitar al contratista la actualización inmediata de las pólizas si no están aprobadas antes de la suscripción del acta de inicio",
+        "D) Comunicar a la Dirección de Bienes y Servicios la aprobación de las garantías para el inicio de la ejecución del contrato"
       ],
       "ans": "B"
     },
     {
       "n": 24,
-      "q": "¿Es obligatoria la designación como supervisor cuando se comunica formalmente?",
+      "q": "De acuerdo con las obligaciones jurídicas del supervisor establecidas en el Artículo Noveno de la Resolución 009 de 2025, ¿qué debe contener el informe detallado que debe presentar ante la Dirección Contractual cuando existe un posible incumplimiento?",
       "opts": [
-        "A. No, el servidor puede rechazarla libremente.",
-        "B. Sí, es de forzosa aceptación, salvo fuerza mayor, caso fortuito, inhabilidad, incompatibilidad, impedimento o conflicto de interés, que deberá manifestarse por escrito al Representante Legal.",
-        "C. Solo es obligatoria para servidores del nivel directivo.",
-        "D. Sí, pero solo si el servidor ha participado en la etapa previa."
+        "A) Las razones del posible incumplimiento, descripción cronológica de los hechos, disposiciones contractuales incumplidas, actuaciones que demuestren el debido proceso y el derecho de defensa del contratista, acreditación del cumplimiento de Colpensiones, que el incumplimiento es imputable al contratista, y la estimación de perjuicios",
+        "B) Solo el porcentaje de cumplimiento del contrato y la descripción de las obligaciones incumplidas por el contratista",
+        "C) La relación de pagos realizados, el balance financiero y la propuesta de sanción aplicable al contratista",
+        "D) El informe de supervisión para terminación, el extracto de pagos y la constancia de paz y salvo del contratista"
       ],
-      "ans": "B"
+      "ans": "A"
     },
     {
       "n": 25,
-      "q": "¿Qué debe hacer el supervisor al recibir la comunicación de designación como primera obligación administrativa?",
+      "q": "Según las obligaciones presupuestales del supervisor contempladas en el Artículo Noveno de la Resolución 009 de 2025, ¿qué debe verificar el supervisor previamente a la realización de cada pago?",
       "opts": [
-        "A. Convocar inmediatamente al contratista para firmar el acta de inicio.",
-        "B. Verificar que las garantías contractuales estén aprobadas por el Director Contractual, lo cual es requisito para suscribir el acta de inicio.",
-        "C. Elaborar el primer informe parcial de ejecución.",
-        "D. Solicitar a la Dirección Contractual el expediente completo."
+        "A) Que el contratista haya entregado el informe parcial de ejecución del período correspondiente con todos los soportes requeridos",
+        "B) Que el contratista se encuentre al día en el pago de los aportes al Sistema de Seguridad Social Integral y demás aportes parafiscales que correspondan",
+        "C) Que la Dirección Contractual haya aprobado la solicitud de pago mediante comunicación escrita",
+        "D) Que el valor de la factura no supere el presupuesto comprometido para la vigencia en curso"
       ],
       "ans": "B"
     },
     {
       "n": 26,
-      "q": "¿Con cuánta anticipación mínima debe el supervisor solicitar modificaciones, aclaraciones, adiciones, prórrogas, cesiones o suspensiones al vencimiento del contrato?",
+      "q": "Conforme al Artículo Noveno de la Resolución 009 de 2025, una de las obligaciones técnicas del supervisor es abstenerse de certificar recibo a satisfacción o dar visto bueno bajo una condición específica. ¿Cuál es esa condición?",
       "opts": [
-        "A. Cinco (5) días hábiles.",
-        "B. Diez (10) días hábiles; o veinte (20) días hábiles si el trámite requiere recomendación del Comité de Contratación.",
-        "C. Quince (15) días hábiles en todos los casos.",
-        "D. Treinta (30) días calendario."
+        "A) Cuando el contratista no haya entregado los informes periódicos en la forma y oportunidad previstas en el contrato",
+        "B) Cuando los bienes, materiales y servicios no cumplan con las calidades, cantidades y especificaciones técnicas contratadas",
+        "C) Cuando el contratista tenga saldos pendientes de aportes al sistema de seguridad social integral",
+        "D) Cuando la Dirección Contractual no haya autorizado previamente la certificación de cumplimiento"
       ],
       "ans": "B"
     },
     {
       "n": 27,
-      "q": "¿Dentro de qué plazo debe el supervisor elaborar y remitir el Informe de Supervisión para Terminación del contrato a la Dirección Contractual?",
+      "q": "Según el Artículo Noveno de la Resolución 009 de 2025, ¿qué debe verificar el supervisor en relación con los derechos de autor y la propiedad industrial cuando aplique?",
       "opts": [
-        "A. Dentro del mes (1) siguiente al vencimiento del plazo contractual.",
-        "B. Dentro de los dos (2) meses siguientes al vencimiento del plazo contractual.",
-        "C. Dentro de los tres (3) meses siguientes a la terminación.",
-        "D. Dentro de los cuatro (4) meses, plazo máximo de liquidación."
+        "A) Que el contrato incluya una cláusula de confidencialidad sobre los productos generados durante la ejecución",
+        "B) Que el contratista realice los trámites y diligencias de cesión de Derechos de Autor y Propiedad Industrial a Colpensiones",
+        "C) Que los productos entregados por el contratista no estén protegidos por derechos de autor de terceros",
+        "D) Que Colpensiones haya registrado previamente sus marcas y derechos de propiedad industrial ante la Superintendencia de Industria y Comercio"
       ],
       "ans": "B"
     },
     {
       "n": 28,
-      "q": "¿Cuál es una obligación presupuestal, financiera y contable del supervisor según la Resolución 009 de 2025?",
+      "q": "El Artículo Décimo de la Resolución 009 de 2025 establece que el contrato de interventoría tiene una característica jurídica especial. ¿Cuál es?",
       "opts": [
-        "A. Aprobar directamente el presupuesto anual de la entidad.",
-        "B. Verificar previo a cada pago que el contratista esté al día en aportes al Sistema de Seguridad Social Integral y parafiscales.",
-        "C. Autorizar transferencias entre vigencias presupuestales.",
-        "D. Negociar directamente con la DIAN el régimen tributario del contratista."
+        "A) Es un contrato accesorio al contrato principal que se extingue automáticamente con la terminación de este",
+        "B) Es un contrato principal y autónomo, e independiente del contrato vigilado, por lo que su existencia no depende de éste",
+        "C) Es un contrato de naturaleza laboral que vincula al interventor como colaborador de Colpensiones para efectos del control",
+        "D) Es un contrato de naturaleza mixta que combina elementos de los contratos de supervisión y de prestación de servicios"
       ],
       "ans": "B"
     },
     {
       "n": 29,
-      "q": "¿Cuál es una obligación jurídica del supervisor frente a un posible incumplimiento contractual?",
+      "q": "De acuerdo con el Artículo Décimo Primero de la Resolución 009 de 2025, en las obligaciones administrativas de la interventoría, ¿qué debe hacer el interventor respecto al personal del contratista cuando aplique?",
       "opts": [
-        "A. Imponer directamente las multas y cláusula penal sin trámite previo.",
-        "B. Presentar un informe detallado a la Dirección Contractual con las razones, descripción cronológica, disposiciones incumplidas, actuaciones que evidencien el debido proceso y estimación de perjuicios.",
-        "C. Resolver unilateralmente el contrato sin informar a la Dirección.",
-        "D. Conciliar directamente con el contratista sin documentar el proceso."
+        "A) Verificar únicamente el nivel académico del personal profesional clave señalado en la oferta del contratista",
+        "B) Verificar el cumplimiento de los requisitos exigidos en los perfiles del personal mínimo requerido y el tiempo de dedicación, pudiendo exigir el cambio de personal cuando se cumpla con los perfiles o funcionalidad requerida y sea autorizado por Colpensiones",
+        "C) Contratar directamente el personal técnico adicional que se requiera para garantizar la adecuada ejecución del objeto contractual",
+        "D) Certificar trimestralmente que el personal del contratista cumple con las calificaciones exigidas en las reglas de participación"
       ],
       "ans": "B"
     },
     {
       "n": 30,
-      "q": "¿Cuál de las siguientes es una prohibición expresa para los supervisores e interventores según el Artículo Quinto de la Resolución 009 de 2025?",
+      "q": "Según las obligaciones financieras de la interventoría contenidas en la Resolución 009 de 2025, ¿qué debe hacer el interventor en relación con el anticipo cuando aplique?",
       "opts": [
-        "A. Solicitar informes periódicos al contratista.",
-        "B. Solicitar y/o recibir, directa o indirectamente, dádivas, favores o beneficios del contratista.",
-        "C. Verificar el cumplimiento de las garantías contractuales.",
-        "D. Convocar reuniones periódicas con el contratista."
+        "A) Administrar directamente el anticipo en una cuenta bancaria conjunta con el contratista bajo su supervisión exclusiva",
+        "B) Validar que el contratista cumpla con los requisitos para la entrega, ejecución y amortización del anticipo, así como exigir y aprobar el plan de manejo e inversión del anticipo",
+        "C) Verificar que el anticipo no supere el 30% del valor del contrato según lo establecido en el Manual de Contratación",
+        "D) Autorizar los desembolsos parciales del anticipo previa certificación de que el contratista ha ejecutado el porcentaje de obra correspondiente"
       ],
       "ans": "B"
     },
     {
       "n": 31,
-      "q": "¿Puede el supervisor permitir la iniciación del objeto del contrato antes de la fecha estipulada y sin verificar los requisitos previos?",
+      "q": "El Artículo Décimo Segundo de la Resolución 009 de 2025 establece las acciones que deben adelantar supervisores e interventores para la liquidación. ¿Dentro de qué plazo debe realizarse de mutuo acuerdo la liquidación cuando es obligatoria y no se ha pactado plazo alguno?",
       "opts": [
-        "A. Sí, si el contratista lo solicita con justificación.",
-        "B. No, es una prohibición expresa para supervisores e interventores.",
-        "C. Sí, con autorización verbal del jefe inmediato.",
-        "D. Solo si existe disponibilidad presupuestal verificada."
+        "A) Dentro de los dos (2) meses siguientes a la terminación del respectivo contrato",
+        "B) Dentro de los cuatro (4) meses siguientes a la terminación del respectivo contrato",
+        "C) Dentro de los seis (6) meses siguientes a la terminación del respectivo contrato",
+        "D) Dentro del año siguiente a la terminación del respectivo contrato"
       ],
       "ans": "B"
     },
     {
       "n": 32,
-      "q": "¿Qué debe hacer el supervisor si se encuentra en situación de conflicto de interés, inhabilidad o incompatibilidad?",
+      "q": "Conforme al Artículo Décimo Segundo de la Resolución 009 de 2025, ¿qué debe adjuntar el supervisor al Informe de Supervisión para Terminación que se requiere para la liquidación?",
       "opts": [
-        "A. Continuar ejerciendo la supervisión informando solo al final del contrato.",
-        "B. Abstenerse de participar, declararse impedido y comunicar de manera inmediata al Representante Legal o su delegado.",
-        "C. Delegar informalmente sus funciones a otro servidor.",
-        "D. Solicitar autorización al Comité de Contratación para continuar."
+        "A) El plan de mejoramiento propuesto por el contratista y las actas de seguimiento firmadas durante la ejecución",
+        "B) El reporte o extracto de pagos efectuados al contratista",
+        "C) Los informes de auditoría interna realizados durante la ejecución del contrato",
+        "D) La certificación de la Dirección de Talento Humano sobre el cumplimiento de obligaciones laborales del contratista"
       ],
       "ans": "B"
     },
     {
       "n": 33,
-      "q": "¿Quién asume la supervisión automáticamente ante ausencia temporal o definitiva del supervisor?",
+      "q": "Según la Resolución 009 de 2025, ¿qué sucede si el contratista no se presenta a la suscripción del acta de liquidación dentro del mes siguiente a la fecha en que fue informado?",
       "opts": [
-        "A. El supervisor más antiguo del área.",
-        "B. El Jefe del área que solicitó la contratación, hasta tanto se haga una nueva designación.",
-        "C. El Director Contractual de manera temporal.",
-        "D. Un supervisor de otra dependencia designado por la Dirección Contractual."
+        "A) Se inicia el proceso de liquidación unilateral por parte de Colpensiones conforme al Estatuto Orgánico del Sistema Financiero",
+        "B) Se tendrá como liquidación del contrato el Informe de Supervisión para Terminación, para efectos de proceder a la liberación de los saldos",
+        "C) El supervisor deberá elaborar el acta de liquidación sin la firma del contratista y remitirla a la Dirección Contractual",
+        "D) El contrato se entiende liquidado por ministerio de la ley con base en los pagos efectuados y las obligaciones cumplidas"
       ],
       "ans": "B"
     },
     {
       "n": 34,
-      "q": "¿Cuántos informes parciales de ejecución y supervisión debe elaborar como mínimo el supervisor según los criterios generales de la Resolución 009 de 2025?",
+      "q": "De acuerdo con la Resolución 009 de 2025, ¿cuáles son los aspectos que deben cubrirse en la verificación mínima que debe adelantarse para la vigilancia, control y verificación del contrato?",
       "opts": [
-        "A. Solo uno al final del contrato.",
-        "B. Uno por cada pago que se gestione en desarrollo del contrato, sin perjuicio de elaborar otros informes adicionales.",
-        "C. Uno mensual sin excepción.",
-        "D. Solo cuando el contratista presente incumplimientos."
+        "A) Solo los aspectos técnicos y los informes de avance presentados por el contratista",
+        "B) Conocer a nivel de detalle todos los documentos del proceso contractual, realizar reunión preliminar con el contratista, elaborar informes por cada pago, solicitar ajustes a informes, informar oportunamente situaciones con incidencia en la ejecución, entre otras actividades contempladas en el artículo 4",
+        "C) Únicamente los aspectos financieros y la verificación de pagos al sistema de seguridad social",
+        "D) Las actas de inicio y terminación, los informes parciales y el informe de terminación"
       ],
       "ans": "B"
     },
     {
       "n": 35,
-      "q": "¿Qué debe contener como mínimo el Informe de Supervisión para Terminación del contrato?",
+      "q": "Según la Resolución 009 de 2025, ¿bajo qué norma se establece que el incumplimiento de las funciones de supervisión puede constituir una falta gravísima?",
       "opts": [
-        "A. Solo el valor ejecutado y los pagos realizados.",
-        "B. Identificación general del contrato, porcentaje de cumplimiento de obligaciones, resumen de ejecución financiera, servicios recibidos a satisfacción, novedades presentadas, constancia de paz y salvo laboral y demás aspectos relevantes.",
-        "C. Solo los hallazgos de incumplimiento y las multas aplicadas.",
-        "D. Únicamente el acta de liquidación final."
+        "A) El artículo 54 de la Ley 1952 de 2019",
+        "B) El artículo 84 de la Ley 1474 de 2011",
+        "C) El artículo 26 de la Ley 80 de 1993",
+        "D) El artículo 13 de la Ley 1150 de 2007"
       ],
       "ans": "B"
     },
     {
       "n": 36,
-      "q": "¿Puede el supervisor certificar el cumplimiento parcial o total cuando existen dudas sobre el cumplimiento de obligaciones?",
+      "q": "Conforme al Artículo Cuarto numeral 10 de la Resolución 009 de 2025, el supervisor deberá solicitar a la Dirección Contractual, con visto bueno del Vicepresidente o Jefe de Oficina, las modificaciones contractuales que se requieran. ¿A qué dependencia debe dirigirse dicha solicitud?",
       "opts": [
-        "A. Sí, si el jefe inmediato lo autoriza.",
-        "B. No, es una prohibición expresa para supervisores e interventores.",
-        "C. Sí, con reserva escrita en el informe.",
-        "D. Solo para pagos inferiores a 50 SMLMV."
+        "A) A la Gerencia de Contratos y Convenios de la Vicepresidencia de Gestión Corporativa",
+        "B) A la Dirección Contractual",
+        "C) Al Comité de Contratación y Racionalización del Gasto",
+        "D) A la Oficina Asesora de Asuntos Legales"
       ],
       "ans": "B"
     },
     {
       "n": 37,
-      "q": "¿Por qué tipos de responsabilidad responden los supervisores e interventores según el Artículo Séptimo de la Resolución 009 de 2025?",
+      "q": "Según el Artículo Noveno de la Resolución 009 de 2025, en las obligaciones administrativas del supervisor, ¿qué debe hacer este respecto de los documentos generados durante el desarrollo del contrato?",
       "opts": [
-        "A. Solo por responsabilidad disciplinaria.",
-        "B. Por responsabilidad disciplinaria, fiscal, civil y penal.",
-        "C. Solo por responsabilidad civil y penal.",
-        "D. Únicamente por responsabilidad administrativa."
+        "A) Mantenerlos en custodia en la dependencia solicitante durante la vigencia del contrato y un año adicional",
+        "B) Administrarlos conforme al Modelo Centralizado de Archivo de Colpensiones, realizando el traslado periódico de los documentos para garantizar la completitud del expediente contractual",
+        "C) Digitalizar todos los documentos y cargarlos al sistema de información contractual en tiempo real",
+        "D) Remitirlos únicamente al finalizar el contrato junto con el informe de supervisión para terminación"
       ],
       "ans": "B"
     },
     {
       "n": 38,
-      "q": "¿Cuándo se configura la responsabilidad disciplinaria del supervisor?",
+      "q": "De acuerdo con la Resolución 009 de 2025, ¿cuál es la regla general para la designación de la supervisión al interior de Colpensiones respecto al nivel de los servidores?",
       "opts": [
-        "A. Solo cuando se produce un daño económico demostrado al patrimonio público.",
-        "B. Cuando incumple sus deberes, se extralimita en derechos y funciones, vulnera prohibiciones o infringe el régimen de inhabilidades, incompatibilidades, impedimentos y conflictos de interés, conforme a la Ley 1952 de 2019.",
-        "C. Únicamente cuando es condenado penalmente.",
-        "D. Solo cuando el contratista presenta una queja formal."
+        "A) La supervisión recaerá en servidores del nivel asistencial y técnico, conforme al Manual de Funciones",
+        "B) La supervisión recaerá en servidores del nivel directivo, asesor y profesional, conforme al Manual Específico de Funciones y Competencias Laborales",
+        "C) La supervisión recaerá exclusivamente en servidores de nivel directivo, quienes no podrán delegar dicha función",
+        "D) La supervisión recaerá en servidores de cualquier nivel siempre que tengan conocimiento sobre el objeto del contrato"
       ],
       "ans": "B"
     },
     {
       "n": 39,
-      "q": "¿Qué característica tiene la responsabilidad fiscal según la Resolución 009 de 2025?",
+      "q": "Según las obligaciones jurídicas de la interventoría contempladas en la Resolución 009 de 2025, ¿qué debe hacer el interventor respecto a las reclamaciones de terceros, subcontratistas y proveedores?",
       "opts": [
-        "A. Es de naturaleza penal y busca sancionar al responsable.",
-        "B. Es de naturaleza administrativa, determinada por un proceso de la misma naturaleza, con carácter eminentemente resarcitorio, buscando recuperar el valor equivalente al detrimento ocasionado.",
-        "C. Es de naturaleza civil exclusivamente.",
-        "D. Es determinada únicamente por la Contraloría General sin proceso previo."
+        "A) Tramitarlas directamente ante Colpensiones como representante legal del contratista durante la ejecución del contrato",
+        "B) Velar porque Colpensiones se mantenga indemne de cualquier reclamación de terceros, subcontratistas, proveedores y demás servicios indirectamente requeridos para la ejecución del contrato",
+        "C) Reportarlas al Comité de Contratación para que este defina la estrategia de defensa de Colpensiones",
+        "D) Incluirlas en el informe de supervisión para terminación con la estimación de los perjuicios causados"
       ],
       "ans": "B"
     },
     {
       "n": 40,
-      "q": "¿Cuándo son responsables fiscales los supervisores e interventores?",
+      "q": "Conforme a la Resolución 009 de 2025, cuando la supervisión de un contrato es compartida entre varios supervisores, ¿bajo qué criterio responden estos y cómo deben suscribirse los documentos?",
       "opts": [
-        "A. Cuando el contratista incumple sus obligaciones sin causa justificada.",
-        "B. Cuando por incumplimiento de sus funciones de control y vigilancia sobre determinado contrato se ocasiona un detrimento patrimonial para la Entidad.",
-        "C. Solo cuando son condenados penalmente por peculado.",
-        "D. Cuando el contrato supera los 6.000 SMLMV y presenta sobrecostos."
+        "A) Responden de manera mancomunada y los documentos deben ser suscritos por cualquiera de ellos indistintamente",
+        "B) Responden de manera solidaria y las justificaciones, solicitudes y documentos que se suscriban en el marco de la supervisión deben ser suscritos de manera conjunta",
+        "C) Responden individualmente por las funciones que cada uno tenga asignadas y suscriben solo los documentos correspondientes a su área de responsabilidad",
+        "D) Responden de manera subsidiaria, siendo el supervisor principal el responsable primario y los demás lo son en defecto de este"
       ],
       "ans": "B"
     },
     {
       "n": 41,
-      "q": "¿Mediante qué mecanismo puede Colpensiones ejercer la responsabilidad civil contra el supervisor o interventor?",
+      "q": "Integrando el Artículo Séptimo y el Artículo Noveno de la Resolución 009 de 2025: un supervisor certifica el recibo a satisfacción de unos bienes que claramente no cumplen las especificaciones técnicas contratadas. ¿Qué tipo de responsabilidades puede generar esa conducta?",
       "opts": [
-        "A. Mediante denuncia penal directa ante la Fiscalía.",
-        "B. Mediante la acción de repetición o el mecanismo de llamamiento en garantía, cuando se le imponga una condena por daños derivados del incumplimiento de su función.",
-        "C. Solo mediante proceso disciplinario ante la Procuraduría.",
-        "D. Mediante embargo preventivo de bienes del supervisor."
+        "A) Solo responsabilidad administrativa interna de Colpensiones",
+        "B) Responsabilidad disciplinaria por incumplimiento de deberes, responsabilidad fiscal si se genera detrimento patrimonial, responsabilidad civil ante Colpensiones y eventualmente responsabilidad penal",
+        "C) Solo responsabilidad civil ante el contratista por incumplimiento de la obligación de recibo",
+        "D) Únicamente responsabilidad fiscal ante la Contraloría General de la República"
       ],
       "ans": "B"
     },
     {
       "n": 42,
-      "q": "¿Cuáles son los delitos contra la administración pública que pueden dar lugar a responsabilidad penal del supervisor o interventor?",
+      "q": "Según la Resolución 009 de 2025, ¿cuál es la consecuencia de que el supervisor autorice la ejecución del contrato por fuera de los plazos contractuales sin haber solicitado la suscripción de la prórroga correspondiente?",
       "opts": [
-        "A. Solo el peculado y el cohecho.",
-        "B. Entre otros: celebración indebida de contratos, tráfico de influencias, peculado, concusión, cohecho, enriquecimiento ilícito y prevaricato.",
-        "C. Únicamente el enriquecimiento ilícito.",
-        "D. Solo los delitos tipificados en el Código Penal para servidores públicos."
+        "A) Constituye una causal de mala prestación del servicio sujeta a sanción disciplinaria leve",
+        "B) Es una prohibición expresa del Artículo Quinto; no puede hacerlo bajo ninguna circunstancia",
+        "C) Debe justificarse ante la Dirección Contractual dentro de los cinco días hábiles siguientes",
+        "D) Solo aplica para contratos de obra pública y no para contratos de prestación de servicios"
       ],
       "ans": "B"
     },
     {
       "n": 43,
-      "q": "¿Cómo responden los supervisores en supervisiones compartidas?",
+      "q": "De acuerdo con la Resolución 009 de 2025, ¿bajo qué circunstancias excepcionales puede Colpensiones abstenerse de adelantar el procedimiento de liquidación de un contrato?",
       "opts": [
-        "A. Cada supervisor responde solo por sus actuaciones individuales.",
-        "B. De manera solidaria por las obligaciones, deberes y compromisos relacionados con el objeto de supervisión.",
-        "C. Solo el supervisor principal asume la responsabilidad.",
-        "D. Responden de manera subsidiaria, primero el principal y luego el suplente."
+        "A) Cuando el valor del contrato sea inferior a cien salarios mínimos legales mensuales vigentes",
+        "B) Cuando a partir de los informes parciales de ejecución y supervisión se evidencie de manera inequívoca el cumplimiento de la totalidad de las obligaciones por las partes, debiendo el supervisor expedir un documento certificando dicha situación",
+        "C) Cuando el contratista haya renunciado expresamente al derecho de liquidación en el contrato",
+        "D) Cuando el contrato haya terminado por vencimiento del plazo sin que se hubieran presentado controversias o reclamaciones"
       ],
       "ans": "B"
     },
     {
       "n": 44,
-      "q": "¿Cuál de los siguientes actos puede constituir falta gravísima para el supervisor según el Artículo Tercero de la Resolución 009 de 2025?",
+      "q": "Conforme al Artículo Cuarto numeral 7 de la Resolución 009 de 2025, ¿en qué servidores recae la designación de la supervisión por regla general y qué documento define los cargos habilitados?",
       "opts": [
-        "A. No asistir a una reunión de seguimiento sin justificación.",
-        "B. El incumplimiento de las funciones de supervisión e interventoría, conforme al artículo 84 de la Ley 1474 de 2011.",
-        "C. Presentar el informe de terminación con un día de retraso.",
-        "D. No utilizar los formatos normalizados en todos los informes."
+        "A) En servidores de cualquier nivel, conforme a las necesidades del área solicitante",
+        "B) En servidores del nivel directivo, asesor y profesional, conforme a lo establecido en el Manual Específico de Funciones y Competencias Laborales",
+        "C) En servidores del nivel profesional exclusivamente, conforme al Manual de Procesos y Procedimientos",
+        "D) En servidores de nivel directivo exclusivamente, conforme al Decreto 309 de 2017"
       ],
       "ans": "B"
     },
     {
       "n": 45,
-      "q": "¿Qué procedimiento debe seguirse para hacer efectiva la cláusula de multas prevista en los contratos de Colpensiones?",
+      "q": "Según la Resolución 009 de 2025, ¿cuál es la diferencia entre el 'Informe Parcial de Ejecución y Supervisión' y el 'Informe de Supervisión o Interventoría para Terminación del Contrato'?",
       "opts": [
-        "A. El supervisor las impone directamente mediante acto administrativo.",
-        "B. El supervisor presenta al contratista el informe de retardo; el contratista tiene 5 días hábiles para pagar o controvertir; Colpensiones analiza y en 20 días hábiles decide si acepta las observaciones o cobra la multa.",
-        "C. Las multas se aplican automáticamente al vencimiento de cada obligación.",
-        "D. Solo la Dirección Contractual puede imponer multas sin intervención del supervisor."
+        "A) El informe parcial cubre un período específico de la ejecución; el informe de terminación cubre toda la ejecución desde el inicio y sirve para la liberación de saldos",
+        "B) El informe parcial es elaborado por el contratista; el informe de terminación es elaborado exclusivamente por el supervisor",
+        "C) El informe parcial se elabora mensualmente; el informe de terminación se elabora anualmente",
+        "D) El informe parcial es de carácter confidencial; el informe de terminación es de carácter público"
       ],
-      "ans": "B"
+      "ans": "A"
     },
     {
       "n": 46,
-      "q": "¿Qué anticipo máximo puede pactar Colpensiones en sus contratos según el Acuerdo 005 de 2020?",
+      "q": "De acuerdo con el perfil del supervisor establecido en la Resolución 009 de 2025, ¿qué condición preferente debe cumplir el servidor que sea designado como supervisor?",
       "opts": [
-        "A. Hasta el 30% del valor inicial del contrato.",
-        "B. Hasta el 50% del valor inicial, siendo obligatoria la póliza de buen manejo y la aprobación del programa de inversión.",
-        "C. Hasta el 70% del valor del contrato para contratos de obra.",
-        "D. Sin límite si el Comité de Contratación lo aprueba."
+        "A) Tener título de posgrado en gestión contractual o derecho administrativo",
+        "B) Haber participado en la etapa previa a la celebración del contrato y pertenecer a la vicepresidencia o dependencia solicitante de la contratación",
+        "C) Contar con al menos tres años de experiencia en supervisión de contratos en el sector público",
+        "D) Tener certificación en competencias laborales específicas para la supervisión de contratos del SENA"
       ],
       "ans": "B"
     },
     {
       "n": 47,
-      "q": "¿Cuál es la naturaleza jurídica del contrato de interventoría según la Resolución 009 de 2025?",
+      "q": "Conforme a la Resolución 009 de 2025, ¿qué ocurre si la designación de supervisor se debe a una vacancia definitiva y cuál es la obligación del supervisor saliente en ese caso?",
       "opts": [
-        "A. Es accesorio y depende del contrato vigilado para existir.",
-        "B. Es principal y autónomo, independiente del contrato vigilado, aunque supone la existencia de este.",
-        "C. Es un contrato de adhesión que sigue siempre las condiciones del contrato principal.",
-        "D. Es un convenio interadministrativo sin carácter contractual."
+        "A) La Dirección Contractual asume la supervisión temporalmente hasta designar un nuevo servidor",
+        "B) El supervisor saliente debe presentar para la entrega del cargo el Informe de Supervisión para Terminación del Contrato si está terminado, o el Informe Parcial si está en ejecución",
+        "C) El nuevo supervisor asume sin necesidad de informe de empalme cuando la vacancia sea por retiro definitivo",
+        "D) El jefe del área solicitante designa de manera inmediata al servidor de mayor jerarquía disponible"
       ],
       "ans": "B"
     },
     {
       "n": 48,
-      "q": "¿Quién supervisa directamente el contrato de interventoría?",
+      "q": "Según la Resolución 009 de 2025, la designación de supervisión es de forzosa aceptación salvo en ciertos casos. ¿Cuáles son las causales para no aceptar la designación?",
       "opts": [
-        "A. El mismo interventor de manera autónoma.",
-        "B. Colpensiones directamente, designando un supervisor para verificar el cumplimiento de las condiciones pactadas.",
-        "C. La Oficina de Control Interno de manera exclusiva.",
-        "D. El Comité de Contratación y Racionalización del Gasto."
+        "A) Exceso de carga laboral debidamente certificado por el jefe inmediato y la Gerencia de Talento Humano",
+        "B) Fuerza mayor o caso fortuito, inhabilidad, incompatibilidad o impedimento, o conflicto de interés que debe ser manifestado por escrito al Representante Legal o su delegado de manera inmediata",
+        "C) Falta de conocimiento técnico sobre el objeto del contrato, demostrada mediante prueba de evaluación de competencias",
+        "D) Solicitud motivada ante el Comité de Contratación con justificación de la imposibilidad para ejercer la supervisión"
       ],
       "ans": "B"
     },
     {
       "n": 49,
-      "q": "¿Puede la interventoría coexistir con la supervisión para un mismo contrato principal?",
+      "q": "De acuerdo con la Resolución 009 de 2025, ¿cuáles son los elementos mínimos que debe contener el Informe de Supervisión para Terminación del Contrato elaborado por el supervisor?",
       "opts": [
-        "A. No, son mutuamente excluyentes sin excepción.",
-        "B. Por regla general no son concurrentes, pero Colpensiones puede determinar vigilancia conjunta, indicando en el contrato de interventoría las actividades a cargo del interventor y entendiendo las demás a cargo del supervisor.",
-        "C. Siempre deben coexistir en contratos superiores a 3.000 SMLMV.",
-        "D. Solo cuando la Superintendencia Financiera lo ordene."
+        "A) Solo la identificación del contrato y el porcentaje de cumplimiento de obligaciones",
+        "B) Identificación general del contrato, concepto y porcentaje de cumplimiento de obligaciones, resumen de ejecución financiera, servicios y productos recibidos a satisfacción, novedades, constancia de paz y salvo, recibo de pólizas, y características del documento entregado cuando aplique",
+        "C) Únicamente el balance financiero y la relación de actas de seguimiento suscritas durante la ejecución",
+        "D) La relación de pagos, el informe de auditoría técnica y el certificado de cumplimiento de normas ambientales"
       ],
       "ans": "B"
     },
     {
       "n": 50,
-      "q": "¿Cuál es una obligación financiera de la interventoría según la Resolución 009 de 2025?",
+      "q": "Integrando los Artículos Cuarto, Noveno y Décimo Segundo de la Resolución 009 de 2025: un supervisor identifica que el contratista ha incumplido reiteradamente obligaciones contractuales. ¿Cuál es la secuencia correcta de actuación según la Resolución?",
       "opts": [
-        "A. Aprobar directamente el presupuesto del proyecto.",
-        "B. Verificar, revisar, aprobar y gestionar las solicitudes de pago y llevar un registro cronológico de pagos y ajustes económicos del contrato.",
-        "C. Negociar con la aseguradora las condiciones de las pólizas.",
-        "D. Autorizar el traslado de recursos entre vigencias fiscales."
+        "A) Requerir oportunamente al contratista sobre los incumplimientos, informar al jefe inmediato y a la Dirección Contractual, elaborar informe detallado con los elementos del Artículo Noveno literal j), participar activamente en audiencias sancionatorias y coordinar el ingreso de las sanciones",
+        "B) Reportar inmediatamente a la Contraloría General de la República y suspender los pagos al contratista hasta que subsane el incumplimiento",
+        "C) Elaborar directamente la resolución de imposición de multa sin necesidad de requerimiento previo al contratista",
+        "D) Solicitar la terminación unilateral del contrato ante la Dirección Contractual sin necesidad de requerimientos previos"
       ],
-      "ans": "B"
+      "ans": "A"
     },
     {
       "n": 51,
-      "q": "¿Cuál es una obligación legal-ambiental de la interventoría según la Resolución 009 de 2025?",
+      "q": "Según el Acuerdo 005 de 2020 (Manual de Contratación), ¿cuál es la naturaleza jurídica de Colpensiones y bajo qué régimen legal se rigen principalmente sus contratos?",
       "opts": [
-        "A. Aprobar los estudios de impacto ambiental del contratista.",
-        "B. Efectuar el seguimiento ambiental al objeto contractual, garantizar el cumplimiento de normas ambientales y verificar la disponibilidad de recursos suficientes en materia de Gestión Ambiental y SST.",
-        "C. Tramitar las licencias ambientales requeridas para el proyecto.",
-        "D. Contratar de manera directa los servicios de gestión ambiental."
+        "A) Es una entidad descentralizada del orden territorial; sus contratos se rigen por el Estatuto General de Contratación de la Administración Pública",
+        "B) Es una Empresa Industrial y Comercial del Estado organizada como entidad financiera de carácter especial; sus contratos se rigen por disposiciones legales y reglamentarias aplicables a dichas actividades, con sujeción al artículo 13 de la Ley 1150 de 2007",
+        "C) Es un establecimiento público del orden nacional; sus contratos se rigen exclusivamente por las normas del Derecho Privado",
+        "D) Es una sociedad de economía mixta vinculada al Ministerio de Hacienda; sus contratos se rigen por el Código de Comercio y las normas civiles"
       ],
       "ans": "B"
     },
     {
       "n": 52,
-      "q": "¿Cuál es la obligación jurídica del interventor frente a dádivas o beneficios?",
+      "q": "El Acuerdo 005 de 2020 establece que los principios rectores de la contratación de Colpensiones incluyen los de igualdad, moralidad, eficacia, economía, celeridad, imparcialidad y publicidad. ¿Conforme a cuáles artículos de la Constitución Política se incorporan los principios de gestión fiscal?",
       "opts": [
-        "A. Reportarlos al supervisor y continuar ejerciendo sus funciones.",
-        "B. Abstenerse de generar o patrocinar conductas de dar o exigir dádivas en virtud de su labor, o permitir que alguien lo haga en su nombre.",
-        "C. Aceptarlos solo si son de bajo valor y no afectan la imparcialidad.",
-        "D. Informarlos a la Contraloría sin suspender sus funciones."
+        "A) Artículos 150 y 189 de la Constitución Política",
+        "B) Artículos 209 y 267 de la Constitución Política",
+        "C) Artículos 333 y 335 de la Constitución Política",
+        "D) Artículos 48 y 53 de la Constitución Política"
       ],
       "ans": "B"
     },
     {
       "n": 53,
-      "q": "¿Cuándo deben liquidarse los contratos suscritos por Colpensiones según el Acuerdo 005 de 2020?",
+      "q": "Según el numeral 4 del Capítulo I, Título II del Acuerdo 005 de 2020, ¿qué es el 'Certificado de Disponibilidad' y quién lo expide?",
       "opts": [
-        "A. En todos los contratos sin excepción.",
-        "B. Cuando superen los 100 SMLMV y ocurra terminación anticipada, situaciones de incumplimiento o sanciones, ejecución por demanda de Colpensiones, o cuando el supervisor lo recomiende.",
-        "C. Solo en contratos de obra pública.",
-        "D. Únicamente cuando el contratista lo solicite expresamente."
+        "A) Es un certificado de idoneidad del contratista expedido por la Dirección Contractual",
+        "B) Es un requisito para la ejecución del contrato que consiste en una revisión de la garantía; lo aprueba la Dirección Contractual",
+        "C) Es un documento que certifica la disponibilidad presupuestal, previamente expedido por la Vicepresidencia de Gestión Corporativa, cuyo valor debe amparar la totalidad de las obligaciones que se contraerán",
+        "D) Es el documento mediante el cual la Dirección de Bienes y Servicios certifica que el bien o servicio requerido está disponible en el mercado"
       ],
-      "ans": "B"
+      "ans": "C"
     },
     {
       "n": 54,
-      "q": "¿Dentro de qué plazo debe realizarse la liquidación de mutuo acuerdo cuando es obligatoria y las partes no han pactado plazo?",
+      "q": "De acuerdo con el numeral 5 del Capítulo I, Título II del Acuerdo 005 de 2020, ¿qué función tiene el Comité de Contratación y Racionalización del Gasto y quién determina sus funciones específicas?",
       "opts": [
-        "A. Dentro de los seis (6) meses siguientes a la terminación del contrato.",
-        "B. Dentro de los cuatro (4) meses siguientes a la terminación del respectivo contrato.",
-        "C. Dentro de los dos (2) meses siguientes al informe de terminación.",
-        "D. Dentro del mes siguiente a la terminación del contrato."
+        "A) Es el órgano que aprueba todos los contratos de Colpensiones independientemente de su cuantía; sus funciones las determina la Junta Directiva",
+        "B) Es el órgano que asesora al Representante Legal y emite recomendaciones conforme a la reglamentación que determine sus funciones, la cual será expedida por el Presidente o por quien éste delegue",
+        "C) Es el órgano que selecciona a los contratistas en los procesos de convocatoria pública; sus funciones están determinadas exclusivamente por el Manual de Contratación",
+        "D) Es el órgano que supervisa la ejecución de todos los contratos de cuantía superior a 300 SMLMV; sus funciones las fija el Decreto 309 de 2017"
       ],
       "ans": "B"
     },
     {
       "n": 55,
-      "q": "¿Qué ocurre si el contratista no se presenta a suscribir el acta de liquidación dentro del mes siguiente a ser informado?",
+      "q": "Conforme al Capítulo I del Título III del Acuerdo 005 de 2020, ¿cuáles son los elementos mínimos que deben contener los Estudios Previos?",
       "opts": [
-        "A. El contrato se entiende liquidado tácitamente sin ningún trámite.",
-        "B. Se tendrá como liquidación del contrato el Informe de Supervisión para Terminación, para efectos de liberar saldos.",
-        "C. Colpensiones debe esperar seis meses antes de liquidar unilateralmente.",
-        "D. Se inicia automáticamente un proceso disciplinario contra el contratista."
+        "A) Objeto del contrato, valor estimado, plazo y forma de pago únicamente",
+        "B) Descripción de la necesidad, modalidad de contratación, objeto y alcance, obligaciones, valor estimado, plazo, forma de pago, criterios de participación, estimación de riesgos, garantías, criterios de desempate y responsable de supervisión, entre otros",
+        "C) Solo los criterios técnicos de selección, el presupuesto oficial y la justificación de la modalidad de contratación",
+        "D) La conveniencia y oportunidad de la contratación, las especificaciones técnicas y el certificado de disponibilidad presupuestal"
       ],
       "ans": "B"
     },
     {
       "n": 56,
-      "q": "¿Cuáles son los documentos que forman parte integral del contrato según la Resolución 009 de 2025?",
+      "q": "El Capítulo II del Título III del Acuerdo 005 de 2020 establece cuatro modalidades de contratación. En la modalidad de 'Invitación a una Pluralidad Determinada de Proponentes', ¿cuál es el rango de cuantía estimada que hace procedente esta modalidad?",
       "opts": [
-        "A. Solo el texto del contrato y las garantías.",
-        "B. Las autorizaciones de ley, estudios previos, invitación/reglas de participación, propuesta u oferta, disponibilidad presupuestal, reserva presupuestal, pólizas aprobadas y todas las actuaciones de su ejecución.",
-        "C. Únicamente el objeto, valor y plazo pactados.",
-        "D. Solo los documentos posteriores a la firma del contrato."
+        "A) Superior a cien SMLMV e inferior a trescientos SMLMV sin incluir IVA",
+        "B) Superior a trescientos SMLMV e inferior a seis mil SMLMV sin incluir IVA",
+        "C) Igual o superior a seis mil SMLMV sin incluir IVA",
+        "D) Inferior a cien SMLMV sin incluir IVA"
       ],
       "ans": "B"
     },
     {
       "n": 57,
-      "q": "¿Cuál es el valor mínimo asegurado de la garantía de 'Seriedad del Ofrecimiento' según el Acuerdo 005 de 2020?",
+      "q": "Según el Acuerdo 005 de 2020, en la modalidad de 'Invitación a una Pluralidad Determinada de Proponentes', ¿cuántos proponentes como mínimo deben ser invitados?",
       "opts": [
-        "A. El 5% del monto de las propuestas.",
-        "B. No inferior al 10% del monto de las propuestas o del presupuesto oficial estimado.",
-        "C. El 20% del valor estimado del contrato.",
-        "D. El 15% del presupuesto oficial."
+        "A) Dos (2) oferentes que estén en capacidad de ofrecer los bienes o servicios requeridos",
+        "B) Tres (3) oferentes como mínimo, salvo que el estudio de mercado evidencie que solo existen dos en el mercado",
+        "C) Cuatro (4) oferentes como mínimo para garantizar la competencia",
+        "D) El número que determine el Comité de Contratación en cada caso particular"
       ],
       "ans": "B"
     },
     {
       "n": 58,
-      "q": "¿Cuál es la vigencia mínima de la garantía de 'Pago de salarios, prestaciones sociales e indemnizaciones laborales'?",
+      "q": "Conforme al Acuerdo 005 de 2020, ¿cuándo procede la modalidad de 'Convocatoria Pública' y cuál es la cuantía estimada mínima para su procedencia?",
       "opts": [
-        "A. El plazo del contrato más un (1) año.",
-        "B. El plazo del contrato más tres (3) años.",
-        "C. Cinco (5) años a partir de la terminación del contrato.",
-        "D. Durante el plazo de ejecución del contrato únicamente."
+        "A) Cuando la cuantía sea superior a trescientos SMLMV sin incluir IVA",
+        "B) Cuando la cuantía estimada para el futuro contrato sea igual o superior a seis mil SMLMV sin incluir IVA, o cuando esté vigente la Ley 996 de 2005",
+        "C) Cuando la cuantía sea superior a cien SMLMV sin incluir IVA y cuando existan más de cinco potenciales oferentes",
+        "D) Cuando la cuantía sea superior a mil SMLMV sin incluir IVA o cuando lo recomiende el Comité de Contratación"
       ],
       "ans": "B"
     },
     {
       "n": 59,
-      "q": "¿Qué debe verificar el supervisor sobre las garantías una vez finalizado el plazo de ejecución?",
+      "q": "Según el numeral III del Capítulo II del Título III del Acuerdo 005 de 2020, ¿en cuál de las siguientes situaciones NO procede la modalidad de 'Invitación a un Proponente'?",
       "opts": [
-        "A. Solo verificar que las pólizas hayan sido expedidas.",
-        "B. Exigir al contratista la extensión o ampliación de los amparos de estabilidad, calidad del bien o servicio, y demás garantías requeridas con posterioridad a la terminación; e informar a la Dirección Contractual sobre el vencimiento de vigencias.",
-        "C. Archivar las pólizas sin más trámite.",
-        "D. Solicitar al contratista nuevas pólizas sin relación con las obligaciones contractuales."
+        "A) Cuando el valor del contrato sea superior a trescientos SMLMV sin incluir IVA, salvo autorización del Comité de Contratación",
+        "B) Cuando se trate de contratos para prestación de servicios cuando no exista personal de planta suficiente",
+        "C) Cuando se trate de la celebración de contratos de condiciones uniformes bajo la modalidad de inscripción, suscripción o afiliación",
+        "D) Cuando se trate de la celebración de contratos complementarios y subsiguientes a otro previamente desarrollado por el mismo contratista"
+      ],
+      "ans": "A"
+    },
+    {
+      "n": 60,
+      "q": "De acuerdo con el Acuerdo 005 de 2020, la modalidad de 'Subasta Inversa' tiene una característica esencial de selección. ¿Cuál es?",
+      "opts": [
+        "A) Colpensiones selecciona la oferta con la mayor puntuación técnica y económica combinada",
+        "B) Colpensiones selecciona la oferta con base en el menor precio ofertado al finalizar el evento de subasta",
+        "C) Colpensiones selecciona la oferta con base en la mejor relación costo-beneficio evaluada por el Grupo Evaluador",
+        "D) Colpensiones selecciona la oferta a través de una puja electrónica donde el mayor precio gana la adjudicación"
       ],
       "ans": "B"
     },
     {
-      "n": 60,
-      "q": "¿Quién es responsable de la conformación y custodia técnica de los expedientes contractuales según el Acuerdo 005 de 2020?",
+      "n": 61,
+      "q": "Conforme al Capítulo III del Título III del Acuerdo 005 de 2020, ¿qué decisión puede adoptar el Comité de Contratación de manera motivada respecto a la modalidad de contratación aplicable?",
       "opts": [
-        "A. El supervisor del contrato de manera exclusiva.",
-        "B. La Dirección Contractual (conformación) y la Dirección Documental (procesamiento y custodia técnica); los supervisores son responsables de entregar los documentos producidos o recibidos en orden.",
-        "C. La Dirección de Bienes y Servicios.",
-        "D. El Comité de Contratación y Racionalización del Gasto."
+        "A) Puede adjudicar directamente cualquier contrato sin necesidad de proceso de selección cuando el interés institucional así lo justifique",
+        "B) Puede decidir la aplicación de una modalidad de contratación diferente a la aplicable a la respectiva contratación, siempre y cuando esta se encuentre regulada en el Manual",
+        "C) Puede prescindir de los Estudios Previos cuando la urgencia del servicio o bien requerido así lo justifique",
+        "D) Puede modificar los criterios de evaluación establecidos en las Reglas de Participación una vez presentadas las ofertas"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 62,
+      "q": "Según el numeral 3 del Título IV del Acuerdo 005 de 2020, ¿cuál es el valor mínimo de la garantía de 'Seriedad del Ofrecimiento' y hasta cuándo se extiende su vigencia?",
+      "opts": [
+        "A) No menor al cinco por ciento (5%) del presupuesto oficial; vigencia hasta la suscripción del contrato",
+        "B) No inferior al diez por ciento (10%) del monto de las propuestas o del presupuesto oficial; vigencia desde la presentación de la oferta hasta la aprobación de la garantía de la etapa contractual",
+        "C) No inferior al veinte por ciento (20%) del presupuesto oficial; vigencia hasta la terminación del contrato",
+        "D) No menor al quince por ciento (15%) del valor estimado del contrato; vigencia desde la apertura del proceso hasta la liquidación"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 63,
+      "q": "De acuerdo con el numeral 3 del Título IV del Acuerdo 005 de 2020, ¿cuál es el porcentaje mínimo del valor total del contrato que debe cubrir la garantía de 'Cumplimiento' y qué obligación específica de Colpensiones debe amparar?",
+      "opts": [
+        "A) No inferior al cinco por ciento (5%) del valor total; ampara el pago de multas",
+        "B) No inferior al diez por ciento (10%) del valor total; debe amparar también los perjuicios causados a Colpensiones por sanciones económicas como multas y cláusula penal pecuniaria",
+        "C) No inferior al veinte por ciento (20%) del valor total; ampara únicamente el incumplimiento del objeto contractual",
+        "D) No inferior al quince por ciento (15%) del valor total; ampara los vicios redhibitorios de los bienes entregados"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 64,
+      "q": "Según el Acuerdo 005 de 2020, ¿bajo qué condición puede Colpensiones prescindir de garantías en sus contratos?",
+      "opts": [
+        "A) Cuando el contrato sea celebrado con una entidad pública",
+        "B) En los contratos inferiores a cien SMLMV, en los contratos interadministrativos y en los contratos de seguros",
+        "C) Cuando el Comité de Contratación así lo autorice expresamente en el estudio previo",
+        "D) Cuando el contratista haya ejecutado contratos anteriores con Colpensiones sin incumplimientos registrados"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 65,
+      "q": "Conforme al numeral 4 del Título IV del Acuerdo 005 de 2020, cuando el objeto del contrato lo requiera, ¿cuál es el límite máximo del anticipo y/o pago anticipado que puede pactarse?",
+      "opts": [
+        "A) No puede superar el treinta por ciento (30%) de su valor inicial",
+        "B) No puede superar el cincuenta por ciento (50%) de su valor inicial",
+        "C) No puede superar el setenta por ciento (70%) de su valor inicial",
+        "D) No puede superar el cuarenta por ciento (40%) de su valor inicial"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 66,
+      "q": "Según el numeral 1 del Título IV del Acuerdo 005 de 2020, ¿cómo se documentan los contratos cuya cuantía sea igual o inferior a cien SMLMV sin incluir el IVA?",
+      "opts": [
+        "A) Mediante formato de contrato simplificado suscrito por el Representante Legal",
+        "B) Mediante la suscripción de un documento de aceptación de oferta remitido al proponente por el Representante Legal o su delegado",
+        "C) Mediante minuta de contrato revisada por la Oficina Asesora de Asuntos Legales",
+        "D) Mediante acta del Comité de Contratación con el visto bueno del Presidente"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 67,
+      "q": "De acuerdo con el numeral 7.1 del Título IV del Acuerdo 005 de 2020, cuando el supervisor o interventor advierte que el contratista está en retardo, ¿cuántos días hábiles tiene el contratista para responder o proponer un plan de mejora, y cuántos días tiene Colpensiones para pronunciarse sobre esa respuesta?",
+      "opts": [
+        "A) Cinco (5) días hábiles para responder; veinte (20) días hábiles para pronunciarse Colpensiones",
+        "B) Diez (10) días hábiles para responder; treinta (30) días hábiles para pronunciarse Colpensiones",
+        "C) Tres (3) días hábiles para responder; quince (15) días hábiles para pronunciarse Colpensiones",
+        "D) Siete (7) días hábiles para responder; veinticinco (25) días hábiles para pronunciarse Colpensiones"
+      ],
+      "ans": "A"
+    },
+    {
+      "n": 68,
+      "q": "Según el Acuerdo 005 de 2020, ¿qué se entiende como inicio de la etapa post contractual y qué debe expedir el supervisor o interventor en ese momento?",
+      "opts": [
+        "A) La terminación bilateral del contrato mediante acta suscrita por las partes; el supervisor debe expedir el certificado de paz y salvo",
+        "B) La terminación del contrato, momento en el cual el supervisor o interventor debe expedir el correspondiente informe de supervisión para terminación",
+        "C) La liquidación definitiva del contrato; el supervisor debe expedir la certificación de liberación de garantías",
+        "D) El vencimiento de la vigencia de las garantías post contractuales; el supervisor debe expedir la constancia de cumplimiento final"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 69,
+      "q": "Conforme al Título V del Acuerdo 005 de 2020, ¿en cuáles eventos deben liquidarse los contratos de Colpensiones que superen los cien SMLMV?",
+      "opts": [
+        "A) Únicamente cuando el contrato se termine de manera anticipada",
+        "B) Cuando el contrato se termine de manera anticipada, cuando durante la ejecución se hayan presentado situaciones de incumplimiento, sanciones o controversias, cuando la ejecución sea por demanda de Colpensiones, o cuando el supervisor así lo recomiende",
+        "C) Solo cuando existan saldos a favor de cualquiera de las partes al momento de la terminación",
+        "D) Únicamente cuando el contratista lo solicite expresamente y la Dirección Contractual lo apruebe"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 70,
+      "q": "Según el numeral 3 del Título V del Acuerdo 005 de 2020, ¿quién es responsable de la conformación de los expedientes contractuales y quién es responsable del procesamiento y custodia técnica de los mismos?",
+      "opts": [
+        "A) La Dirección Contractual es responsable de la conformación; la Dirección Documental es responsable del procesamiento y custodia técnica",
+        "B) El supervisor del contrato es responsable de la conformación; la Oficina de Control Interno es responsable de la custodia",
+        "C) La Gerencia de Talento Humano es responsable de la conformación; el Archivo General de la Nación es responsable de la custodia",
+        "D) La Vicepresidencia de Gestión Corporativa es responsable de la conformación; la Dirección de Bienes y Servicios es responsable de la custodia"
+      ],
+      "ans": "A"
+    },
+    {
+      "n": 71,
+      "q": "Conforme al Capítulo III del Título III del Acuerdo 005 de 2020, el Grupo Evaluador debe elaborar el Informe de Evaluación que será puesto en conocimiento de los proponentes. ¿Por cuántos días hábiles estará disponible este informe para que los proponentes formulen observaciones?",
+      "opts": [
+        "A) Un (1) día hábil",
+        "B) Tres (3) días hábiles",
+        "C) Cinco (5) días hábiles",
+        "D) Diez (10) días hábiles"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 72,
+      "q": "Según el numeral 8 del Capítulo III del Título III del Acuerdo 005 de 2020, en la etapa de negociación previa a la selección del contratista, ¿qué está expresamente prohibido?",
+      "opts": [
+        "A) Obtener el menor precio de oferta dentro de los proponentes habilitados",
+        "B) Poner en riesgo la ejecución del objeto del futuro contrato o las obligaciones en él contenidas, ni desmejorar las condiciones técnicas presentadas en la oferta",
+        "C) Solicitar al único oferente habilitado el mejor precio disponible",
+        "D) Publicar el resultado de la etapa de negociación en el SECOP II"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 73,
+      "q": "De acuerdo con el Acuerdo 005 de 2020, ¿cuándo puede Colpensiones ejercer el 'Derecho de Retracto' y cuál es su efecto?",
+      "opts": [
+        "A) Cuando el contratista no suscribe el contrato en el plazo establecido; el efecto es hacer efectiva la garantía de seriedad",
+        "B) Con posterioridad a la selección del contratista y antes de la firma del contrato, cuando detecte error o inconsistencia en la evaluación; el efecto es comunicar la decisión y, corregido el error, continuar con el procedimiento",
+        "C) Durante la ejecución del contrato cuando se detecte incumplimiento grave del objeto contractual",
+        "D) Solo durante el plazo de observaciones al informe de evaluación; el efecto es retrotraer el proceso a la etapa de apertura"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 74,
+      "q": "Según el Acuerdo 005 de 2020, ¿cuándo puede Colpensiones abstenerse de suscribir el contrato con el oferente que presentó el menor precio en una subasta inversa?",
+      "opts": [
+        "A) Cuando el precio sea inferior al costo directo estimado por el Grupo Evaluador",
+        "B) Cuando de manera razonada observe que la postura final del proponente puede poner en riesgo el cumplimiento del objeto del contrato y sus obligaciones, por ser artificialmente baja",
+        "C) Cuando el proponente no cumpla con los requisitos de experiencia mínima exigidos en las reglas de participación",
+        "D) Cuando el precio final sea inferior al cincuenta por ciento (50%) del presupuesto oficial estimado"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 75,
+      "q": "Conforme al numeral 6 del Capítulo I del Título II del Acuerdo 005 de 2020, ¿qué actividades específicas puede realizar Colpensiones durante el estudio de mercado y qué debe establecerse expresamente en las comunicaciones enviadas al mercado?",
+      "opts": [
+        "A) Puede solo consultar bases de datos especializadas y presentar cotizaciones formales; las comunicaciones deben indicar el presupuesto oficial",
+        "B) Puede realizar consultas a través de medios convenientes o en forma directa con personas del sector, elaborando el cuadro comparativo; las solicitudes deben establecer que no generan compromiso u obligación para Colpensiones",
+        "C) Puede contratar estudios de mercado externos sin requerir autorización del Comité de Contratación; las comunicaciones deben indicar la fecha límite de respuesta",
+        "D) Puede realizar únicamente consultas a través del SECOP II; las comunicaciones deben indicar que el resultado será vinculante para la entidad"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 76,
+      "q": "Según el numeral 2 del Capítulo II del Título I del Acuerdo 005 de 2020, las Políticas de Buen Gobierno de Colpensiones contemplan la inclusión de 'Acuerdos de Niveles de Servicio - ANS'. ¿Para qué sirven estos acuerdos?",
+      "opts": [
+        "A) Para garantizar que los contratos sean publicados oportunamente en el SECOP II conforme a la Ley de Transparencia",
+        "B) Para permitir a Colpensiones realizar descuentos por indisponibilidades o desviaciones en la calidad, sin acudir a procesos sancionatorios",
+        "C) Para certificar la calidad técnica de los bienes y servicios contratados ante entes de control",
+        "D) Para establecer los criterios de evaluación de las propuestas en los procesos de convocatoria pública"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 77,
+      "q": "Conforme al numeral 4 del Capítulo II del Título I del Acuerdo 005 de 2020, ¿en qué plataforma debe publicar Colpensiones los documentos de su actividad contractual?",
+      "opts": [
+        "A) Exclusivamente en su portal web institucional conforme a la Ley 1712 de 2014",
+        "B) En el SECOP II o en la plataforma que disponga la Agencia Nacional de Contratación Pública - Colombia Compra Eficiente, en concordancia con la Ley de Transparencia",
+        "C) En el Sistema de Información y Gestión del Empleo Público - SIGEP administrado por el DAFP",
+        "D) En el Portal Único de Contratación administrado por el Ministerio de Hacienda y Crédito Público"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 78,
+      "q": "Según el numeral 5 del Capítulo II del Título I del Acuerdo 005 de 2020, ¿para qué actividades puede Colpensiones usar medios electrónicos?",
+      "opts": [
+        "A) Únicamente para la publicación de documentos precontractuales conforme a las normas de gestión documental",
+        "B) Para la solicitud y recibo de cotizaciones y ofertas, celebración de contratos, audiencias de negociación, subastas inversas, procedimientos sancionatorios que requieran presencia de las partes, y todos los demás trámites en la etapa precontractual y contractual",
+        "C) Solo para las audiencias de negociación y los procesos de subasta inversa de cuantía superior a 300 SMLMV",
+        "D) Para todos los trámites contractuales excepto la suscripción del acta de liquidación que debe ser presencial"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 79,
+      "q": "De acuerdo con el numeral 3 del Capítulo I del Título II del Acuerdo 005 de 2020, ¿quién consolida el Plan General de Compras y ante quién debe recomendarse su aprobación?",
+      "opts": [
+        "A) Lo consolida el Comité de Contratación y se recomienda su aprobación a la Junta Directiva",
+        "B) Lo consolida la Dirección de Bienes y Servicios y lo presenta el Gerente Administrativo al Comité de Contratación, quien recomienda su aprobación al Vicepresidente de Gestión Corporativa",
+        "C) Lo consolida cada Vicepresidencia y se presenta directamente al Presidente para su aprobación",
+        "D) Lo consolida la Dirección Contractual y se somete a aprobación de la Superintendencia Financiera de Colombia"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 80,
+      "q": "Integrando el Acuerdo 005 de 2020 y la Resolución 009 de 2025: un contrato de servicios de consultoría cuya cuantía es de 4.500 SMLMV entra en etapa de ejecución con un supervisor designado. Durante la ejecución se identifica que la complejidad técnica supone conocimientos especializados que el supervisor no tiene. ¿Cuál es la actuación más completa y correcta conforme a los dos instrumentos normativos?",
+      "opts": [
+        "A) El supervisor puede renunciar a la función alegando falta de idoneidad técnica ante el Representante Legal",
+        "B) Colpensiones puede contratar una interventoría para el seguimiento técnico especializado, mientras la supervisión integral se mantiene; el supervisor puede además apoyarse en contratos de prestación de servicios debidamente justificados, sin que ello implique delegación de sus funciones",
+        "C) El supervisor debe delegar todas sus funciones en el interventor contratado para el efecto, quien asume la responsabilidad integral del contrato",
+        "D) El Comité de Contratación debe modificar la modalidad de contratación a 'Invitación a un Proponente' para contratar el apoyo requerido"
       ],
       "ans": "B"
     }
   ]
 });
 // ============================================================ FIN MÓDULO: contractual
+
 
 // ============================================================
 // MÓDULO: etica
