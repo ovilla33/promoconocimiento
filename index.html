@@ -9130,6 +9130,920 @@ registerModule("etica", {
 });
 // ============================================================ FIN MÓDULO: etica
 
+// ============================================================
+// MÓDULO: beps
+// Nombre: Beneficios Económicos Periódicos – BEPS
+// Preguntas: 80
+// Para actualizar: pídele a Claude "Reemplaza el bloque
+//   MÓDULO: beps con [tus nuevas preguntas o cambios]"
+// ============================================================
+registerModule("beps", {
+  "name": "Beneficios Económicos Periódicos – BEPS",
+  "icon": "🌱",
+  "color": "#8e44ad",
+  "desc": "Módulo A: Fundamento normativo, naturaleza y acceso · Módulo B: Administración, recaudo y régimen técnico · Módulo C: Equivalencias, Ley 2381/2024 y casos integrados",
+  "bloques": [
+    "MÓDULO A · SECCIÓN 1 — Origen constitucional y legal  (1–5)",
+    "MÓDULO A · SECCIÓN 2 — Requisitos de ingreso y aportes  (6–10)",
+    "MÓDULO A · SECCIÓN 3 — El incentivo estatal  (11–15)",
+    "MÓDULO A · SECCIÓN 4 — Beneficio económico periódico y destinación de recursos  (16–21)",
+    "MÓDULO A · SECCIÓN 5 — Coexistencia con el Sistema General de Pensiones  (22–25)",
+    "MÓDULO B · SECCIÓN 6 — Administración por Colpensiones  (26–30)",
+    "MÓDULO B · SECCIÓN 7 — Sistema de recaudo y operadores  (31–35)",
+    "MÓDULO B · SECCIÓN 8 — Aportes de terceros y creadores culturales  (36–40)",
+    "MÓDULO B · SECCIÓN 9 — Régimen técnico y financiación del seguro  (41–45)",
+    "MÓDULO B · SECCIÓN 10 — Decreto 1494 de 2022: Sistema de Equivalencias  (46–50)",
+    "MÓDULO C · SECCIÓN 11 — Ley 2381 de 2024 y BEPS en el nuevo sistema  (51–53)",
+    "MÓDULO C · SECCIÓN 12 — Prohibiciones, restricciones y reglas especiales  (54–58)",
+    "MÓDULO C · SECCIÓN 13 — Casos integrados y aplicación normativa  (59–80)"
+  ],
+  "questions": [
+    {
+      "n": 1,
+      "q": "El Acto Legislativo 01 de 2005 es la piedra angular normativa del programa BEPS. ¿Cuál fue la modificación constitucional específica que habilitó la creación de los BEPS y cuál es el tope máximo que establece para el beneficio?",
+      "opts": [
+        "A) Modificó el artículo 48 de la Carta Política e introdujo la posibilidad de que la ley determine casos en que se puedan conceder beneficios económicos periódicos inferiores al salario mínimo mensual legal vigente a personas de escasos recursos",
+        "B) Creó directamente el programa BEPS como derecho fundamental y estableció que el beneficio no podía superar el 50% del salario mínimo mensual legal vigente",
+        "C) Modificó el artículo 49 de la Constitución e incorporó el principio de sostenibilidad fiscal aplicado únicamente al sistema pensional del sector privado",
+        "D) Estableció que el Gobierno Nacional podía crear sistemas alternativos de pensión para reemplazar el régimen de prima media en zonas rurales"
+      ],
+      "ans": "A"
+    },
+    {
+      "n": 2,
+      "q": "El artículo 87 de la Ley 1328 de 2009 formalizó el mandato constitucional del programa BEPS. ¿Cuál es la función específica que cumple esta disposición dentro del marco normativo del programa?",
+      "opts": [
+        "A) Reglamentó técnicamente todos los aspectos operativos del programa incluyendo el porcentaje del incentivo estatal y las edades de retiro",
+        "B) Señaló los requisitos generales para acceder al esquema BEPS y delegó al Gobierno Nacional su regulación técnica siguiendo los lineamientos de política pública social",
+        "C) Creó el Fondo de BEPS como patrimonio autónomo administrado por el Banco de la República con independencia de Colpensiones",
+        "D) Estableció que los BEPS serían administrados por el Ministerio del Trabajo con supervisión de la Contraloría General de la República"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 3,
+      "q": "El Decreto 604 de 2013, compilado en el Decreto 1833 de 2016, es el instrumento de reglamentación formal del programa. ¿Cuál fue la fecha oficial de inicio de operaciones del programa BEPS y qué decreto la fijó?",
+      "opts": [
+        "A) El 1 de enero de 2014, fijada por el Decreto 2983 de 2013",
+        "B) El 10 de diciembre de 2013, fijada a través del Decreto 1872 de 2013",
+        "C) El 15 de agosto de 2013, fijada por el mismo Decreto 604 de 2013 en su artículo transitorio",
+        "D) El 1 de julio de 2014, fijada por el CONPES Social 156 de 2012 como fecha de entrada en vigencia"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 4,
+      "q": "El CONPES Social 156 de 2012 tuvo un rol específico en la implementación del programa BEPS. ¿Cuál fue ese rol?",
+      "opts": [
+        "A) Creó el programa BEPS mediante habilitación presupuestal y lo adscribió al Ministerio de Hacienda para efectos de sostenibilidad financiera",
+        "B) Reglamentó el sistema de equivalencias entre semanas de cotización pensional y ahorros BEPS",
+        "C) Definió el diseño institucional, la focalización y la viabilidad presupuestal para la implementación de los BEPS como servicio social complementario",
+        "D) Estableció el porcentaje del incentivo estatal del 20% y la periodicidad de pago bimestral de la anualidad vitalicia"
+      ],
+      "ans": "C"
+    },
+    {
+      "n": 5,
+      "q": "Según la definición del Decreto 1833 de 2016, los BEPS son un mecanismo con cinco características jurídicas específicas. ¿Cuáles son esas cinco características?",
+      "opts": [
+        "A) Obligatorio, contributivo, solidario, vitalicio e intransferible",
+        "B) Individual, independiente, autónomo, voluntario y de protección para la vejez, que se ofrece como parte de los servicios sociales complementarios",
+        "C) Colectivo, subsidiado, estatal, temporal y focalizado en población vulnerable del campo colombiano",
+        "D) Complementario, pensional, heredable, administrado por el Estado e indexado al IPC anual"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 6,
+      "q": "El artículo 2.2.13.2.1 del Decreto 1833 de 2016 establece los requisitos de ingreso al programa BEPS. ¿Cómo debe acreditarse el requisito de ingresos inferiores a un SMMLV según el Parágrafo 3 de ese artículo?",
+      "opts": [
+        "A) Mediante declaración juramentada ante notario sobre los ingresos percibidos durante los últimos seis meses",
+        "B) Mediante la presentación del certificado de afiliación al régimen subsidiado de salud o de la condición de beneficiario del régimen contributivo de salud",
+        "C) Mediante certificación expedida por el empleador o la última declaración de renta presentada ante la DIAN",
+        "D) Mediante el carné del Sisbén vigente que acredite clasificación en los niveles A, B o C del instrumento de focalización"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 7,
+      "q": "Según el Parágrafo 1 del artículo 2.2.13.2.1, después de recibida la solicitud de ingreso, ¿en qué plazo máximo debe Colpensiones informar al interesado si fue aceptada o rechazada su solicitud?",
+      "opts": [
+        "A) En un plazo que no exceda los cinco (5) días hábiles",
+        "B) En un plazo que no exceda los quince (15) días calendario",
+        "C) En un plazo que no exceda los diez (10) días hábiles",
+        "D) En un plazo que no exceda los veinte (20) días hábiles"
+      ],
+      "ans": "C"
+    },
+    {
+      "n": 8,
+      "q": "El artículo 2.2.13.3.1 establece las reglas sobre los aportes al mecanismo BEPS. ¿Qué sucede cuando una persona alcanza el aporte anual máximo establecido antes de finalizar el año y realiza aportes que superan ese monto?",
+      "opts": [
+        "A) Los aportes excedentes son devueltos de inmediato al vinculado sin generar ningún rendimiento ni incentivo estatal",
+        "B) Los aportes que superen el monto máximo serán contabilizados para el año calendario siguiente, sin que se pueda superar el tope fijado, y además se da traslado de esos casos a la UGPP",
+        "C) El excedente se transfiere automáticamente como cotización al sistema general de pensiones en el régimen de prima media",
+        "D) Colpensiones suspende el acceso del vinculado al sistema de recaudo por el tiempo que reste del año en curso"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 9,
+      "q": "¿Quién tiene la facultad de definir el monto máximo del aporte BEPS para cada vigencia, según el Decreto 1833 de 2016?",
+      "opts": [
+        "A) La Junta Directiva de Colpensiones mediante acuerdo aprobado en sesión ordinaria",
+        "B) El Ministerio del Trabajo informará el monto máximo, y el porcentaje de incremento anual será definido por la Comisión Intersectorial de Pensiones y Beneficios Económicos",
+        "C) La Superintendencia Financiera de Colombia mediante circular externa dirigida a Colpensiones",
+        "D) El Ministerio de Hacienda y Crédito Público previo concepto del CONFIS sobre sostenibilidad presupuestal"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 10,
+      "q": "Según el artículo 2.2.13.3.2, ¿cómo se registran y contabilizan los recursos de los aportes BEPS y cómo se calcula el beneficio a pagar?",
+      "opts": [
+        "A) Se registran en un fondo colectivo de nivelación administrado por el Ministerio de Hacienda; el beneficio se calcula sobre el promedio del fondo",
+        "B) Se registran y contabilizan en cuentas individuales dentro del fondo común de BEPS administrado por Colpensiones; el beneficio se calcula y paga exclusivamente con los recursos contabilizados en la cuenta individual",
+        "C) Se registran en el sistema general de pensiones como cotizaciones voluntarias y generan historia laboral para el vinculado",
+        "D) Se registran en una cuenta bancaria individual a nombre del vinculado administrada directamente por la aseguradora que expedirá la anualidad vitalicia"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 11,
+      "q": "El artículo 2.2.13.4.1 define el incentivo periódico BEPS. ¿Cuál es la finalidad última declarada del incentivo según esta disposición?",
+      "opts": [
+        "A) Garantizar que todos los vinculados alcancen al menos el 50% del salario mínimo como ingreso en la vejez",
+        "B) Desarrollar el principio de solidaridad con la población de menor ingreso, constituyéndose en un apoyo al esfuerzo de ahorro",
+        "C) Compensar la ausencia de mesada catorce que tienen los beneficiarios de la anualidad vitalicia BEPS",
+        "D) Cubrir los costos de administración del programa para que no sean asumidos directamente por los vinculados"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 12,
+      "q": "El artículo 2.2.13.4.2 establece el cálculo del valor del incentivo periódico. ¿Sobre qué base se calcula el 20% y con qué periodicidad se contabiliza?",
+      "opts": [
+        "A) Se calcula sobre el saldo acumulado total de la cuenta individual al momento del retiro; se contabiliza una sola vez al cumplir la edad de retiro",
+        "B) Se calcula sobre el total de aportes históricos del vinculado desde su vinculación al programa; se contabiliza al finalizar cada quinquenio",
+        "C) Se calcula sobre el aporte realizado por el beneficiario en el respectivo año y se contabiliza anualmente",
+        "D) Se calcula sobre el promedio mensual de aportes de los últimos tres años previos al retiro; se contabiliza bimestralmente"
+      ],
+      "ans": "C"
+    },
+    {
+      "n": 13,
+      "q": "El artículo 2.2.13.4.3 establece una obligación específica de Colpensiones al inicio de cada año. ¿En qué consiste esa obligación?",
+      "opts": [
+        "A) Reportar al Ministerio de Hacienda la provisión de subsidios para la siguiente vigencia fiscal a más tardar el último día de marzo",
+        "B) Publicar en el portal web institucional el monto máximo de aportes permitidos para esa vigencia fiscal",
+        "C) Dentro del primer mes de cada año calendario, calcular el subsidio periódico que se le otorgaría a cada persona e informar a cada beneficiario el valor de su ahorro durante los años anteriores",
+        "D) Verificar que todos los vinculados activos no hayan cotizado simultáneamente al sistema general de pensiones en el año inmediatamente anterior"
+      ],
+      "ans": "C"
+    },
+    {
+      "n": 14,
+      "q": "El incentivo puntual BEPS tiene una finalidad y un requisito específico de aportes mínimos. ¿Cuáles son según el Decreto 1833 de 2016?",
+      "opts": [
+        "A) Su finalidad es cubrir los riesgos de invalidez y muerte; requiere doce (12) aportes mínimos en el año calendario anterior",
+        "B) Su finalidad es promover la fidelidad en el ahorro y consiste en acceder a microseguros; para obtenerlo se requiere haber realizado por lo menos seis (6) aportes en el año calendario anterior o pagos equivalentes al valor total de seis (6) salarios mínimos diarios",
+        "C) Su finalidad es incentivar el traslado de recursos del RPM a BEPS; requiere un aporte mínimo equivalente a un salario mínimo mensual en el año anterior",
+        "D) Su finalidad es bonificar a los vinculados que mantienen saldo positivo en su cuenta individual; requiere que el saldo acumulado supere los tres millones de pesos al finalizar el año"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 15,
+      "q": "Según el artículo 2.2.13.4.4 modificado por el Decreto 1857 de 2021, ¿qué incluyen los gastos de administración como incentivo puntual y con qué tasa de interés técnico se calculan las anualidades vitalicias BEPS?",
+      "opts": [
+        "A) Incluyen los gastos operativos de recaudo y la garantía de mantenimiento del poder adquisitivo de los aportes; tasa de interés técnico IPC + 2%",
+        "B) Incluyen los gastos que realice la administradora para cubrir los desbalances financieros de las anualidades vitalicias BEPS, y también la garantía de mantener el poder adquisitivo de los aportes; tasa de interés técnico IPC + 4%",
+        "C) Incluyen únicamente la prima de los microseguros de invalidez y muerte financiados con el Fondo de Riesgos Laborales; tasa de interés técnico DTF + 2%",
+        "D) Incluyen los costos de tecnología y divulgación del programa; tasa de interés técnico IPC + 6%"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 16,
+      "q": "El artículo 2.2.13.5.1 establece tres requisitos para ser beneficiario del BEPS. ¿Cuál es el tercer requisito relacionado con el monto del ahorro?",
+      "opts": [
+        "A) Que el vinculado haya realizado aportes en al menos tres años continuos antes de solicitar el beneficio",
+        "B) Que el monto del ahorro acumulado sea superior al equivalente a 50 salarios mínimos mensuales",
+        "C) Que el monto anual del ahorro sea inferior al aporte mínimo anual señalado para el sistema general de pensiones",
+        "D) Que el vinculado no tenga deudas pendientes con ninguna entidad del sistema general de seguridad social"
+      ],
+      "ans": "C"
+    },
+    {
+      "n": 17,
+      "q": "Según el artículo 2.2.13.5.2, el valor de la anualidad vitalicia tiene un tope máximo legal. ¿Cuál es ese tope y con qué periodicidad se reajusta?",
+      "opts": [
+        "A) No puede superar el 100% de un SMMLV; se reajusta cada dos años según el crecimiento del PIB",
+        "B) No puede superar el 85% de un SMMLV mensual; se reajusta cada año de acuerdo con la variación porcentual del IPC certificado por el DANE para el año inmediatamente anterior",
+        "C) No puede superar el 70% de un SMMLV; se reajusta cada año de acuerdo con el incremento del salario mínimo legal",
+        "D) No puede superar el 50% de un SMMLV mensual; se reajusta cada tres años conforme a la inflación acumulada del período"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 18,
+      "q": "Cuando al contratar la anualidad vitalicia los recursos aportados más rendimientos e incentivo superan el tope del 85% del SMMLV, ¿qué ocurre con el capital excedente según el Decreto 1833 de 2016?",
+      "opts": [
+        "A) El capital excedente se transfiere al Fondo de Solidaridad Pensional para financiar el subsidio de otros vinculados",
+        "B) El capital excedente se usa para incrementar el número de meses de pago de la anualidad vitalicia hasta agotar el saldo",
+        "C) El capital que exceda dicho porcentaje se devolverá al beneficiario del mecanismo BEPS con sus respectivos rendimientos financieros",
+        "D) El capital excedente se destina automáticamente como cotización voluntaria al sistema general de pensiones"
+      ],
+      "ans": "C"
+    },
+    {
+      "n": 19,
+      "q": "El artículo 2.2.13.5.2 contempla cuatro modalidades de destinación de los recursos al cumplir la edad de retiro. ¿En cuál de ellas el beneficiario NO obtiene el subsidio periódico del Estado?",
+      "opts": [
+        "A) En la contratación de la anualidad vitalicia con una compañía de seguros legalmente constituida",
+        "B) En la solicitud de devolución de la suma ahorrada y sus rendimientos en un único pago",
+        "C) En el pago total o parcial de un inmueble de su propiedad",
+        "D) En el traslado de los recursos al sistema general de pensiones cuando proceda el incentivo"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 20,
+      "q": "Según el Parágrafo 2 del artículo 2.2.13.5.2, ¿qué ocurre si el vinculado fallece antes de cumplir la edad para hacerse acreedor al Beneficio Económico Periódico?",
+      "opts": [
+        "A) Los herederos reciben el monto del ahorro más rendimientos y también el subsidio estatal del 20% como reconocimiento al esfuerzo de ahorro del causante",
+        "B) Los recursos se transfieren al Fondo de Garantías de Instituciones Financieras (FOGAFÍN) para su administración hasta que los herederos los reclamen",
+        "C) El monto del ahorro realizado más sus rendimientos son devueltos a los herederos, sin que se genere el subsidio del Estado, siguiendo los lineamientos de la Superintendencia Financiera sobre exención del juicio de sucesión",
+        "D) Los recursos quedan en el fondo común de BEPS y se redistribuyen entre los vinculados activos del programa como mecanismo de solidaridad intergeneracional"
+      ],
+      "ans": "C"
+    },
+    {
+      "n": 21,
+      "q": "El Parágrafo 1 del artículo 2.2.13.5.2 establece que en la contratación de la anualidad vitalicia no se puede incluir un concepto específico. ¿Cuál?",
+      "opts": [
+        "A) No se puede incluir ningún monto para el pago de comisiones de intermediación de seguros",
+        "B) No se puede incluir cláusulas de exclusión por enfermedades preexistentes del beneficiario",
+        "C) No se puede incluir el valor del incentivo periódico en el cálculo base de la prima del seguro",
+        "D) No se puede incluir la inflación esperada como factor de reajuste de la prima durante la vigencia del seguro"
+      ],
+      "ans": "A"
+    },
+    {
+      "n": 22,
+      "q": "Según el artículo 2.2.13.7.1, ¿puede una persona estar afiliada simultáneamente al sistema general de pensiones y vinculada al mecanismo BEPS? ¿Qué está expresamente prohibido?",
+      "opts": [
+        "A) No pueden coexistir bajo ninguna circunstancia; la afiliación a BEPS implica la desafiliación automática del sistema general de pensiones",
+        "B) Sí pueden coexistir, pero no se permite cotizar al sistema general de pensiones y aportar al mecanismo BEPS en un mismo mes",
+        "C) Sí pueden coexistir sin ninguna restricción; los aportes en ambos sistemas son completamente independientes",
+        "D) Solo pueden coexistir durante los primeros cinco años de vinculación a BEPS; transcurrido ese plazo el vinculado debe elegir entre un sistema u otro"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 23,
+      "q": "El artículo 2.2.13.7.2 establece dos principios de coexistencia entre BEPS y el SGP. ¿Cuál es el segundo principio?",
+      "opts": [
+        "A) En todos los casos primarán los beneficios que eventualmente se puedan obtener del sistema general de pensiones sobre los que se puedan obtener del Servicio Social Complementario de BEPS",
+        "B) En todos los casos primarán los beneficios BEPS cuando el vinculado no haya alcanzado las semanas mínimas requeridas para la pensión de vejez",
+        "C) En todos los casos los recursos ahorrados en BEPS se trasladan automáticamente al SGP al cumplir la edad de retiro sin necesidad de manifestación del vinculado",
+        "D) En todos los casos el incentivo del 20% del Estado tiene prelación sobre cualquier otro subsidio proveniente del sistema general de pensiones"
+      ],
+      "ans": "A"
+    },
+    {
+      "n": 24,
+      "q": "Según el numeral 5 del artículo 2.2.13.7.3, una persona afiliada al RPM puede usar los recursos de BEPS para cumplir los requisitos pensionales. ¿Qué instrumento actuarial se utiliza y en qué evento sí se otorga el incentivo periódico?",
+      "opts": [
+        "A) Se usa una tabla de capitalización simple; el incentivo se otorga solo si el vinculado tiene menos de 900 semanas cotizadas al momento del traslado",
+        "B) Se usa un mecanismo actuarial de equivalencias en semanas definido por los Ministerios de Hacienda, Trabajo y el DNP; el incentivo periódico sí se otorga cuando los recursos se destinan para cumplir los requisitos de pensión en el RPM",
+        "C) Se usa el mismo mecanismo actuarial del sistema de ahorro individual; el incentivo se otorga solo si los recursos representan más del 10% del capital requerido para la pensión mínima",
+        "D) Se usa una fórmula de valor presente neto aprobada por la Superintendencia Financiera; el incentivo se otorga en todos los casos de traslado al RPM sin excepción"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 25,
+      "q": "Según el numeral 8 del artículo 2.2.13.7.3, cuando una persona no logra cumplir los requisitos para pensionarse y transfiere su devolución de saldos o indemnización sustitutiva a BEPS, ¿cuál es el tope sobre el cual se aplica el incentivo del 20%?",
+      "opts": [
+        "A) El incentivo se aplica sobre la totalidad del monto de la devolución de saldos o indemnización sustitutiva sin ningún límite",
+        "B) El incentivo se aplica solo sobre el monto de la devolución de saldos o indemnización sustitutiva; cuando este supere el tope máximo del artículo 2.2.13.5.2, el incentivo se otorga solo sobre el monto del ahorro necesario para conformar dicho capital, y el excedente se devuelve al beneficiario",
+        "C) El incentivo se aplica sobre el 50% de la devolución de saldos para evitar una doble aplicación del principio de solidaridad del Estado",
+        "D) El incentivo no aplica cuando los recursos provienen de devolución de saldos o indemnización sustitutiva por tratarse de recursos previamente subsidiados por el Estado"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 26,
+      "q": "El artículo 2.2.13.8.1 establece que la administración del mecanismo BEPS será realizada exclusivamente por Colpensiones. ¿Desde cuándo fue otorgada esta función exclusiva y en qué artículo del Decreto 604 de 2013 se formalizó?",
+      "opts": [
+        "A) Desde el 1 de enero de 2013, formalizada en el artículo 1 del Decreto 604",
+        "B) Desde el 10 de diciembre de 2013, otorgada en el artículo 17 del Decreto 604 de 2013",
+        "C) Desde el 30 de julio de 2020, cuando la Junta Directiva de Colpensiones adoptó el Manual de Contratación",
+        "D) Desde el 16 de julio de 2024, con la entrada en vigencia de la Ley 2381 que confirmó el rol de Colpensiones"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 27,
+      "q": "El Parágrafo del artículo 2.2.13.8.2 establece una limitación importante sobre las actividades que Colpensiones puede contratar con terceros. ¿Cuál es esa limitación?",
+      "opts": [
+        "A) Colpensiones no puede contratar con terceros ninguna actividad relacionada con la atención al ciudadano vinculado al programa",
+        "B) Colpensiones puede celebrar contratos con terceros para el desarrollo de las actividades de operación del mecanismo de BEPS, excepto la de liquidación y otorgamiento del subsidio",
+        "C) Colpensiones no puede contratar con terceros las actividades de inversión del portafolio acumulado en el fondo común de BEPS",
+        "D) Colpensiones solo puede contratar con terceros las actividades de recaudo, debiendo realizar directamente todas las demás funciones operativas"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 28,
+      "q": "Según el artículo 2.2.13.8.3, ¿quién aprueba el régimen de inversiones del portafolio acumulado en el fondo común de BEPS y qué tratamiento tributario tienen esos recursos?",
+      "opts": [
+        "A) Lo aprueba la Superintendencia Financiera de Colombia; los recursos tienen tratamiento tributario de renta exenta",
+        "B) Lo aprueba la Junta Directiva de Colpensiones; los recursos tienen el tratamiento tributario de los recursos de la seguridad social",
+        "C) Lo aprueba el Ministerio de Hacienda mediante decreto; los recursos no causan ningún tipo de impuesto ni contribución",
+        "D) Lo aprueba el CONFIS previo concepto del Consejo Directivo de Colpensiones; los recursos tienen tratamiento tributario especial de entidades sin ánimo de lucro"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 29,
+      "q": "El artículo 2.2.13.8.4 establece una regla fundamental sobre los costos de administración del programa BEPS. ¿Cómo se financian esos costos y pueden ser trasladados a los beneficiarios?",
+      "opts": [
+        "A) Los costos se financian con un descuento del 2% sobre los rendimientos de la cuenta individual; sí pueden trasladarse parcialmente a los vinculados con mayores ahorros",
+        "B) Los costos serán cubiertos por el Presupuesto General de la Nación previo concepto de la Comisión Intersectorial de Pensiones y Beneficios Económicos; en ningún caso esos costos serán asumidos por los beneficiarios del mecanismo",
+        "C) Los costos se financian con parte del incentivo del 20% del Estado, descontando hasta un 5% para gastos operativos; no se trasladan directamente a los vinculados",
+        "D) Los costos son asumidos por Colpensiones con cargo a sus propios recursos patrimoniales sin afectar el Presupuesto General de la Nación"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 30,
+      "q": "Según el artículo 2.2.13.9.1, ¿cuál entidad financia los microseguros de invalidez y muerte para los vinculados al BEPS?",
+      "opts": [
+        "A) El Presupuesto General de la Nación a través del Ministerio de Hacienda previo concepto del CONFIS",
+        "B) Colpensiones con cargo a las reservas del fondo común de BEPS administrado por la entidad",
+        "C) El Fondo de Riesgos Laborales, siendo el pago del siniestro efectivo mediante una suma única",
+        "D) La Subcuenta de Solidaridad del Fondo de Solidaridad Pensional como mecanismo de protección social"
+      ],
+      "ans": "C"
+    },
+    {
+      "n": 31,
+      "q": "El artículo 2.2.13.11.1 define dos tipos de operadores de recaudo BEPS. ¿Cuál es la diferencia entre operadores tradicionales y operadores alternativos?",
+      "opts": [
+        "A) Los operadores tradicionales son entidades públicas; los alternativos son entidades privadas sin importar si son vigiladas por la Superintendencia Financiera",
+        "B) Los operadores tradicionales son entidades vigiladas por la Superintendencia Financiera con quienes Colpensiones suscriba acuerdos de servicios; los alternativos son entidades legalmente constituidas no vigiladas por la Superintendencia Financiera cuyo objeto social contempla la posibilidad de realizar recaudos",
+        "C) Los operadores tradicionales son bancos y cooperativas financieras; los alternativos son entidades del sector solidario como cajas de compensación familiar",
+        "D) Los operadores tradicionales tienen cobertura nacional; los operadores alternativos tienen cobertura regional o municipal"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 32,
+      "q": "El artículo 2.2.13.11.3 establece un requisito de experiencia para los operadores alternativos (no vigilados por la Superintendencia Financiera). ¿Cuál es ese requisito?",
+      "opts": [
+        "A) Deben acreditar un capital social mínimo equivalente a 500 SMMLV y tener por lo menos tres años de constitución legal",
+        "B) Deben estar certificados bajo la norma ISO 9001 y contar con al menos dos años de experiencia en gestión documental",
+        "C) Deben acreditar experiencia en sistemas de recaudo y/o pago con entidades vigiladas por la Superintendencia Financiera de por lo menos un año",
+        "D) Deben contar con aprobación expresa del Ministerio de Tecnologías de la Información y las Comunicaciones para operar sistemas de pago electrónico"
+      ],
+      "ans": "C"
+    },
+    {
+      "n": 33,
+      "q": "Según el artículo 2.2.13.11.2, ¿cuál es la regla sobre las transferencias diarias de los dineros recaudados?",
+      "opts": [
+        "A) Los operadores deben transferir los recursos dentro de los tres días hábiles siguientes al recaudo para garantizar la seguridad de las operaciones",
+        "B) El sistema deberá garantizar las transferencias diarias de los dineros recaudados a las cuentas y entidades bancarias que Colpensiones defina para el manejo de los recursos",
+        "C) Los operadores pueden acumular los recaudos por períodos de hasta cinco días hábiles antes de transferirlos a Colpensiones",
+        "D) Las transferencias se realizan mensualmente al inicio de cada mes calendario para facilitar la conciliación contable del fondo común de BEPS"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 34,
+      "q": "El artículo 2.2.13.11.4 enumera las obligaciones de los operadores de recaudo. ¿Cuánto tiempo mínimo deben almacenar el registro de cada transacción?",
+      "opts": [
+        "A) Seis (6) meses",
+        "B) Dos (2) años",
+        "C) Un (1) año",
+        "D) Cinco (5) años"
+      ],
+      "ans": "C"
+    },
+    {
+      "n": 35,
+      "q": "Según el artículo 2.2.13.11.4, ¿bajo qué estándar internacional de seguridad deben operar los operadores de recaudo de BEPS?",
+      "opts": [
+        "A) ISO 9001 sobre sistemas de gestión de calidad",
+        "B) ISO 27001 o las normas que la modifiquen o sustituyan",
+        "C) ISO 31000 sobre gestión del riesgo financiero",
+        "D) PCI-DSS (Payment Card Industry Data Security Standard)"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 36,
+      "q": "El Capítulo 12 del Decreto 1833 de 2016 regula las contribuciones de terceros a vinculados BEPS. Según el artículo 2.2.13.12.8, ¿sobre qué monto se calcula el incentivo periódico del Estado cuando hay contribuciones de terceros?",
+      "opts": [
+        "A) Sobre la suma total del ahorro del vinculado más las contribuciones del tercero, para maximizar el beneficio del vinculado",
+        "B) El cálculo del incentivo periódico se efectúa exclusivamente sobre el monto de los aportes realizados por la persona vinculada al BEPS y no sobre los recursos que el tercero haya realizado",
+        "C) Sobre el 50% de las contribuciones del tercero más el 100% de los aportes propios del vinculado",
+        "D) Sobre el monto que sea mayor entre los aportes propios del vinculado y las contribuciones del tercero en cada vigencia fiscal"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 37,
+      "q": "El artículo 2.2.13.12.4 establece el tope máximo de la anualidad vitalicia que puede financiar un tercero a un vinculado BEPS. ¿Cuál es ese tope?",
+      "opts": [
+        "A) Una anualidad vitalicia que no podrá superar el cien por ciento (100%) del Salario Mínimo Mensual Legal Vigente",
+        "B) Una anualidad vitalicia que no podrá superar el ochenta y cinco por ciento (85%) del Salario Mínimo Mensual Legal Vigente",
+        "C) Una anualidad vitalicia que no podrá superar el cincuenta por ciento (50%) del Salario Mínimo Mensual Legal Vigente",
+        "D) Una anualidad vitalicia que no podrá superar el setenta por ciento (70%) del Salario Mínimo Mensual Legal Vigente"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 38,
+      "q": "Según el artículo 2.2.13.12.9, ¿qué debe hacer Colpensiones dentro de los diez (10) días calendario siguientes a recibir la información de un tercero que quiere realizar contribuciones BEPS?",
+      "opts": [
+        "A) Verificar el cumplimiento de requisitos de los vinculados beneficiarios y notificar al Ministerio del Trabajo",
+        "B) Comunicarle al tercero los mecanismos disponibles para realizar la transferencia de recursos, bien sea para anualidad vitalicia o aportes BEPS",
+        "C) Publicar en el SECOP II los convenios de contribución de terceros conforme a la Ley de Transparencia",
+        "D) Solicitar concepto previo de la Comisión Intersectorial de Pensiones sobre la procedencia de la contribución"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 39,
+      "q": "El Capítulo 13 del Decreto 1833 regula los recursos de la estampilla Pro cultura (Ley 666 de 2001) destinados a creadores y gestores culturales vía BEPS. ¿Cuál es el tope máximo de la anualidad vitalicia que pueden recibir y qué edad mínima se requiere para acceder a ella?",
+      "opts": [
+        "A) El tope es el 85% del SMMLV; se requiere ser mayor de 65 años para hombres y 60 años para mujeres",
+        "B) El tope es el 30% del SMMLV; se requiere tener una edad igual o superior a 62 años los hombres y 57 años las mujeres",
+        "C) El tope es el 50% del SMMLV; se requiere ser mayor de 70 años para hombres y mujeres indistintamente",
+        "D) El tope es el 100% del SMMLV para quienes acrediten más de 20 años de trayectoria cultural reconocida"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 40,
+      "q": "El artículo 2.2.13.13.5 establece los criterios de priorización para la selección de creadores y gestores culturales beneficiarios. ¿Cuál de los siguientes criterios NO está incluido en esa disposición?",
+      "opts": [
+        "A) La edad del aspirante",
+        "B) El tiempo de dedicación del creador o gestor cultural en el campo de la cultura",
+        "C) El nivel de ingresos del cónyuge o compañero permanente del aspirante",
+        "D) La minusvalía o discapacidad física o mental del aspirante"
+      ],
+      "ans": "C"
+    },
+    {
+      "n": 41,
+      "q": "El artículo 2.2.13.10.1 establece que las aseguradoras de vida autorizadas para el ramo BEPS deben calcular la prima y las reservas técnicas con una tasa específica. ¿Cuál es esa tasa?",
+      "opts": [
+        "A) Con la tasa del 6% anual efectivo",
+        "B) Con la tasa del 2% anual efectivo",
+        "C) Con la tasa del 4% anual",
+        "D) Con la tasa DTF vigente en el momento de la contratación"
+      ],
+      "ans": "C"
+    },
+    {
+      "n": 42,
+      "q": "¿Qué entidad es responsable de elaborar la nota técnica y adoptar las tablas de mortalidad para la población BEPS, según el artículo 2.2.13.10.1?",
+      "opts": [
+        "A) La Junta Directiva de Colpensiones previo concepto actuarial de la Comisión Intersectorial de Pensiones",
+        "B) La Superintendencia Financiera de Colombia, por tratarse de seguros expedidos a personas de escasos recursos y población vulnerable",
+        "C) El Ministerio de Hacienda con el apoyo técnico del Banco de la República y la UGPP",
+        "D) El DANE en coordinación con el Ministerio del Trabajo para garantizar datos estadísticos actualizados"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 43,
+      "q": "Según el artículo 2.2.13.9.2, ¿hasta qué fecha debe la administradora BEPS reportar al Ministerio de Hacienda la provisión para el financiamiento de subsidios de la siguiente vigencia fiscal?",
+      "opts": [
+        "A) A más tardar el último día del mes de enero de cada año",
+        "B) A más tardar el último día del mes de junio de cada año",
+        "C) A más tardar el último día del mes de marzo de cada año",
+        "D) A más tardar el último día del mes de diciembre del año anterior"
+      ],
+      "ans": "C"
+    },
+    {
+      "n": 44,
+      "q": "El artículo 2.2.13.6.1 establece la coexistencia del BEPS con otros programas de Servicios Sociales Complementarios. ¿Cuál es la regla aplicable?",
+      "opts": [
+        "A) Las personas que cumplan requisitos para BEPS no pueden acceder simultáneamente a otros programas de servicios sociales complementarios por prohibición de doble subsidio",
+        "B) Las personas que al momento de cumplir los requisitos para ser beneficiarias del BEPS también cumplan los requisitos para ser beneficiarias del otro programa de servicios sociales complementarios, podrán ser beneficiarias de los dos programas paralelamente",
+        "C) Las personas solo pueden recibir beneficios de un servicio social complementario por período de cinco años, transcurridos los cuales pueden solicitar el cambio al otro programa",
+        "D) La coexistencia solo aplica cuando los beneficios combinados de los dos programas no superen el 100% del SMMLV mensual"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 45,
+      "q": "El artículo 2.2.13.11.6 establece que las personas que se afilien al sistema general de pensiones tienen una opción adicional. ¿En qué consiste y qué deben hacer las administradoras pensionales?",
+      "opts": [
+        "A) Las administradoras pensionales deben transferir automáticamente los aportes de las personas con ingresos inferiores a un SMMLV al programa BEPS sin necesidad de solicitud",
+        "B) Las personas pueden solicitar simultáneamente su vinculación al BEPS; las administradoras pensionales deben brindar información sobre BEPS y enviar digitalizado a Colpensiones el anexo del formulario de afiliación para que esta verifique los requisitos",
+        "C) Las administradoras pensionales deben negar la afiliación al sistema general de pensiones a quienes ya estén vinculados a BEPS hasta que cancelen su vinculación",
+        "D) Las personas recién afiliadas al sistema pensional tienen 30 días para solicitar la exclusión de BEPS si ya estaban previamente vinculadas al programa"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 46,
+      "q": "El Decreto 1494 de 2022 adicionó el Capítulo 15 al Título 13 del Decreto 1833 de 2016. ¿Cuál es el objeto específico de este sistema de equivalencias?",
+      "opts": [
+        "A) Establecer las condiciones para que los afiliados al sistema general de pensiones trasladen sus ahorros voluntarios al mecanismo BEPS para incrementar el monto de su anualidad vitalicia",
+        "B) Establecer el Sistema de Equivalencias de semanas entre el Servicio Social Complementario BEPS y el Sistema General de Pensiones, cuando el afiliado con estos recursos pueda acceder a una pensión de vejez",
+        "C) Crear un mecanismo para calcular el valor en dinero que representan las semanas cotizadas al SGP cuando se quieren trasladar a BEPS como ahorros voluntarios",
+        "D) Reemplazar el sistema de anualidad vitalicia con un esquema de semanas equivalentes de pensión temporal administradas por Colpensiones"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 47,
+      "q": "Según el Decreto 1494 de 2022, las administradoras del Régimen de Ahorro Individual y la administradora del Régimen de Prima Media tienen una obligación expresa respecto a las semanas BEPS obtenidas por equivalencias. ¿Cuál es?",
+      "opts": [
+        "A) Deben reportar trimestralmente a la UGPP el número de semanas equivalentes acreditadas a cada afiliado",
+        "B) Están obligadas a imputar las semanas BEPS obtenidas a través del sistema de equivalencias para el cumplimiento del número de semanas requeridas para obtener una pensión de vejez o la garantía de pensión mínima en el RAIS",
+        "C) Deben devolver los recursos ahorrados en BEPS a los afiliados que opten por el sistema de equivalencias en lugar de acreditar semanas",
+        "D) Deben someter la acreditación de semanas equivalentes a aprobación previa del Ministerio del Trabajo antes de incluirlas en la historia laboral del afiliado"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 48,
+      "q": "¿Cuándo comenzó a operar efectivamente el Sistema de Equivalencias establecido por el Decreto 1494 de 2022?",
+      "opts": [
+        "A) El 3 de agosto de 2022, misma fecha de expedición del decreto",
+        "B) El 1 de enero de 2023 como fecha de inicio de vigencia prevista en el decreto",
+        "C) El 1 de febrero de 2023, cuando Colpensiones puso en marcha el mecanismo operativamente",
+        "D) El 16 de julio de 2024 con la entrada en vigencia de la Ley 2381 de 2024"
+      ],
+      "ans": "C"
+    },
+    {
+      "n": 49,
+      "q": "¿Cuál es la principal ventaja del Sistema de Equivalencias del Decreto 1494 de 2022 para los afiliados al RPM que tienen ahorros en BEPS?",
+      "opts": [
+        "A) Permite recibir simultáneamente el beneficio de la anualidad vitalicia BEPS y la pensión de vejez del RPM sin restricción de doble subsidio",
+        "B) Permite convertir los ahorros BEPS en semanas de cotización al sistema general de pensiones para completar las semanas requeridas para acceder a una pensión de vejez, sumando los esfuerzos de ahorro",
+        "C) Permite que los ahorros BEPS sean reconocidos como aportes de empleador para efectos de las obligaciones parafiscales del vinculado",
+        "D) Permite que el incentivo del 20% del Estado se aplique retroactivamente sobre los ahorros BEPS de todos los años anteriores al cumplimiento de la edad de retiro"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 50,
+      "q": "Según la Ley 2381 de 2024, ¿cuál es el tratamiento que reciben las semanas cotizadas dentro de la equivalencia BEPS en el nuevo sistema de pilares para el reconocimiento de prestaciones del Pilar Contributivo?",
+      "opts": [
+        "A) Las semanas equivalentes BEPS solo son reconocidas en el componente de prima media y no en el componente complementario de ahorro individual",
+        "B) Las semanas que se hayan cotizado dentro de la equivalencia contemplada en el programa BEPS se tienen en cuenta para el reconocimiento de las prestaciones del Sistema de Protección Social Integral para la Vejez en el Pilar Contributivo",
+        "C) Las semanas equivalentes BEPS solo son válidas para quienes se afiliaron al programa antes del 1 de julio de 2025, fecha de entrada en vigencia de la reforma pensional",
+        "D) Las semanas equivalentes BEPS generan un beneficio adicional del 5% sobre la pensión de vejez como incentivo a la formalización laboral progresiva"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 51,
+      "q": "La Ley 2381 de 2024 introdujo el sistema de pilares en Colombia. ¿Cuál es el pilar al que más se asemeja el programa BEPS en su función de protección de la vejez para la población de menores recursos?",
+      "opts": [
+        "A) Al Pilar Contributivo, pues los vinculados realizan aportes periódicos similares a las cotizaciones al sistema general de pensiones",
+        "B) Al Pilar Solidario, pues está dirigido a personas en condición de vulnerabilidad y pobreza que no logran acceder a una pensión, con financiación estatal a través del subsidio",
+        "C) Al Pilar Semicontributivo, pues combina ahorro individual con subsidio estatal para personas que no alcanzan los requisitos de la pensión mínima",
+        "D) Al Componente Complementario de Ahorro Individual, pues los recursos BEPS son administrados por Colpensiones como entidad del sistema financiero"
+      ],
+      "ans": "C"
+    },
+    {
+      "n": 52,
+      "q": "Según la Ley 2381 de 2024, ¿cuál es la renta básica solidaria establecida para adultos mayores vulnerables que no lograron obtener pensión y cómo se relaciona con el programa BEPS?",
+      "opts": [
+        "A) La renta básica solidaria es de $150.000 pesos mensuales; los beneficiarios de BEPS automáticamente acceden a esta suma adicional como complemento de la anualidad vitalicia",
+        "B) La renta básica solidaria es de $225.000 pesos para más de 2 millones de personas mayores; los ahorros BEPS pueden complementar este beneficio del Pilar Solidario para quienes ya tienen anualidad vitalicia activa",
+        "C) La renta básica solidaria equivale al 40% del SMMLV; los recursos BEPS son descontados de esta suma para evitar el doble subsidio",
+        "D) La renta básica solidaria es de $500.000 pesos; los beneficiarios de BEPS son excluidos automáticamente de este beneficio por ya recibir subsidio del Estado"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 53,
+      "q": "Con la entrada en vigencia de la Ley 2381 de 2024, Colpensiones administra el Régimen de Prima Media con Prestación Definida y los BEPS. ¿Cuál es el artículo de la Ley 2381 que reitera la naturaleza jurídica de Colpensiones como Empresa Industrial y Comercial del Estado?",
+      "opts": [
+        "A) El artículo 48 de la Ley 2381 que modifica el sistema de prima media",
+        "B) El artículo 70 de la Ley 2381 de 2024",
+        "C) El artículo 12 de la Ley 2381 sobre afiliados a Colpensiones no cobijados por el régimen de transición",
+        "D) El artículo 76 de la Ley 2381 sobre oportunidad de traslado para mujeres y hombres con semanas determinadas"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 54,
+      "q": "Una persona vinculada a BEPS solicita una anualidad vitalicia con sus ahorros acumulados. Simultáneamente tiene derecho a la garantía de pensión mínima del RAIS por haber cotizado 1.150 semanas. ¿Puede recibir el incentivo del 20% del Estado?",
+      "opts": [
+        "A) Sí puede recibir el incentivo porque tiene semanas cotizadas al sistema general de pensiones que son diferentes de los ahorros BEPS",
+        "B) No puede recibir el incentivo porque esto generaría un doble subsidio proveniente del Estado; en el RAIS con garantía de pensión mínima no se aplica el incentivo periódico de BEPS",
+        "C) Puede recibir el incentivo pero solo sobre el monto que exceda el capital necesario para la pensión mínima garantizada",
+        "D) Puede recibir el incentivo siempre y cuando opte por la anualidad vitalicia BEPS en lugar de acogerse a la garantía de pensión mínima del RAIS"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 55,
+      "q": "Un vinculado al BEPS fallece antes de cumplir la edad de retiro. Sus herederos solicitan los recursos. ¿Qué criterio debe aplicar Colpensiones según la normativa vigente para la devolución de los recursos?",
+      "opts": [
+        "A) Colpensiones debe abrir un juicio de sucesión ante notaría para determinar quiénes son los herederos legítimos del vinculado fallecido",
+        "B) Colpensiones sigue los lineamientos que la Superintendencia Financiera fija para los establecimientos bancarios respecto de la exención del juicio de sucesión, devolviendo el monto del ahorro más rendimientos sin aplicar el subsidio del Estado",
+        "C) Colpensiones espera que los herederos presenten la sentencia judicial de sucesión aprobada por juez competente, sin importar el tiempo que tome el proceso",
+        "D) Colpensiones aplica el subsidio del 20% antes de entregar los recursos a los herederos como reconocimiento al esfuerzo de ahorro del vinculado fallecido"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 56,
+      "q": "Según el principio de no simultaneidad establecido en el artículo 2.2.13.7.1, cuando Colpensiones detecta en su verificación semestral que una persona cotizó simultáneamente al SGP y aportó a BEPS en un mismo mes, ¿qué procedimiento aplica?",
+      "opts": [
+        "A) Cancela la vinculación del afiliado al programa BEPS y devuelve todos los ahorros acumulados sin reconocer el incentivo",
+        "B) Acredita los ahorros BEPS al primer día hábil del siguiente mes en que no se hayan identificado aportes al SGP; si no es posible, se toman como aportes BEPS del siguiente año respetando el tope máximo; además da traslado a la UGPP",
+        "C) Transfiere automáticamente los aportes BEPS del mes en conflicto al sistema general de pensiones como cotizaciones voluntarias del afiliado",
+        "D) Impone una multa al afiliado equivalente al valor del incentivo del mes en conflicto como sanción por el doble aporte"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 57,
+      "q": "El artículo 2.2.13.12.3 establece que los recursos de contribuciones de terceros solo pueden destinarse a dos usos específicos. ¿Cuáles son?",
+      "opts": [
+        "A) Financiación de primas de microseguros de vida y pago de gastos de administración del mecanismo BEPS",
+        "B) Financiación de una anualidad vitalicia del Servicio Social Complementario BEPS y financiación de aportes al Servicio Social Complementario BEPS",
+        "C) Cotizaciones al sistema general de pensiones y pago de deudas del vinculado con el SENA o el ICBF",
+        "D) Adquisición de vivienda rural y financiación de proyectos productivos para vinculados en economía informal"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 58,
+      "q": "Según el artículo 2.2.13.12.12, ¿qué obligación en materia anticorrupción tiene la administradora de BEPS respecto de las contribuciones de terceros?",
+      "opts": [
+        "A) Debe reportar a la Fiscalía General de la Nación todas las contribuciones que superen 10 SMMLV como posibles operaciones sospechosas",
+        "B) Debe dar cumplimiento a lo establecido en el artículo 73 de la Ley 1474 de 2011 respecto de las contribuciones en dinero realizadas por los terceros (Plan Anticorrupción)",
+        "C) Debe contratar una auditoría externa anual para verificar la procedencia lícita de los recursos aportados por los terceros",
+        "D) Debe publicar en el SECOP II todos los convenios de contribución de terceros mayores a 100 SMMLV conforme al principio de transparencia"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 59,
+      "q": "Una persona tiene 58 años, es mujer, tiene ingresos de $700.000 pesos mensuales, está clasificada en el nivel B del Sisbén, ha ahorrado en BEPS durante 8 años y tiene 650 semanas cotizadas al RPM. ¿Cuál es la opción más favorable que puede tomar según la normativa BEPS?",
+      "opts": [
+        "A) Solicitar la devolución de saldos de su cuenta BEPS y la indemnización sustitutiva del RPM simultáneamente para maximizar los recursos recibidos de una sola vez",
+        "B) Usar el Sistema de Equivalencias del Decreto 1494 de 2022 para convertir sus ahorros BEPS en semanas que complementen las 650 cotizadas en el RPM y alcanzar las semanas necesarias para la pensión de vejez, recibiendo el incentivo periódico si los recursos no implican doble subsidio",
+        "C) Solicitar inmediatamente la anualidad vitalicia BEPS con el incentivo del 20%, pues ya cumplió la edad de retiro de 57 años para mujeres",
+        "D) Trasladar todos sus ahorros BEPS al RAIS para obtener la garantía de pensión mínima sin necesidad del sistema de equivalencias"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 60,
+      "q": "Un tercero (persona jurídica) desea realizar una contribución BEPS para financiar la anualidad vitalicia de un grupo de trabajadores informales. El trabajador postulado tuvo una devolución de saldos del RPM que no ha sido reportada. ¿Cómo debe proceder Colpensiones al calcular el monto de la contribución?",
+      "opts": [
+        "A) Debe ignorar la devolución de saldos del RPM porque ya fue recibida por el trabajador y no forma parte de su cuenta BEPS actual",
+        "B) Debe incluir los recursos de la devolución de saldos en el cálculo actuarial del monto de la contribución necesario para financiar la anualidad vitalicia, pues estos recursos deben tenerse en cuenta según el artículo 2.2.13.12.4",
+        "C) Debe suspender el trámite hasta que el trabajador reintegre la devolución de saldos al sistema general de pensiones como condición previa",
+        "D) Debe aplicar el incentivo del 20% sobre la devolución de saldos del RPM además del cálculo actuarial de la anualidad vitalicia como doble incentivo de reintegración al sistema"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 61,
+      "q": "Un creador cultural de 60 años desea acceder a los beneficios BEPS mediante recursos de la estampilla Pro cultura. No cumple la edad para la anualidad vitalicia. ¿Qué alternativa le ofrece el Decreto 1833 de 2016?",
+      "opts": [
+        "A) Debe esperar dos años hasta cumplir la edad mínima de 62 años; no existen alternativas intermedias en el programa",
+        "B) Puede recibir aportes al Servicio Social Complementario BEPS financiados con recursos de la estampilla Pro cultura, siempre que cumpla los requisitos de afiliación al régimen de seguridad social en salud y haga parte de las agremiaciones culturales del Decreto 780 de 2016",
+        "C) Puede solicitar la anualidad vitalicia parcial equivalente al 30% del SMMLV si acredita más de 20 años de trayectoria cultural certificada por el Ministerio de Cultura",
+        "D) Puede recibir un subsidio directo del municipio equivalente a 6 SMMLV mensuales hasta cumplir la edad de acceso a la anualidad vitalicia completa"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 62,
+      "q": "Una persona vinculada al RAIS tiene capital suficiente para pensionarse y además tiene ahorros en BEPS. ¿Puede usar los ahorros BEPS para incrementar el monto de su pensión y recibirá el incentivo del Estado?",
+      "opts": [
+        "A) Sí puede usar los ahorros BEPS como cotizaciones voluntarias para incrementar el saldo de su cuenta individual de ahorro pensional y recibirá el incentivo del 20% como estímulo",
+        "B) Puede destinar las sumas ahorradas en BEPS como cotizaciones voluntarias conforme al artículo 62 de la Ley 100 de 1993 para optar por una pensión mayor, pero en este evento NO se hace acreedora al incentivo periódico",
+        "C) No puede usar los ahorros BEPS para incrementar la pensión porque el mecanismo solo está diseñado para personas que no pueden pensionarse",
+        "D) Puede usar los ahorros BEPS para incrementar la pensión y además recibirá el incentivo del 20% como doble beneficio por haber contribuido simultáneamente al SGP y a BEPS"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 63,
+      "q": "Según la normativa BEPS, ¿cuál es la diferencia en el tratamiento del incentivo del Estado entre quien opta por la anualidad vitalicia y quien opta por el pago de un inmueble de su propiedad?",
+      "opts": [
+        "A) En la anualidad vitalicia sí hay incentivo del Estado; en el pago de inmueble no hay incentivo del Estado",
+        "B) En ambas opciones hay incentivo del Estado del 20% según el artículo 2.2.13.5.2 numerales 1 y 3 respectivamente",
+        "C) En ambas opciones no hay incentivo porque el beneficiario ya cumplió la edad de retiro",
+        "D) En la anualidad vitalicia no hay incentivo porque la aseguradora asume ese costo; en el inmueble sí hay incentivo del 20%"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 64,
+      "q": "Un operador alternativo de recaudo BEPS incumple su obligación de garantizar las transferencias diarias de recursos recaudados. Según el artículo 2.2.13.11.5, ¿cuáles son las consecuencias?",
+      "opts": [
+        "A) Solo procede la terminación del acuerdo de servicio por parte de Colpensiones, sin que haya lugar a acciones legales adicionales",
+        "B) Colpensiones puede adelantar las acciones legales que correspondan, sin perjuicio de que la entidad de vigilancia y control correspondiente aplique las sanciones establecidas en la ley",
+        "C) El operador pierde automáticamente su registro como operador de recaudo sin posibilidad de rehabilitación ante Colpensiones",
+        "D) El incumplimiento se reporta a la UGPP para que esta inicie el proceso sancionatorio correspondiente como autoridad competente"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 65,
+      "q": "Según el Parágrafo del artículo 2.2.13.5.2 sobre la selección de la aseguradora para la anualidad vitalicia, ¿cuándo puede Colpensiones prescindir del procedimiento previsto en el artículo 2.36.2.1.1 del Decreto 2555 de 2010?",
+      "opts": [
+        "A) Cuando el valor de la anualidad sea inferior a 100 SMMLV anuales por economía de escala",
+        "B) Nunca; el procedimiento del artículo 2.36.2.1.1 del Decreto 2555 de 2010 es de obligatorio cumplimiento en todos los casos",
+        "C) Cuando suscriba convenio interadministrativo para la prestación del servicio de anualidad vitalicia",
+        "D) Cuando la Superintendencia Financiera autorice expresamente a Colpensiones para seleccionar directamente la aseguradora"
+      ],
+      "ans": "C"
+    },
+    {
+      "n": 66,
+      "q": "El artículo 2.2.13.13.7 establece el procedimiento de los entes territoriales para asignar beneficios BEPS a creadores y gestores culturales. ¿Hasta qué fecha deben remitir al Ministerio de Cultura la información sobre la asignación de beneficios?",
+      "opts": [
+        "A) Hasta el 31 de diciembre de cada año para su inclusión en el presupuesto de la siguiente vigencia",
+        "B) Hasta máximo el 30 de marzo de cada año, con envío desde el primer día hábil del mes de enero",
+        "C) Hasta el 30 de junio de cada año coincidiendo con el primer corte semestral de los entes territoriales",
+        "D) Hasta el 31 de agosto de cada año antes del inicio del siguiente ciclo de postulaciones"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 67,
+      "q": "Según el artículo 2.2.13.13.6, el cálculo del incentivo periódico del Estado para los creadores y gestores culturales que reciben aportes con recursos de la estampilla Pro cultura tiene una regla específica. ¿Cuál?",
+      "opts": [
+        "A) El incentivo se aplica sobre la totalidad de los recursos transferidos por las entidades territoriales más los aportes propios del creador cultural",
+        "B) El incentivo se efectúa exclusivamente sobre el monto de los aportes realizados por el creador y gestor cultural al BEPS, y no sobre los recursos transferidos por las entidades territoriales, departamentos o distritos",
+        "C) El incentivo se aplica sobre el 50% de los recursos territoriales más el 100% de los aportes propios del creador como reconocimiento al sector cultural",
+        "D) El incentivo aplica sobre la totalidad de los recursos combinados hasta un tope de 6 SMMLV anuales"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 68,
+      "q": "¿Qué ocurre con los aportes al BEPS de los creadores culturales una vez se agoten los recursos de la estampilla Pro cultura disponibles en la entidad territorial?",
+      "opts": [
+        "A) La entidad territorial queda obligada a buscar fuentes de financiación alternativas en el presupuesto municipal para no interrumpir los beneficios",
+        "B) En ningún caso el aporte al Servicio Social Complementario BEPS genera derechos ciertos o expectativas legítimas; una vez agotados los recursos, la entidad territorial no está obligada a continuar realizando estos aportes",
+        "C) Colpensiones asume el financiamiento de los aportes restantes con cargo al Presupuesto General de la Nación hasta tanto se repongan los recursos territoriales",
+        "D) Los beneficiarios tienen derecho a interponer acción de tutela para exigir la continuidad del programa como derecho adquirido"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 69,
+      "q": "Integrando la normativa del Decreto 1833 de 2016 y el Decreto 1494 de 2022: un vinculado al RPM tiene 62 años, ha ahorrado $8.000.000 en BEPS y cotizó 1.100 semanas al RPM. Necesita 1.300 semanas para pensionarse. ¿Cuál es la ruta correcta según la normativa?",
+      "opts": [
+        "A) Debe solicitar la anualidad vitalicia BEPS con el incentivo del 20% y simultáneamente la indemnización sustitutiva del RPM por no reunir las semanas requeridas",
+        "B) Puede usar el Sistema de Equivalencias del Decreto 1494 de 2022 para convertir sus ahorros BEPS en semanas equivalentes que le permitan completar las 200 semanas faltantes y acceder a la pensión de vejez en el RPM, recibiendo el incentivo periódico en ese escenario",
+        "C) Debe solicitar la devolución de sus ahorros BEPS en un único pago y con ese dinero completar por su cuenta las semanas faltantes mediante aportes voluntarios al RPM",
+        "D) Debe trasladarse al RAIS y usar los ahorros BEPS más la garantía de pensión mínima para obtener inmediatamente su pensión de vejez"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 70,
+      "q": "El artículo 2.2.13.11.8 permite el traslado voluntario de sumas cotizadas al SGP al mecanismo BEPS. ¿A quiénes está dirigida esta figura y bajo qué condición?",
+      "opts": [
+        "A) A todos los afiliados al SGP que deseen complementar su ahorro para la vejez, sin importar si alcanzaron o no los requisitos de pensión",
+        "B) A las personas que han realizado cotizaciones mínimas semanales al SGP que no logran cumplir los requisitos para obtener una pensión, para que trasladen los recursos de devolución de saldos o indemnización sustitutiva a BEPS",
+        "C) Solo a los trabajadores independientes que cotizaron al SGP de manera intermitente durante su vida laboral",
+        "D) A los afiliados al RAIS que tienen cuentas de ahorro individual inferiores al capital requerido para la pensión mínima garantizada"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 71,
+      "q": "¿Cuál es la prohibición de doble subsidio más relevante en la interacción entre BEPS y el sistema general de pensiones, y en qué artículo del Decreto 1833 de 2016 está consagrada?",
+      "opts": [
+        "A) La prohibición de recibir simultáneamente la anualidad vitalicia BEPS y la mesada pensional de vejez del RPM; consagrada en el artículo 2.2.13.5.2",
+        "B) La prohibición de obtener simultáneamente un subsidio proveniente del sistema general de pensiones y uno proveniente de los Servicios Sociales Complementarios; consagrada en el artículo 2.2.13.7.2 numeral 1",
+        "C) La prohibición de cotizar al RPM y aportar a BEPS en el mismo mes; consagrada en el artículo 2.2.13.7.1",
+        "D) La prohibición de recibir el incentivo del 20% BEPS y la garantía de pensión mínima del RAIS de manera simultánea; consagrada en el artículo 2.2.13.7.3 numeral 2"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 72,
+      "q": "Según el artículo 2.2.13.8.2 numeral 4, Colpensiones debe obtener autorización de una entidad específica para el modelo operativo del mecanismo BEPS. ¿De cuál entidad?",
+      "opts": [
+        "A) Del Ministerio del Trabajo previo concepto técnico de la Comisión Intersectorial de Pensiones",
+        "B) De la Superintendencia Financiera de Colombia",
+        "C) De la Junta Directiva de Colpensiones en sesión plenaria con quórum calificado",
+        "D) Del CONFIS como instancia de coordinación presupuestal del Gobierno Nacional"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 73,
+      "q": "Un vinculado al BEPS decide destinar sus ahorros al pago parcial de un inmueble de su propiedad. La administradora de BEPS tiene una obligación específica antes de ejecutar esa destinación. ¿Cuál?",
+      "opts": [
+        "A) Verificar que el inmueble esté libre de gravámenes hipotecarios y que el valor del ahorro cubra al menos el 20% del precio comercial del inmueble",
+        "B) Obtener concepto favorable del Ministerio de Vivienda sobre la procedencia de usar recursos BEPS para pagos de inmuebles",
+        "C) Informar al beneficiario los riesgos de esa decisión, según el artículo 2.2.13.5.2 numeral 3",
+        "D) Consultar a la Comisión Intersectorial de Pensiones si la destinación del inmueble genera derecho al incentivo del 20%"
+      ],
+      "ans": "C"
+    },
+    {
+      "n": 74,
+      "q": "El artículo 2.2.13.8.5 describe el sistema de recaudo de aportes BEPS. ¿Qué instrumentos y mecanismos están previstos?",
+      "opts": [
+        "A) Solo los canales bancarios tradicionales como bancos y cooperativas financieras con red de sucursales presenciales",
+        "B) Servicios de administración de redes de pago de bajo valor y otras redes de recaudo incluyendo servicios de pago y transacciones virtuales o tarjetas monedero",
+        "C) Exclusivamente el sistema de planilla integrada de liquidación de aportes (PILA) para garantizar la coherencia con las cotizaciones al sistema general de seguridad social",
+        "D) Solo transferencias bancarias directas desde las cuentas de los vinculados a las cuentas de Colpensiones, sin intermediación de operadores"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 75,
+      "q": "Según el numeral 7 del artículo 2.2.13.7.3, una persona afiliada al SGP en cualquiera de sus regímenes logra cumplir los requisitos para pensionarse. ¿Qué opción tiene respecto a sus recursos BEPS?",
+      "opts": [
+        "A) Debe trasladar obligatoriamente sus recursos BEPS al SGP como requisito previo para recibir la pensión de vejez",
+        "B) Puede solicitar que los recursos ahorrados en BEPS más los rendimientos le sean devueltos, pero en ese evento no se hace acreedor al incentivo o subsidio periódico",
+        "C) Puede solicitar el incentivo del 20% sobre los recursos BEPS como reconocimiento a su esfuerzo de ahorro aunque no los destine al sistema pensional",
+        "D) Debe contratar la anualidad vitalicia BEPS como complemento obligatorio a la pensión de vejez para optimizar la protección en la vejez"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 76,
+      "q": "El Decreto 295 de 2017 que adicionó el Capítulo 12 sobre contribuciones de terceros establece que estas contribuciones pueden ser asumidas como un tipo jurídico específico. ¿Cuál?",
+      "opts": [
+        "A) Como aportes parafiscales al Sistema de Seguridad Social Integral con los mismos efectos tributarios de las cotizaciones laborales",
+        "B) Como donaciones condicionadas que realiza un tercero en su nombre al mecanismo de protección para la vejez BEPS",
+        "C) Como inversiones sociales obligatorias de las empresas en el marco de su política de Responsabilidad Social Empresarial",
+        "D) Como créditos blandos otorgados a los vinculados con tasa de interés cero y amortización mediante los rendimientos del fondo BEPS"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 77,
+      "q": "Según el artículo 2.2.13.12.6, el tercero puede aplicar criterios de priorización para seleccionar a los postulantes beneficiarios de sus contribuciones. ¿Cuáles son esos criterios?",
+      "opts": [
+        "A) El nivel de ahorro acumulado en BEPS, la antigüedad de la vinculación al programa y la ubicación geográfica del postulante",
+        "B) La edad del aspirante; el puntaje Sisbén o listado censal; y la minusvalía o discapacidad física o mental del aspirante",
+        "C) El número de dependientes económicos del aspirante, su nivel educativo y el tiempo de desempleo certificado",
+        "D) El municipio de residencia, el sector económico de actividad laboral y la pertenencia a grupos étnicos reconocidos"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 78,
+      "q": "El Parágrafo del artículo 2.2.13.7.3 establece que la Superintendencia Financiera de Colombia tiene una función específica en la coexistencia entre el SGP y los BEPS. ¿Cuál es esa función?",
+      "opts": [
+        "A) Autorizar los traslados de recursos entre BEPS y el SGP mediante resolución administrativa para cada caso individual",
+        "B) Definir el procedimiento para el intercambio de información entre las administradoras del sistema general de pensiones y Colpensiones como entidad administradora de BEPS, estableciendo los plazos para la transferencia de recursos",
+        "C) Vigilar y sancionar a los vinculados que incumplan la prohibición de cotizar simultáneamente al SGP y aportar a BEPS",
+        "D) Certificar anualmente el valor del incentivo del 20% y comunicarlo a Colpensiones para su pago con cargo al Presupuesto General de la Nación"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 79,
+      "q": "Según el numeral 6 del artículo 2.2.13.7.3, una persona afiliada al RPM que cumple con las semanas mínimas requeridas para la pensión puede usar sus ahorros BEPS para incrementar el monto de la pensión. ¿Obtiene el incentivo del Estado en ese caso?",
+      "opts": [
+        "A) Sí obtiene el incentivo porque está destinando los recursos a mejorar su protección pensional conforme al principio de solidaridad",
+        "B) No se hará acreedora al incentivo periódico en el evento en que destine las sumas ahorradas en BEPS para incrementar el monto de la pensión de vejez del RPM mediante el sistema de equivalencias",
+        "C) Solo obtiene el incentivo sobre el 50% de los recursos BEPS destinados a incrementar la pensión como estímulo parcial",
+        "D) Obtiene el incentivo solo si el incremento de la pensión no supera el 20% de la pensión base que le correspondería sin los recursos BEPS"
+      ],
+      "ans": "B"
+    },
+    {
+      "n": 80,
+      "q": "Integrando toda la normativa BEPS: una persona de 64 años, hombre, con ingresos de $850.000 pesos, Sisbén nivel B, que ahorró en BEPS durante 12 años y cotizó esporádicamente 400 semanas al RPM. Al cumplir la edad decide destinar sus ahorros a la anualidad vitalicia. ¿Cuáles son las afirmaciones correctas sobre su situación según el marco normativo vigente?",
+      "opts": [
+        "A) Recibirá el incentivo del 20%; la anualidad se pagará mensualmente sin tope; sus herederos recibirán la anualidad al fallecer; los costos de administración los asume él como beneficiario",
+        "B) Sí cumple los requisitos de edad (62 años) y de insuficiencia de recursos para pensión; recibirá el incentivo del 20%; la anualidad se paga bimestralmente con tope del 85% del SMMLV; si al contratar la anualidad hay excedente, se le devuelve; los costos de administración son cubiertos por el Presupuesto General de la Nación; la obligación de pago del seguro se extingue con su fallecimiento",
+        "C) No puede acceder al beneficio BEPS porque tiene 400 semanas cotizadas al RPM, lo que lo excluye del programa por tener vinculación pensional previa",
+        "D) Recibirá el incentivo del 20% y la garantía de pensión mínima del sistema general de pensiones simultáneamente como reconocimiento a sus 12 años de ahorro en BEPS"
+      ],
+      "ans": "B"
+    }
+  ]
+});
+// ============================================================ FIN MÓDULO: beps
+
+
+
 
 
 
